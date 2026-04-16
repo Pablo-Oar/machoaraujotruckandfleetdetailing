@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 /* ─────────────────────────────────────────────────────────────
    Tipografía — Montserrat
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
