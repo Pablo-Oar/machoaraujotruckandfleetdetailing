@@ -10,9 +10,10 @@ import { useEffect, useRef, useState } from "react"
    ───────────────────────────────────────────────────────────── */
 
 const STATS = [
-  { value: 100, suffix: "+", label: "Reviews on Google" },
-  { value: 5,   suffix: "★", label: "Star Rating"       },
-  { value: 99,  suffix: "%", label: "Happy Customers"   },
+  { value: 100, suffix: "+", label: "Reviews on Google"   },
+  { value: 5,   suffix: "★", label: "Star Rating"         },
+  { value: 99,  suffix: "%", label: "Happy Customers"     },
+  { value: 5,   suffix: "+", label: "Years of Experience" },
 ]
 
 function useCountUp(target: number, duration = 1500, active = false) {
@@ -79,8 +80,8 @@ export default function StatsRow() {
 
         .stats-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          max-width: 860px;
+          grid-template-columns: repeat(4, 1fr);
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 48px;
         }
@@ -116,34 +117,38 @@ export default function StatsRow() {
           text-align: center;
         }
 
-        /* ── MOBILE ───────────────────────────────────────── */
+        /* ── MOBILE: grid 2×2 ────────────────────────────── */
         @media (max-width: 640px) {
           .stats-grid {
             grid-template-columns: 1fr 1fr;
-            padding: 0 0 0 20px;
-            border-left: 2px solid #C9A84C;
-            margin: 0 20px;
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
           }
 
           .stat-item {
-            padding: 32px 16px;
+            padding: 28px 12px;
+            border-right: none !important;
           }
 
-          /* Stat 3 (99%) ocupa las 2 columnas */
-          .stat-item:last-child {
-            grid-column: 1 / -1;
-            border-right: none;
-            border-top: 1px solid rgba(201,168,76,0.15);
+          /* Columna izquierda: borde derecho */
+          .stat-item:nth-child(odd) {
+            border-right: 1px solid rgba(201,168,76,0.3) !important;
           }
 
-          /* Separador entre stat 1 y 2 */
-          .stat-item:nth-child(1) {
-            border-right: 1px solid rgba(201,168,76,0.3);
-            border-bottom: none;
-          }
-
+          /* Fila superior: borde inferior */
+          .stat-item:nth-child(1),
           .stat-item:nth-child(2) {
-            border-right: none;
+            border-bottom: 1px solid rgba(201,168,76,0.2);
+          }
+
+          .stat-number {
+            font-size: 38px;
+          }
+
+          .stat-label {
+            font-size: 10px;
+            letter-spacing: 0.08em;
           }
         }
       `}</style>

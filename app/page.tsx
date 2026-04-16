@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero"
 import StatsRow from "@/components/home/StatsRow"
 import ServiceCards from "@/components/home/ServiceCards"
+import AdditionalServices from "@/components/home/AdditionalServices"
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <StatsRow />
       <ServiceCards />
+      <AdditionalServices />
     </main>
   )
 }
