@@ -12,37 +12,37 @@ import Image from "next/image"
 const SERVICES = [
   {
     title:       "Paint Correction",
-    description: "Remove scratches, swirls and oxidation. Restore your paint to flawless.",
+    description: "Multi-stage polishing to eliminate swirl marks, scratches and oxidation. Your paint, flawless again.",
     href:        "/services/paint-correction",
     image:       "/images/portfolio/Screenshot_20260415_134651_Instagram.jpg",
   },
   {
     title:       "Fleet Detailing",
-    description: "Keep your entire fleet clean and professional at all times.",
+    description: "Scheduled cleaning programs for your entire fleet — weekly, biweekly or monthly at competitive rates.",
     href:        "/services/fleet-detailing",
     image:       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
   },
   {
     title:       "Ceramic Coating",
-    description: "Superior 3+ year hydrophobic protection for your paint.",
+    description: "Professional-grade ceramic protection with 3+ years of hydrophobic, UV-resistant shield.",
     href:        "/services/ceramic-coating",
     image:       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
   },
   {
     title:       "Detailing Packages",
-    description: "Full-service packages tailored to your vehicle's needs.",
+    description: "Express, Standard or Premium Deluxe — tailored packages from $80 to match any need and budget.",
     href:        "/services/detailing-packages",
     image:       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
   },
   {
     title:       "Aircraft Detailing",
-    description: "Specialized detailing for aircraft interiors and exteriors.",
+    description: "Meticulous interior and exterior detailing for private and commercial aircraft.",
     href:        "/services/aircraft-detailing",
     image:       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
   },
   {
     title:       "Boat Detailing",
-    description: "Marine-grade detailing to protect and restore your vessel.",
+    description: "Marine-grade cleaning, waxing and protection to keep your vessel looking showroom-ready.",
     href:        "/services/boat-detailing",
     image:       "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
   },
