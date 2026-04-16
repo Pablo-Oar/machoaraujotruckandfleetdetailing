@@ -316,28 +316,39 @@ export default function Navbar() {
           {NAV_LINKS.map((link) =>
             link.dropdown ? (
               <div key={link.label}>
-                {/* Services trigger */}
-                <button onClick={() => setMobileServices((v) => !v)}
-                  style={{
-                    width: "100%", background: "none", border: "none",
-                    borderBottom: "0.5px solid #1A1A1A", cursor: "pointer",
-                    display: "flex", justifyContent: "space-between", alignItems: "center",
-                    padding: "18px 0", fontSize: "22px", fontWeight: 700,
-                    color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
-                    textTransform: "uppercase", letterSpacing: "0.04em", fontFamily: "inherit",
-                  }}>
-                  {link.label}
-                  <span style={{
-                    display: "inline-flex", alignItems: "center", justifyContent: "center",
-                    width: "28px", height: "28px", border: "1px solid #C9A84C",
-                    borderRadius: "20px", color: "#C9A84C",
-                    transform: mobileServices ? "rotate(180deg)" : "rotate(0deg)",
-                    transition: "transform 0.25s ease",
-                  }}><ChevronDown /></span>
-                </button>
+                {/* Services row: link navega + chevron expande accordion */}
+                <div style={{
+                  display: "flex", alignItems: "center",
+                  borderBottom: "0.5px solid #1A1A1A",
+                }}>
+                  <Link href={link.href} onClick={() => setMenuOpen(false)}
+                    style={{
+                      flex: 1, textDecoration: "none",
+                      padding: "18px 0", fontSize: "22px", fontWeight: 700,
+                      color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
+                      textTransform: "uppercase", letterSpacing: "0.04em",
+                    }}>
+                    {link.label}
+                  </Link>
+                  <button onClick={() => setMobileServices((v) => !v)}
+                    aria-label="Expand services menu"
+                    style={{
+                      background: "none", border: "none", cursor: "pointer",
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      padding: "18px 0 18px 16px",
+                    }}>
+                    <span style={{
+                      display: "inline-flex", alignItems: "center", justifyContent: "center",
+                      width: "28px", height: "28px", border: "1px solid #C9A84C",
+                      borderRadius: "20px", color: "#C9A84C",
+                      transform: mobileServices ? "rotate(180deg)" : "rotate(0deg)",
+                      transition: "transform 0.25s ease",
+                    }}><ChevronDown /></span>
+                  </button>
+                </div>
 
                 {mobileServices && (
-                  <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
+                  <div style={{ borderBottom: "0.5px solid #1A1A1A" }}>
                     {link.dropdown.map((item) => {
                       /* Subscription Plan — accordion */
                       if (item.type === "submenu") return (
@@ -345,11 +356,12 @@ export default function Navbar() {
                           <button onClick={() => setMobileSubscription((v) => !v)}
                             style={{
                               width: "100%", background: "none", border: "none",
-                              borderBottom: "0.5px solid #1A1A1A", cursor: "pointer",
+                              borderTop: "0.5px solid #222222", cursor: "pointer",
                               display: "flex", justifyContent: "space-between", alignItems: "center",
-                              padding: "14px 0", fontFamily: "inherit",
+                              padding: "15px 24px", fontFamily: "inherit",
                               fontSize: "15px", fontWeight: 600,
                               color: "#C9A84C", letterSpacing: "0.04em",
+                              textTransform: "uppercase",
                             }}>
                             {item.label}
                             <span style={{
@@ -358,21 +370,24 @@ export default function Navbar() {
                               borderRadius: "20px", color: "#C9A84C",
                               transform: mobileSubscription ? "rotate(180deg)" : "rotate(0deg)",
                               transition: "transform 0.25s ease",
+                              flexShrink: 0,
                             }}><ChevronDown /></span>
                           </button>
 
                           {mobileSubscription && (
-                            <div style={{ paddingLeft: "16px" }}>
+                            <div style={{ backgroundColor: "#0D0D0D" }}>
                               {item.items.map((sub) => (
                                 <Link key={sub.label} href={sub.href}
                                   onClick={() => setMenuOpen(false)}
                                   style={{
-                                    display: "block", padding: "11px 0",
-                                    fontSize: "13px", color: pathname === sub.href ? "#C9A84C" : "#666666",
-                                    textDecoration: "none", borderBottom: "0.5px solid #111111",
+                                    display: "block", padding: "13px 32px",
+                                    fontSize: "14px", fontWeight: 500,
+                                    color: pathname === sub.href ? "#C9A84C" : "#AAAAAA",
+                                    textDecoration: "none",
+                                    borderTop: "0.5px solid #1A1A1A",
                                     letterSpacing: "0.01em",
                                   }}>
-                                  — {sub.label}
+                                  {sub.label}
                                 </Link>
                               ))}
                             </div>
@@ -380,13 +395,15 @@ export default function Navbar() {
                         </div>
                       )
 
-                      /* Regular item */
+                      /* Regular service item */
                       return (
                         <Link key={item.label} href={item.href} onClick={() => setMenuOpen(false)}
                           style={{
-                            display: "block", padding: "12px 0", fontSize: "15px",
-                            color: pathname === item.href ? "#C9A84C" : "#888888",
-                            textDecoration: "none", borderBottom: "0.5px solid #111111",
+                            display: "block", padding: "15px 24px",
+                            fontSize: "15px", fontWeight: 500,
+                            color: pathname === item.href ? "#C9A84C" : "#CCCCCC",
+                            textDecoration: "none",
+                            borderTop: "0.5px solid #222222",
                             letterSpacing: "0.02em",
                           }}>
                           {item.label}
