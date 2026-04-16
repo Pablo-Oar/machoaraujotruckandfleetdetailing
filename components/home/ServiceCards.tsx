@@ -11,34 +11,40 @@ import Image from "next/image"
 
 const SERVICES = [
   {
-    title:       "Ceramic Coating",
-    description: "Superior 3+ year hydrophobic protection for your paint.",
-    href:        "/services/ceramic-coating",
+    title:       "Paint Correction",
+    description: "Remove scratches, swirls and oxidation. Restore your paint to flawless.",
+    href:        "/services/paint-correction",
     image:       "/images/portfolio/Screenshot_20260415_134651_Instagram.jpg",
   },
   {
-    title:       "Paint Correction",
-    description: "Remove scratches, swirls and imperfections. Restore the shine.",
-    href:        "/services/paint-correction",
+    title:       "Fleet Detailing",
+    description: "Keep your entire fleet clean and professional at all times.",
+    href:        "/services/fleet-detailing",
     image:       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
   },
   {
-    title:       "PPF",
-    description: "Paint protection film. Shield your vehicle from road damage.",
-    href:        "/services/ppf",
+    title:       "Ceramic Coating",
+    description: "Superior 3+ year hydrophobic protection for your paint.",
+    href:        "/services/ceramic-coating",
     image:       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
   },
   {
-    title:       "Wash & Wax",
-    description: "3–6 months of brilliant protection with a premium hand wash.",
-    href:        "/services/wash-and-wax",
+    title:       "Detailing Packages",
+    description: "Full-service packages tailored to your vehicle's needs.",
+    href:        "/services/detailing-packages",
     image:       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
   },
   {
-    title:       "Interior Detail",
-    description: "Deep clean your seats, carpets and every surface inside.",
-    href:        "/services/interior-detail",
+    title:       "Aircraft Detailing",
+    description: "Specialized detailing for aircraft interiors and exteriors.",
+    href:        "/services/aircraft-detailing",
     image:       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+  },
+  {
+    title:       "Boat Detailing",
+    description: "Marine-grade detailing to protect and restore your vessel.",
+    href:        "/services/boat-detailing",
+    image:       "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
   },
 ]
 
@@ -56,7 +62,7 @@ export default function ServiceCards() {
         /* ── Grid flush full-width ───────────────────────── */
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(5, 1fr);
+          grid-template-columns: repeat(6, 1fr);
           gap: 5px;
           background-color: #0D0D0D;
         }
@@ -153,8 +159,15 @@ export default function ServiceCards() {
           width: 100%;
         }
 
+        /* ── TABLET ─────────────────────────────────────── */
+        @media (max-width: 1024px) and (min-width: 641px) {
+          .services-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
         /* ── MOBILE ─────────────────────────────────────── */
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
           .services-header {
             padding: 56px 20px 36px;
           }
@@ -165,7 +178,7 @@ export default function ServiceCards() {
           }
 
           .service-card {
-            min-height: 300px;
+            min-height: 280px;
           }
 
           .service-card-title {
