@@ -144,15 +144,15 @@ export default function Navbar() {
                 <div key={link.label} style={{ position: "relative" }}
                   onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
 
-                  <button style={{
-                    background: "none", border: "none", cursor: "pointer",
+                  <Link href={link.href} style={{
                     display: "flex", alignItems: "center", gap: "5px",
-                    fontSize: "14px", fontWeight: 500, padding: 0,
+                    fontSize: "14px", fontWeight: 500,
                     fontFamily: "inherit", letterSpacing: "0.01em",
+                    textDecoration: "none",
                     color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
                   }}>
                     {link.label} <ChevronDown />
-                  </button>
+                  </Link>
 
                   {/* ── LEVEL 1 DROPDOWN ──────────────────── */}
                   {dropdownOpen && (
