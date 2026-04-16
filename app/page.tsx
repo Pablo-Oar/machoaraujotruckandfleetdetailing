@@ -4,6 +4,7 @@ import ServiceCards from "@/components/home/ServiceCards"
 import AdditionalServices from "@/components/home/AdditionalServices"
 import WhyChooseUs from "@/components/home/WhyChooseUs"
 import BeforeAfterSection from "@/components/home/BeforeAfterSection"
+import Testimonials from "@/components/home/Testimonials"
 import CTABanner from "@/components/home/CTABanner"
 import ComparisonTable from "@/components/home/ComparisonTable"
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AdditionalServices />
       <WhyChooseUs />
       <BeforeAfterSection />
+      <Testimonials />
       <CTABanner />
       <ComparisonTable />
     </main>
