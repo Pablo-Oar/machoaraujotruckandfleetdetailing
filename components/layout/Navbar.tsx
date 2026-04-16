@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -55,10 +55,11 @@ function ChevronDown() {
    ───────────────────────────────────────────────────────────── */
 export default function Navbar() {
   const pathname = usePathname()
-  const [menuOpen,     setMenuOpen]     = useState(false)
-  const [scrolled,     setScrolled]     = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [menuOpen,       setMenuOpen]       = useState(false)
+  const [scrolled,       setScrolled]       = useState(false)
+  const [dropdownOpen,   setDropdownOpen]   = useState(false)
   const [mobileServices, setMobileServices] = useState(false)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   /* Scroll border */
   useEffect(() => {
@@ -69,6 +70,11 @@ export default function Navbar() {
 
   /* Close mobile menu on route change */
   useEffect(() => { setMenuOpen(false) }, [pathname])
+
+  /* Limpia el timer del dropdown al desmontar */
+  useEffect(() => {
+    return () => { if (closeTimer.current) clearTimeout(closeTimer.current) }
+  }, [])
 
   /* Prevent body scroll when menu is open */
   useEffect(() => {
@@ -115,8 +121,13 @@ export default function Navbar() {
                 <div
                   key={link.label}
                   style={{ position: "relative" }}
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
+                  onMouseEnter={() => {
+                    if (closeTimer.current) clearTimeout(closeTimer.current)
+                    setDropdownOpen(true)
+                  }}
+                  onMouseLeave={() => {
+                    closeTimer.current = setTimeout(() => setDropdownOpen(false), 150)
+                  }}
                 >
                   <button style={{
                     background: "none",
