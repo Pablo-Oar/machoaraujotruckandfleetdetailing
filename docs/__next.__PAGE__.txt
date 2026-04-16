@@ -1,0 +1,788 @@
+1:"$Sreact.fragment"
+2:I[46179,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js"],"default"]
+3:I[79698,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js"],"default"]
+e:I[22016,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js"],""]
+f:I[5500,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js"],"Image"]
+17:I[92368,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js"],"default"]
+1b:I[97367,["/machoaraujotruckandfleetdetailing/_next/static/chunks/141hzuvlacx9l.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+1c:"$Sreact.suspense"
+4:Tea2,
+        /* ── Section header ─────────────────────────────── */
+        .services-header {
+          background-color: #0D0D0D;
+          text-align: center;
+          padding: 80px 24px 48px;
+        }
+
+        /* ── Grid flush full-width ───────────────────────── */
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 5px;
+          background-color: #0D0D0D;
+        }
+
+        /* ── Card ────────────────────────────────────────── */
+        .service-card {
+          position: relative;
+          min-height: 340px;
+          overflow: hidden;
+          cursor: pointer;
+          display: block;
+          text-decoration: none;
+        }
+
+        /* Imagen con zoom en hover */
+        .service-card-img {
+          transition: transform 0.45s ease;
+          will-change: transform;
+        }
+
+        .service-card:hover .service-card-img {
+          transform: scale(1.06);
+        }
+
+        /* Overlay degradado */
+        .service-card-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to top,
+            #000000 0%,
+            rgba(0,0,0,0.62) 45%,
+            rgba(0,0,0,0.10) 100%
+          );
+          z-index: 1;
+          transition: background 0.3s ease;
+        }
+
+        .service-card:hover .service-card-overlay {
+          background: linear-gradient(
+            to top,
+            #000000 0%,
+            rgba(0,0,0,0.72) 55%,
+            rgba(0,0,0,0.25) 100%
+          );
+        }
+
+        /* Texto inferior */
+        .service-card-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 20px 18px;
+          z-index: 2;
+        }
+
+        .service-card-title {
+          display: block;
+          font-size: 15px;
+          font-weight: 900;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          letter-spacing: 0.04em;
+          line-height: 1.2;
+          margin-bottom: 5px;
+          transition: color 0.2s ease;
+        }
+
+        .service-card:hover .service-card-title {
+          color: #C9A84C;
+        }
+
+        .service-card-desc {
+          display: block;
+          font-size: 12px;
+          color: rgba(255,255,255,0.60);
+          line-height: 1.55;
+        }
+
+        /* Línea gold inferior que aparece en hover */
+        .service-card-line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 0;
+          background-color: #C9A84C;
+          transition: width 0.35s ease;
+          z-index: 3;
+        }
+
+        .service-card:hover .service-card-line {
+          width: 100%;
+        }
+
+        /* ── TABLET ─────────────────────────────────────── */
+        @media (max-width: 1024px) and (min-width: 641px) {
+          .services-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        /* ── MOBILE ─────────────────────────────────────── */
+        @media (max-width: 640px) {
+          .services-header {
+            padding: 56px 20px 36px;
+          }
+
+          .services-grid {
+            grid-template-columns: 1fr;
+            gap: 4px;
+          }
+
+          .service-card {
+            min-height: 280px;
+          }
+
+          .service-card-title {
+            font-size: 17px;
+          }
+        }
+      0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"flex-1","children":[["$","$L2",null,{}],["$","$L3",null,{}],[["$","style",null,{"children":"$4"}],"$L5","$L6"],"$L7","$L8","$L9","$La","$Lb"]}],["$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0sL7Yi8GH6p7Y64UW_IsF"}
+5:["$","section",null,{"className":"services-header","children":[["$","span",null,{"className":"eyebrow","style":{"marginBottom":"14px"},"children":"Our Services"}],["$","h2",null,{"className":"section-h2","style":{"maxWidth":"600px","margin":"0 auto"},"children":"Our Popular Car Detailing Services"}]]}]
+6:["$","div",null,{"className":"services-grid","children":[["$","$Le","Paint Correction",{"href":"/services/paint-correction","className":"service-card","aria-label":"Paint Correction","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260415_134651_Instagram.jpg","alt":"Paint Correction","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],["$","div",null,{"className":"service-card-overlay"}],["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Paint Correction"}],["$","span",null,{"className":"service-card-desc","children":"Multi-stage polishing to eliminate swirl marks, scratches and oxidation. Your paint, flawless again."}]]}],["$","div",null,{"className":"service-card-line"}]]}],["$","$Le","Fleet Detailing",{"href":"/services/fleet-detailing","className":"service-card","aria-label":"Fleet Detailing","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024830_Instagram.jpg","alt":"Fleet Detailing","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],["$","div",null,{"className":"service-card-overlay"}],["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Fleet Detailing"}],["$","span",null,{"className":"service-card-desc","children":"Scheduled cleaning programs for your entire fleet — weekly, biweekly or monthly at competitive rates."}]]}],["$","div",null,{"className":"service-card-line"}]]}],["$","$Le","Ceramic Coating",{"href":"/services/ceramic-coating","className":"service-card","aria-label":"Ceramic Coating","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024847_Instagram.jpg","alt":"Ceramic Coating","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],["$","div",null,{"className":"service-card-overlay"}],["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Ceramic Coating"}],["$","span",null,{"className":"service-card-desc","children":"Professional-grade ceramic protection with 3+ years of hydrophobic, UV-resistant shield."}]]}],["$","div",null,{"className":"service-card-line"}]]}],["$","$Le","Detailing Packages",{"href":"/services/detailing-packages","className":"service-card","aria-label":"Detailing Packages","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024903_Instagram.jpg","alt":"Detailing Packages","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],["$","div",null,{"className":"service-card-overlay"}],["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Detailing Packages"}],["$","span",null,{"className":"service-card-desc","children":"Express, Standard or Premium Deluxe — tailored packages from $80 to match any need and budget."}]]}],["$","div",null,{"className":"service-card-line"}]]}],["$","$Le","Aircraft Detailing",{"href":"/services/aircraft-detailing","className":"service-card","aria-label":"Aircraft Detailing","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024916_Instagram.jpg","alt":"Aircraft Detailing","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],["$","div",null,{"className":"service-card-overlay"}],["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Aircraft Detailing"}],["$","span",null,{"className":"service-card-desc","children":"Meticulous interior and exterior detailing for private and commercial aircraft."}]]}],["$","div",null,{"className":"service-card-line"}]]}],["$","$Le","Boat Detailing",{"href":"/services/boat-detailing","className":"service-card","aria-label":"Boat Detailing","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024930_Instagram.jpg","alt":"Boat Detailing","fill":true,"sizes":"(max-width: 768px) 100vw, 20vw","style":{"objectFit":"cover"},"className":"service-card-img"}],"$L10","$L11","$L12"]}]]}]
+13:T129b,
+        .additional-section {
+          background-color: #0D0D0D;
+          padding: 80px 0 0;
+        }
+
+        .additional-heading {
+          text-align: left;
+          padding: 0 80px 48px;
+          max-width: 1300px;
+          margin: 0 auto;
+        }
+
+        /* ── Banner ─────────────────────────────────────────── */
+        .add-banner {
+          position: relative;
+          width: 100%;
+          min-height: 220px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 4px;
+          text-decoration: none;
+        }
+
+        .add-banner:last-child {
+          margin-bottom: 0;
+        }
+
+        /* Imagen zoom en hover */
+        .add-banner-img {
+          transition: transform 0.5s ease;
+          will-change: transform;
+        }
+
+        .add-banner:hover .add-banner-img {
+          transform: scale(1.04);
+        }
+
+        /* Overlay */
+        .add-banner-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to right,
+            rgba(0,0,0,0.80) 0%,
+            rgba(0,0,0,0.55) 50%,
+            rgba(0,0,0,0.30) 100%
+          );
+          z-index: 1;
+          transition: background 0.3s ease;
+        }
+
+        .add-banner:hover .add-banner-overlay {
+          background: linear-gradient(
+            to right,
+            rgba(0,0,0,0.88) 0%,
+            rgba(0,0,0,0.65) 50%,
+            rgba(0,0,0,0.40) 100%
+          );
+        }
+
+        /* Contenido */
+        .add-banner-content {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 32px 80px;
+          max-width: 1300px;
+          margin: 0 auto;
+        }
+
+        /* Texto izquierda */
+        .add-banner-left { max-width: 480px; }
+
+        .add-banner-title {
+          display: block;
+          font-size: clamp(20px, 2.5vw, 28px);
+          font-weight: 900;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          line-height: 1.1;
+          margin-bottom: 6px;
+          transition: color 0.2s;
+        }
+
+        .add-banner:hover .add-banner-title {
+          color: #C9A84C;
+        }
+
+        .add-banner-subtitle {
+          display: block;
+          font-size: 13px;
+          color: rgba(255,255,255,0.60);
+          line-height: 1.55;
+          margin-bottom: 10px;
+        }
+
+        .add-banner-price {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 700;
+          color: #C9A84C;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+        }
+
+        /* Checklist derecha */
+        .add-banner-checks {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .add-banner-check {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 13px;
+          color: #CCCCCC;
+          white-space: nowrap;
+        }
+
+        /* Arrow indicator */
+        .add-banner-arrow {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border: 1px solid rgba(201,168,76,0.4);
+          border-radius: 4px;
+          color: #C9A84C;
+          flex-shrink: 0;
+          transition: background 0.2s, border-color 0.2s;
+          margin-left: 24px;
+        }
+
+        .add-banner:hover .add-banner-arrow {
+          background-color: #C9A84C;
+          border-color: #C9A84C;
+          color: #0D0D0D;
+        }
+
+        /* ── MOBILE ─────────────────────────────────────────── */
+        @media (max-width: 768px) {
+          .additional-section {
+            padding-top: 56px;
+          }
+
+          .additional-heading {
+            text-align: center;
+            padding: 0 20px 36px;
+          }
+
+          .add-banner {
+            min-height: 180px;
+            align-items: center;
+          }
+
+          .add-banner-overlay {
+            background: rgba(0,0,0,0.68) !important;
+          }
+
+          .add-banner-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 28px 20px;
+          }
+
+          .add-banner-left {
+            max-width: 100%;
+          }
+
+          .add-banner-checks {
+            display: none;
+          }
+
+          .add-banner-arrow {
+            margin-left: 0;
+            margin-top: 16px;
+          }
+        }
+      7:[["$","style",null,{"children":"$13"}],"$L14"]
+15:T121b,
+        .why-section {
+          background-color: #0D0D0D;
+          padding: 96px 0;
+          border-top: 1px solid rgba(201,168,76,0.12);
+        }
+
+        .why-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 80px;
+        }
+
+        /* ── Two-column layout: heading | grid ─────────────── */
+        .why-layout {
+          display: grid;
+          grid-template-columns: 320px 1fr;
+          gap: 80px;
+          align-items: start;
+        }
+
+        /* Left: heading block */
+        .why-heading-block {
+          position: sticky;
+          top: 120px;
+        }
+
+        .why-heading-block .section-h2 {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+
+        .why-heading-desc {
+          font-size: 15px;
+          color: rgba(255,255,255,0.55);
+          line-height: 1.75;
+          margin-bottom: 36px;
+        }
+
+        .why-cta-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 13px;
+          font-weight: 700;
+          color: #C9A84C;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          text-decoration: none;
+          transition: gap 0.2s ease;
+        }
+
+        .why-cta-link:hover {
+          gap: 12px;
+        }
+
+        /* Right: features 2×2 grid */
+        .why-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2px;
+        }
+
+        .why-card {
+          background-color: #111111;
+          border: 1px solid rgba(255,255,255,0.05);
+          padding: 40px 36px;
+          transition: border-color 0.25s ease, background-color 0.25s ease;
+        }
+
+        .why-card:hover {
+          border-color: rgba(201,168,76,0.30);
+          background-color: #141414;
+        }
+
+        .why-card-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          background-color: rgba(201,168,76,0.08);
+          border: 1px solid rgba(201,168,76,0.20);
+          border-radius: 4px;
+          margin-bottom: 24px;
+          transition: background-color 0.25s, border-color 0.25s;
+        }
+
+        .why-card:hover .why-card-icon {
+          background-color: rgba(201,168,76,0.15);
+          border-color: rgba(201,168,76,0.40);
+        }
+
+        .why-card-title {
+          font-size: 16px;
+          font-weight: 900;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          letter-spacing: 0.03em;
+          margin-bottom: 12px;
+          transition: color 0.2s;
+        }
+
+        .why-card:hover .why-card-title {
+          color: #C9A84C;
+        }
+
+        .why-card-desc {
+          font-size: 13.5px;
+          color: rgba(255,255,255,0.52);
+          line-height: 1.75;
+        }
+
+        /* ── TABLET ──────────────────────────────────────────── */
+        @media (max-width: 1024px) and (min-width: 641px) {
+          .why-inner {
+            padding: 0 40px;
+          }
+
+          .why-layout {
+            grid-template-columns: 1fr;
+            gap: 48px;
+          }
+
+          .why-heading-block {
+            position: static;
+          }
+
+          .why-heading-block .section-h2,
+          .why-heading-block .eyebrow {
+            text-align: center;
+          }
+
+          .why-heading-desc {
+            text-align: center;
+          }
+
+          .why-cta-link {
+            display: block;
+            text-align: center;
+          }
+        }
+
+        /* ── MOBILE ──────────────────────────────────────────── */
+        @media (max-width: 640px) {
+          .why-section {
+            padding: 64px 0;
+          }
+
+          .why-inner {
+            padding: 0 20px;
+          }
+
+          .why-layout {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+
+          .why-heading-block {
+            position: static;
+          }
+
+          .why-heading-block .section-h2,
+          .why-heading-block .eyebrow {
+            text-align: center;
+          }
+
+          .why-heading-desc {
+            text-align: center;
+            font-size: 14px;
+          }
+
+          .why-cta-link {
+            display: block;
+            text-align: center;
+          }
+
+          .why-grid {
+            grid-template-columns: 1fr;
+            gap: 2px;
+          }
+
+          .why-card {
+            padding: 28px 24px;
+          }
+        }
+      8:[["$","style",null,{"children":"$15"}],"$L16"]
+9:["$","$L17",null,{}]
+18:T613,
+        .cta-banner {
+          background-color: #000000;
+          padding: 100px 24px;
+          text-align: center;
+          border-top:    1px solid rgba(201,168,76,0.15);
+          border-bottom: 1px solid rgba(201,168,76,0.15);
+        }
+
+        .cta-banner-inner {
+          max-width: 720px;
+          margin: 0 auto;
+        }
+
+        .cta-banner-title {
+          font-size: clamp(36px, 5vw, 60px);
+          font-weight: 900;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          letter-spacing: -0.01em;
+          line-height: 1.05;
+          margin: 14px 0 20px;
+        }
+
+        .cta-banner-sub {
+          font-size: 15px;
+          color: rgba(255,255,255,0.52);
+          line-height: 1.75;
+          max-width: 520px;
+          margin: 0 auto 40px;
+        }
+
+        .cta-banner-actions {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 14px;
+          flex-wrap: wrap;
+        }
+
+        /* ── MOBILE ──────────────────────────────────────────── */
+        @media (max-width: 640px) {
+          .cta-banner {
+            padding: 72px 20px;
+          }
+
+          .cta-banner-actions {
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+          }
+
+          .cta-banner-actions .btn-gold,
+          .cta-banner-actions .btn-outline {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      a:[["$","style",null,{"children":"$18"}],["$","section",null,{"className":"cta-banner","children":["$","div",null,{"className":"cta-banner-inner","children":[["$","span",null,{"className":"eyebrow","children":"Get A Quote"}],["$","h2",null,{"className":"cta-banner-title","children":"Want To Clean Your Car?"}],["$","p",null,{"className":"cta-banner-sub","children":"Mobile detailing that comes to you. Book your appointment today and experience the Macho Araujo difference."}],["$","div",null,{"className":"cta-banner-actions","children":[["$","$Le",null,{"href":"/contact","className":"btn-gold","children":"Book Now"}],["$","a",null,{"href":"tel:+15595699415","className":"btn-outline","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 A19.5 19.5 0 013.09 10.9 19.79 19.79 0 01.22 2.28 2 2 0 012.22.07h3a2 2 0 012 1.72 c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91 a16 16 0 006.29 6.29l1.42-1.42a2 2 0 012.11-.45 c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"}]}],"(559) 569-9415"]}]]}]]}]}]]
+19:T11c4,
+        .ct-section {
+          background-color: #0D0D0D;
+          padding: 96px 0;
+          border-top: 1px solid rgba(201,168,76,0.12);
+        }
+
+        .ct-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 0 80px;
+        }
+
+        .ct-heading {
+          text-align: center;
+          margin-bottom: 16px;
+        }
+
+        .ct-heading .section-h2 {
+          margin-bottom: 16px;
+        }
+
+        .ct-subtitle {
+          font-size: 14px;
+          color: rgba(255,255,255,0.45);
+          line-height: 1.7;
+          max-width: 580px;
+          margin: 0 auto 56px;
+          text-align: center;
+        }
+
+        /* ── Tabla ─────────────────────────────────────────── */
+        .ct-table-wrap {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .ct-table {
+          width: 100%;
+          border-collapse: collapse;
+          min-width: 500px;
+        }
+
+        /* Header */
+        .ct-thead th {
+          background-color: #111111;
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.10em;
+          padding: 16px 20px;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+        .ct-thead th:first-child {
+          text-align: left;
+          color: rgba(255,255,255,0.35);
+        }
+
+        .ct-thead th.ct-th-highlight {
+          color: #C9A84C;
+          border-left:  1px solid rgba(201,168,76,0.35);
+          border-right: 1px solid rgba(201,168,76,0.35);
+          border-top:   2px solid #C9A84C;
+        }
+
+        .ct-thead th.ct-th-dim {
+          color: rgba(255,255,255,0.35);
+        }
+
+        /* Body rows */
+        .ct-tbody tr {
+          border-bottom: 1px solid rgba(255,255,255,0.05);
+          transition: background-color 0.15s;
+        }
+
+        .ct-tbody tr:hover {
+          background-color: rgba(255,255,255,0.02);
+        }
+
+        .ct-tbody tr:last-child {
+          border-bottom: none;
+        }
+
+        /* Cells */
+        .ct-cell {
+          padding: 14px 20px;
+          font-size: 13px;
+        }
+
+        .ct-cell:first-child {
+          font-size: 13px;
+          font-weight: 700;
+          color: #CCCCCC;
+          text-transform: uppercase;
+          letter-spacing: 0.03em;
+          white-space: nowrap;
+        }
+
+        .ct-cell-center {
+          text-align: center;
+        }
+
+        .ct-cell-text {
+          text-align: center;
+          font-size: 12px;
+          color: rgba(255,255,255,0.45);
+          font-style: italic;
+        }
+
+        /* Columna highlight */
+        .ct-cell.ct-mobile-col {
+          border-left:  1px solid rgba(201,168,76,0.25);
+          border-right: 1px solid rgba(201,168,76,0.25);
+          background-color: rgba(201,168,76,0.03);
+        }
+
+        /* Última fila: borde inferior gold en columna highlight */
+        .ct-tbody tr:last-child .ct-mobile-col {
+          border-bottom: 2px solid #C9A84C;
+        }
+
+        /* Icons */
+        .ct-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+        }
+
+        .ct-icon-yes {
+          background-color: rgba(74,222,128,0.12);
+          color: #4ade80;
+        }
+
+        .ct-icon-no {
+          background-color: rgba(248,113,113,0.12);
+          color: #f87171;
+        }
+
+        .ct-icon-partial {
+          background-color: rgba(251,191,36,0.12);
+          color: #fbbf24;
+        }
+
+        /* ── MOBILE ──────────────────────────────────────────── */
+        @media (max-width: 640px) {
+          .ct-section {
+            padding: 64px 0;
+          }
+
+          .ct-inner {
+            padding: 0 0;
+          }
+
+          .ct-heading,
+          .ct-subtitle {
+            padding: 0 20px;
+          }
+
+          .ct-table-wrap {
+            padding: 0;
+          }
+
+          .ct-cell:first-child {
+            font-size: 11px;
+            padding: 12px 14px;
+          }
+
+          .ct-cell {
+            padding: 12px 12px;
+          }
+
+          .ct-thead th {
+            padding: 14px 12px;
+            font-size: 9px;
+          }
+        }
+
+        @media (max-width: 1024px) and (min-width: 641px) {
+          .ct-inner {
+            padding: 0 40px;
+          }
+        }
+      b:[["$","style",null,{"children":"$19"}],"$L1a"]
+c:["$","script","script-0",{"src":"/machoaraujotruckandfleetdetailing/_next/static/chunks/0wfqrz2m~wa.x.js","async":true}]
+d:["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]
+10:["$","div",null,{"className":"service-card-overlay"}]
+11:["$","div",null,{"className":"service-card-text","children":[["$","span",null,{"className":"service-card-title","children":"Boat Detailing"}],["$","span",null,{"className":"service-card-desc","children":"Marine-grade cleaning, waxing and protection to keep your vessel looking showroom-ready."}]]}]
+12:["$","div",null,{"className":"service-card-line"}]
+14:["$","section",null,{"className":"additional-section","children":[["$","div",null,{"className":"additional-heading","children":[["$","span",null,{"className":"eyebrow","children":"Subscription Plan"}],["$","h2",null,{"className":"section-h2","children":["Additional Detailing Services",["$","br",null,{}],"in Fresno, California"]}]]}],[["$","$Le","Interior Premium & Express",{"href":"/services/interior-detail","className":"add-banner","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024830_Instagram.jpg","alt":"Interior Premium & Express","fill":true,"sizes":"100vw","style":{"objectFit":"cover"},"className":"add-banner-img"}],["$","div",null,{"className":"add-banner-overlay"}],["$","div",null,{"className":"add-banner-content","children":[["$","div",null,{"className":"add-banner-left","children":[["$","span",null,{"className":"add-banner-title","children":"Interior Premium & Express"}],["$","span",null,{"className":"add-banner-subtitle","children":"Deep clean of every surface, seats, carpets and trim."}],["$","span",null,{"className":"add-banner-price","children":"Starting at $150"}]]}],["$","div",null,{"className":"add-banner-checks","children":[["$","div","Full vacuum & steam clean",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Full vacuum & steam clean"]}],["$","div","Leather / fabric treatment",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Leather / fabric treatment"]}],["$","div","Odor elimination",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Odor elimination"]}],["$","div","Dashboard & trim detailing",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Dashboard & trim detailing"]}]]}],["$","div",null,{"className":"add-banner-arrow","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","children":[["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}],["$","polyline",null,{"points":"12 5 19 12 12 19"}]]}]}]]}]]}],["$","$Le","Exterior Premium & Express",{"href":"/services/exterior-detail","className":"add-banner","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024847_Instagram.jpg","alt":"Exterior Premium & Express","fill":true,"sizes":"100vw","style":{"objectFit":"cover"},"className":"add-banner-img"}],["$","div",null,{"className":"add-banner-overlay"}],["$","div",null,{"className":"add-banner-content","children":[["$","div",null,{"className":"add-banner-left","children":[["$","span",null,{"className":"add-banner-title","children":"Exterior Premium & Express"}],["$","span",null,{"className":"add-banner-subtitle","children":"Hand wash, clay bar, polish and protective sealant."}],["$","span",null,{"className":"add-banner-price","children":"Starting at $120"}]]}],["$","div",null,{"className":"add-banner-checks","children":[["$","div","Two-bucket hand wash",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Two-bucket hand wash"]}],["$","div","Clay bar decontamination",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Clay bar decontamination"]}],["$","div","Paint sealant protection",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":"$L1e"}]," ","Paint sealant protection"]}],"$L1f"]}],"$L20"]}]]}],"$L21","$L22"]]}]
+16:["$","section",null,{"className":"why-section","children":["$","div",null,{"className":"why-inner","children":["$","div",null,{"className":"why-layout","children":[["$","div",null,{"className":"why-heading-block","children":[["$","span",null,{"className":"eyebrow","children":"Why Choose Us"}],["$","h2",null,{"className":"section-h2","children":["Fresno's Most Trusted",["$","br",null,{}],"Detailing Specialists"]}],["$","p",null,{"className":"why-heading-desc","children":"Macho Araujo Car Detailing brings certified expertise and premium products directly to your door. We've built our reputation one vehicle at a time since 2020."}],["$","a",null,{"href":"/about","className":"why-cta-link","children":["Our Story",["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","children":[["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}],["$","polyline",null,{"points":"12 5 19 12 12 19"}]]}]]}]]}],["$","div",null,{"className":"why-grid","children":[["$","div","5+ Years of Experience",{"className":"why-card","children":[["$","div",null,{"className":"why-card-icon","children":["$","svg",null,{"width":"28","height":"28","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","polyline",null,{"points":"12 6 12 12 16 14"}]]}]}],["$","div",null,{"className":"why-card-title","children":"5+ Years of Experience"}],["$","p",null,{"className":"why-card-desc","children":"Since 2020, Elias Araujo has been delivering precision detailing in Fresno. The same discipline from a boxing career — applied to every vehicle."}]]}],["$","div","Certified Professional",{"className":"why-card","children":[["$","div",null,{"className":"why-card-icon","children":["$","svg",null,{"width":"28","height":"28","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"}]}]}],["$","div",null,{"className":"why-card-title","children":"Certified Professional"}],["$","p",null,{"className":"why-card-desc","children":"Trained in ceramic coating application, paint correction and interior deep cleaning — using only professional-grade products and techniques."}]]}],["$","div","We Come To You",{"className":"why-card","children":[["$","div",null,{"className":"why-card-icon","children":["$","svg",null,{"width":"28","height":"28","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","path",null,{"d":"M1 3h15v13H1z"}],["$","path",null,{"d":"M16 8h4l3 3v5h-7V8z"}],["$","circle",null,{"cx":"5.5","cy":"18.5","r":"2.5"}],["$","circle",null,{"cx":"18.5","cy":"18.5","r":"2.5"}]]}]}],["$","div",null,{"className":"why-card-title","children":"We Come To You"}],["$","p",null,{"className":"why-card-desc","children":"Our fully equipped mobile detailing van arrives at your home, office or any location. No drop-offs, no waiting — premium car care on your schedule."}]]}],["$","div","Satisfaction Guaranteed",{"className":"why-card","children":[["$","div",null,{"className":"why-card-icon","children":["$","svg",null,{"width":"28","height":"28","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polygon",null,{"points":"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"}]}]}],["$","div",null,{"className":"why-card-title","children":"Satisfaction Guaranteed"}],["$","p",null,{"className":"why-card-desc","children":"100+ five-star Google reviews and 99% happy customers. We don't stop until you're completely satisfied with the results."}]]}]]}]]}]}]}]
+1a:["$","section",null,{"className":"ct-section","children":["$","div",null,{"className":"ct-inner","children":[["$","div",null,{"className":"ct-heading","children":[["$","span",null,{"className":"eyebrow","children":"The Best Option For You"}],["$","h2",null,{"className":"section-h2","children":["Mobile Detailing vs.",["$","br",null,{}],"Traditional Services"]}]]}],["$","p",null,{"className":"ct-subtitle","children":"Not all detailing is created equal. See why Macho Araujo's mobile service outperforms both the traditional car wash and DIY options on every metric that matters."}],["$","div",null,{"className":"ct-table-wrap","children":["$","table",null,{"className":"ct-table","children":[["$","thead",null,{"className":"ct-thead","children":["$","tr",null,{"children":[["$","th",null,{"style":{"textAlign":"left"},"children":"Feature"}],["$","th",null,{"className":"ct-th-highlight","children":["Macho Araujo",["$","br",null,{}],"Mobile Detailing"]}],["$","th",null,{"className":"ct-th-dim","children":["Traditional",["$","br",null,{}],"Car Wash"]}],["$","th",null,{"className":"ct-th-dim","children":["DIY /",["$","br",null,{}],"Self-Service"]}]]}]}],["$","tbody",null,{"className":"ct-tbody","children":[["$","tr","We Come To You",{"children":[["$","td",null,{"className":"ct-cell","children":"We Come To You"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}]]}],["$","tr","Professional Quality",{"children":[["$","td",null,{"className":"ct-cell","children":"Professional Quality"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-partial","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}]]}],["$","tr","Paint-Safe Products",{"children":[["$","td",null,{"className":"ct-cell","children":"Paint-Safe Products"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-partial","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":"$L23"}]}]}]]}],"$L24","$L25","$L26","$L27"]}]]}]}]]}]}]
+1d:null
+1e:["$","polyline",null,{"points":"20 6 9 17 4 12"}]
+1f:["$","div","Tire & rim dressing",{"className":"add-banner-check","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","stroke":"#C9A84C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]," ","Tire & rim dressing"]}]
+20:["$","div",null,{"className":"add-banner-arrow","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","children":[["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}],["$","polyline",null,{"points":"12 5 19 12 12 19"}]]}]}]
+21:["$","$Le","Headlights Restoration",{"href":"/services/headlights-restoration","className":"add-banner","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024903_Instagram.jpg","alt":"Headlights Restoration","fill":true,"sizes":"100vw","style":{"objectFit":"cover"},"className":"add-banner-img"}],["$","div",null,{"className":"add-banner-overlay"}],["$","div",null,{"className":"add-banner-content","children":[["$","div",null,{"className":"add-banner-left","children":[["$","span",null,{"className":"add-banner-title","children":"Headlights Restoration"}],["$","span",null,{"className":"add-banner-subtitle","children":"Restore clarity and improve night visibility."}],["$","span",null,{"className":"add-banner-price","children":"Starting at $80"}]]}],"$undefined",["$","div",null,{"className":"add-banner-arrow","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","children":[["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}],["$","polyline",null,{"points":"12 5 19 12 12 19"}]]}]}]]}]]}]
+22:["$","$Le","Engine Detailing",{"href":"/services/engine-detailing","className":"add-banner","children":[["$","$Lf",null,{"src":"/images/portfolio/Screenshot_20260416_024916_Instagram.jpg","alt":"Engine Detailing","fill":true,"sizes":"100vw","style":{"objectFit":"cover"},"className":"add-banner-img"}],["$","div",null,{"className":"add-banner-overlay"}],["$","div",null,{"className":"add-banner-content","children":[["$","div",null,{"className":"add-banner-left","children":[["$","span",null,{"className":"add-banner-title","children":"Engine Detailing"}],["$","span",null,{"className":"add-banner-subtitle","children":"Safely degrease and detail your engine bay."}],["$","span",null,{"className":"add-banner-price","children":"Starting at $80"}]]}],"$undefined",["$","div",null,{"className":"add-banner-arrow","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","children":[["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}],["$","polyline",null,{"points":"12 5 19 12 12 19"}]]}]}]]}]]}]
+23:["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}]
+24:["$","tr","Interior Deep Clean",{"children":[["$","td",null,{"className":"ct-cell","children":"Interior Deep Clean"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-partial","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":["$","line",null,{"x1":"5","y1":"12","x2":"19","y2":"12"}]}]}]}]]}]
+25:["$","tr","Ceramic Coating Available",{"children":[["$","td",null,{"className":"ct-cell","children":"Ceramic Coating Available"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}]]}]
+26:["$","tr","Saves Your Time",{"children":[["$","td",null,{"className":"ct-cell","children":"Saves Your Time"}],["$","td",null,{"className":"ct-cell ct-cell-center ct-mobile-col","children":["$","span",null,{"className":"ct-icon ct-icon-yes","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}],["$","td",null,{"className":"ct-cell ct-cell-center","children":["$","span",null,{"className":"ct-icon ct-icon-no","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"3","strokeLinecap":"round","children":[["$","line",null,{"x1":"18","y1":"6","x2":"6","y2":"18"}],["$","line",null,{"x1":"6","y1":"6","x2":"18","y2":"18"}]]}]}]}]]}]
+27:["$","tr","Cost vs. Value",{"children":[["$","td",null,{"className":"ct-cell","children":"Cost vs. Value"}],["$","td",null,{"className":"ct-cell ct-cell-text ct-mobile-col","children":"Best value"}],["$","td",null,{"className":"ct-cell ct-cell-text","children":"Low quality"}],["$","td",null,{"className":"ct-cell ct-cell-text","children":"Hidden costs"}]]}]
