@@ -7,6 +7,7 @@ import BeforeAfterSection from "@/components/home/BeforeAfterSection"
 import Testimonials from "@/components/home/Testimonials"
 import CTABanner from "@/components/home/CTABanner"
 import ComparisonTable from "@/components/home/ComparisonTable"
+import FAQAccordion from "@/components/home/FAQAccordion"
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Testimonials />
       <CTABanner />
       <ComparisonTable />
+      <FAQAccordion />
     </main>
   )
 }
