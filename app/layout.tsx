@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
 
 /* ─────────────────────────────────────────────────────────────
    Tipografía — Montserrat
@@ -67,6 +68,7 @@ export default function RootLayout({
       style={{ backgroundColor: "#0D0D0D" }}
     >
       <body className="min-h-full flex flex-col antialiased">
+        <Navbar />
         {children}
       </body>
     </html>
