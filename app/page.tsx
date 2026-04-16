@@ -3,6 +3,9 @@ import StatsRow from "@/components/home/StatsRow"
 import ServiceCards from "@/components/home/ServiceCards"
 import AdditionalServices from "@/components/home/AdditionalServices"
 import WhyChooseUs from "@/components/home/WhyChooseUs"
+import BeforeAfterSection from "@/components/home/BeforeAfterSection"
+import CTABanner from "@/components/home/CTABanner"
+import ComparisonTable from "@/components/home/ComparisonTable"
 
 export default function HomePage() {
   return (
@@ -12,6 +15,9 @@ export default function HomePage() {
       <ServiceCards />
       <AdditionalServices />
       <WhyChooseUs />
+      <BeforeAfterSection />
+      <CTABanner />
+      <ComparisonTable />
     </main>
   )
 }
