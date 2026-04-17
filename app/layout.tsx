@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 /* ─────────────────────────────────────────────────────────────
    Tipografía — Montserrat
@@ -72,6 +73,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

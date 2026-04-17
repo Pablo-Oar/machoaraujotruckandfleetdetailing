@@ -131,7 +131,8 @@ export default function Navbar() {
         }}>
 
           {/* Logo */}
-          <Link href="/" style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+          <Link href="/" style={{ display: "flex", alignItems: "center", flexShrink: 0 }}
+            onClick={() => { if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
             <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing — Fresno, CA"
               width={160} height={48}
               style={{ objectFit: "contain", height: "42px", width: "auto" }} priority />
@@ -251,6 +252,7 @@ export default function Navbar() {
                     color: pathname === link.href ? "#C9A84C" : "#FFFFFF",
                     textDecoration: "none", transition: "color 0.2s",
                   }}
+                  onClick={() => { if (pathname === link.href) window.scrollTo({ top: 0, behavior: "smooth" }) }}
                   onMouseEnter={(e) => { if (pathname !== link.href) e.currentTarget.style.color = "#C9A84C" }}
                   onMouseLeave={(e) => { if (pathname !== link.href) e.currentTarget.style.color = "#FFFFFF" }}>
                   {link.label}
@@ -294,7 +296,7 @@ export default function Navbar() {
       }}>
         {/* Top row */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "44px" }}>
-          <Link href="/" onClick={() => setMenuOpen(false)}>
+          <Link href="/" onClick={() => { setMenuOpen(false); if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
             <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing"
               width={140} height={42} style={{ objectFit: "contain", height: "36px", width: "auto" }} />
           </Link>
@@ -414,7 +416,8 @@ export default function Navbar() {
                 )}
               </div>
             ) : (
-              <Link key={link.label} href={link.href} onClick={() => setMenuOpen(false)}
+              <Link key={link.label} href={link.href}
+                onClick={() => { setMenuOpen(false); if (pathname === link.href) window.scrollTo({ top: 0, behavior: "smooth" }) }}
                 style={{
                   display: "block", fontSize: "22px", fontWeight: 700,
                   color: pathname === link.href ? "#C9A84C" : "#FFFFFF",

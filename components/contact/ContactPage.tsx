@@ -40,7 +40,7 @@ const CONTACT_INFO = [
     ),
     label: "ELIASDAM87@GMAIL.COM",
     sub: "Email Address",
-    href: "mailto:eliasdam87@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&to=eliasdam87@gmail.com",
   },
   {
     id: "location",
@@ -53,7 +53,7 @@ const CONTACT_INFO = [
     ),
     label: "FRESNO, CA",
     sub: "Serving the Central Valley",
-    href: null,
+    href: "https://www.google.com/maps/search/Fresno,+CA",
   },
 ]
 
@@ -82,7 +82,7 @@ const SOCIAL_LINKS = [
   },
   {
     id: "tiktok",
-    href: "#",
+    href: "https://www.tiktok.com/@macho.araujo.detailing",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -636,7 +636,7 @@ export default function ContactPage() {
               <div className="contact-blocks">
                 {CONTACT_INFO.map((item) =>
                   item.href ? (
-                    <a key={item.id} href={item.href} className="contact-block">
+                    <a key={item.id} href={item.href} className="contact-block" target={item.href.startsWith("https://") ? "_blank" : undefined} rel={item.href.startsWith("https://") ? "noopener noreferrer" : undefined}>
                       <div className="contact-block-icon">{item.icon}</div>
                       <div>
                         <p className="contact-block-main">{item.label}</p>
