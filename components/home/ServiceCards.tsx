@@ -14,19 +14,19 @@ const SERVICES = [
     title:       "Paint Correction",
     description: "Multi-stage polishing to eliminate swirl marks, scratches and oxidation. Your paint, flawless again.",
     href:        "/services/paint-correction",
-    image:       "/images/portfolio/Screenshot_20260415_134651_Instagram.jpg",
+    image:       "/images/services/PaintCorrection.jpg",
   },
   {
     title:       "Fleet Detailing",
     description: "Scheduled cleaning programs for your entire fleet — weekly, biweekly or monthly at competitive rates.",
     href:        "/services/fleet-detailing",
-    image:       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+    image:       "/images/services/FleetDetailing.jpg",
   },
   {
     title:       "Ceramic Coating",
     description: "Professional-grade ceramic protection with 3+ years of hydrophobic, UV-resistant shield.",
     href:        "/services/ceramic-coating",
-    image:       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+    image:       "/images/services/CeramicCoating.jpg",
   },
   {
     title:       "Detailing Packages",
@@ -38,13 +38,13 @@ const SERVICES = [
     title:       "Aircraft Detailing",
     description: "Meticulous interior and exterior detailing for private and commercial aircraft.",
     href:        "/services/aircraft-detailing",
-    image:       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+    image:       "/images/services/AircraftDetailing.jpg",
   },
   {
     title:       "Boat Detailing",
     description: "Marine-grade cleaning, waxing and protection to keep your vessel looking showroom-ready.",
     href:        "/services/boat-detailing",
-    image:       "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
+    image:       "/images/services/BoatDetailing.jpg",
   },
 ]
 
@@ -75,16 +75,35 @@ export default function ServiceCards() {
           cursor: pointer;
           display: block;
           text-decoration: none;
+          z-index: 1;
         }
 
-        /* Imagen con zoom en hover */
+        .service-card:hover {
+          overflow: visible;
+          z-index: 2;
+        }
+
+        /* Wrapper imagen + overlay que se expande hacia los lados */
+        .service-card-media {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          overflow: hidden;
+          transition:
+            left  0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+            right 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .service-card:hover .service-card-media {
+          left: -50px;
+          right: -50px;
+        }
+
+        /* Sin zoom — solo se revela más al expandirse el wrapper */
         .service-card-img {
-          transition: transform 0.45s ease;
-          will-change: transform;
-        }
-
-        .service-card:hover .service-card-img {
-          transform: scale(1.06);
+          transition: none;
         }
 
         /* Overlay degradado */
@@ -206,18 +225,18 @@ export default function ServiceCards() {
             className="service-card"
             aria-label={service.title}
           >
-            {/* Foto */}
-            <Image
-              src={service.image}
-              alt={service.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 20vw"
-              style={{ objectFit: "cover" }}
-              className="service-card-img"
-            />
-
-            {/* Overlay */}
-            <div className="service-card-overlay" />
+            {/* Imagen + overlay se expanden juntos hacia los lados */}
+            <div className="service-card-media">
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                style={{ objectFit: "cover" }}
+                className="service-card-img"
+              />
+              <div className="service-card-overlay" />
+            </div>
 
             {/* Texto */}
             <div className="service-card-text">

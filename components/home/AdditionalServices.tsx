@@ -27,7 +27,7 @@ const BANNERS: Banner[] = [
     subtitle: "Deep clean of every surface, seats, carpets and trim.",
     price:    "Starting at $150",
     href:     "/services/interior-detail",
-    image:    "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+    image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     checks:   [
       "Full vacuum & steam clean",
       "Leather / fabric treatment",
@@ -53,14 +53,14 @@ const BANNERS: Banner[] = [
     subtitle: "Restore clarity and improve night visibility.",
     price:    "Starting at $80",
     href:     "/services/headlights-restoration",
-    image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+    image:    "/images/services/HeadLights.png",
   },
   {
     title:    "Engine Detailing",
     subtitle: "Safely degrease and detail your engine bay.",
     price:    "Starting at $80",
     href:     "/services/engine-detailing",
-    image:    "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+    image:    "/images/services/EngineDetailing.jpg",
   },
 ]
 
@@ -93,26 +93,40 @@ export default function AdditionalServices() {
         .add-banner {
           position: relative;
           width: 100%;
-          min-height: 220px;
+          height: 220px;
           overflow: hidden;
           display: flex;
           align-items: flex-end;
           margin-bottom: 4px;
           text-decoration: none;
+          z-index: 1;
+          transition:
+            height     0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+            margin-top 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+            margin-bottom 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .add-banner:last-child {
           margin-bottom: 0;
         }
 
-        /* Imagen zoom en hover */
-        .add-banner-img {
-          transition: transform 0.5s ease;
-          will-change: transform;
+        .add-banner:hover {
+          height: 320px;
+          margin-top: -50px;
+          margin-bottom: -50px;
+          z-index: 2;
         }
 
-        .add-banner:hover .add-banner-img {
-          transform: scale(1.04);
+        /* Wrapper imagen + overlay (sin transform propio) */
+        .add-banner-media {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+
+        /* Imagen sin zoom — solo se revela más al crecer el contenedor */
+        .add-banner-img {
+          transition: none;
         }
 
         /* Overlay */
@@ -280,18 +294,18 @@ export default function AdditionalServices() {
         {BANNERS.map((banner) => (
           <Link key={banner.title} href={banner.href} className="add-banner">
 
-            {/* Background image */}
-            <Image
-              src={banner.image}
-              alt={banner.title}
-              fill
-              sizes="100vw"
-              style={{ objectFit: "cover" }}
-              className="add-banner-img"
-            />
-
-            {/* Overlay */}
-            <div className="add-banner-overlay" />
+            {/* Imagen + overlay escalan juntos */}
+            <div className="add-banner-media">
+              <Image
+                src={banner.image}
+                alt={banner.title}
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+                className="add-banner-img"
+              />
+              <div className="add-banner-overlay" />
+            </div>
 
             {/* Content */}
             <div className="add-banner-content">
