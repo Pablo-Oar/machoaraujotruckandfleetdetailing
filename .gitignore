@@ -7,6 +7,11 @@ node_modules/
 .next/
 out/
 build/
+docs/dev/
+docs/cache/
+docs/server/
+docs/types/
+docs/logs/
 
 # ─── Environment variables ──────────────────────────────────
 .env

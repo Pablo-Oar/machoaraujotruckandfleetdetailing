@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[80515,["/machoaraujotruckandfleetdetailing/_next/static/chunks/0cbh7xvhlmdyh.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/06qgxf256.0bq.js"],"default"]
+3:I[97367,["/machoaraujotruckandfleetdetailing/_next/static/chunks/0cbh7xvhlmdyh.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/machoaraujotruckandfleetdetailing/_next/static/chunks/06qgxf256.0bq.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"-9JNmiA5G2cLfsoJhGVJk"}
+5:null
