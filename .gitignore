@@ -60,11 +60,3 @@ coverage/
 # No va al repo — es específico de cada máquina
 .claude/
 
-# ─── Media pesada (videos) ──────────────────────────────────
-# Los videos no van en git — hospedarlos en CDN externo
-# (Cloudinary, Bunny.net, YouTube, etc.)
-*.mp4
-*.mov
-*.avi
-*.webm
-*.mkv

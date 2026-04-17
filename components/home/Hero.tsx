@@ -37,7 +37,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section style={{ position: "relative", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <section style={{ position: "relative", minHeight: "100vh", display: "flex", flexDirection: "column", marginTop: "-70px" }}>
 
       {/* ── VIDEO DE FONDO ─────────────────────────────────── */}
       <video

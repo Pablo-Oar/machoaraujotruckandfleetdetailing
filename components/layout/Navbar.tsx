@@ -119,10 +119,10 @@ export default function Navbar() {
     <>
       {/* ── HEADER ─────────────────────────────────────────── */}
       <header style={{
-        position: "sticky", top: 0, zIndex: 1000,
-        backgroundColor: "#0D0D0D",
+        position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
+        backgroundColor: scrolled ? "#0D0D0D" : "transparent",
         borderBottom: scrolled ? "1px solid #2A2A2A" : "1px solid transparent",
-        transition: "border-color 0.3s ease, box-shadow 0.3s ease",
+        transition: "background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease",
         boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.5)" : "none",
       }}>
         <div className="site-container" style={{
@@ -135,7 +135,7 @@ export default function Navbar() {
             onClick={() => { if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
             <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing — Fresno, CA"
               width={160} height={48}
-              style={{ objectFit: "contain", height: "42px", width: "auto" }} priority />
+              style={{ objectFit: "contain", height: "52px", width: "auto" }} priority />
           </Link>
 
           {/* ── DESKTOP NAV ───────────────────────────────── */}
@@ -298,7 +298,7 @@ export default function Navbar() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "44px" }}>
           <Link href="/" onClick={() => { setMenuOpen(false); if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
             <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing"
-              width={140} height={42} style={{ objectFit: "contain", height: "36px", width: "auto" }} />
+              width={140} height={42} style={{ objectFit: "contain", height: "44px", width: "auto" }} />
           </Link>
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu"
             style={{

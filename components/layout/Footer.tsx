@@ -142,7 +142,7 @@ export default function Footer() {
                 alt="Macho Araujo Truck & Fleet Detailing"
                 width={160}
                 height={48}
-                style={{ objectFit: "contain", height: "44px", width: "auto" }}
+                style={{ objectFit: "contain", height: "150px", width: "auto" }}
               />
             </Link>
             <p className="footer-tagline">
