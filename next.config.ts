@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? "/machoaraujotruckandfleetdetailing/" : "",
   images: { unoptimized: true },
   allowedDevOrigins: ["192.168.1.3"],
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/machoaraujotruckandfleetdetailing" : "",
+  },
 };
 
 export default nextConfig;

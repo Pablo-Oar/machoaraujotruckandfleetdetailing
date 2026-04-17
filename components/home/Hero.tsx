@@ -46,7 +46,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/images/portfolio/Screenshot_20260415_134651_Instagram.jpg"
+        poster={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/portfolio/Screenshot_20260415_134651_Instagram.jpg`}
         style={{
           position: "absolute",
           inset: 0,
@@ -56,8 +56,7 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-        {/* Para producción: reemplazar con URL del CDN */}
-        <source src="/videos/lavadoAuto.mp4" type="video/mp4" />
+        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/videos/lavadoAuto.mp4`} type="video/mp4" />
       </video>
 
       {/* ── OVERLAY ────────────────────────────────────────── */}

@@ -176,7 +176,7 @@ function VideoCard({
           ref={(el) => registerRef(item.id, el)}
           onPlay={() => onPlay(item.id)}
           controls
-          poster={item.poster}
+          poster={item.poster ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${item.poster}` : undefined}
           preload="none"
           playsInline
           style={{
@@ -189,7 +189,7 @@ function VideoCard({
             backgroundColor: "#0D0D0D",
           }}
         >
-          <source src={item.src} type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${item.src}`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
