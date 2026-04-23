@@ -91,7 +91,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Decontamination wash + clay bar prep",
       "Final LSP (Last Step Product) protection",
     ],
-    price: "Starting at $300",
+    price: "$200 – $350",
     priceNote: "Final price depends on vehicle size, paint condition and stages required. Free inspection included.",
     benefits: [
       {
@@ -153,7 +153,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Bird dropping & acid rain resistance",
       "Paint correction prep included",
     ],
-    price: "Starting at $500",
+    price: "$350 – $550",
     priceNote: "Price varies by vehicle size and coating package (1, 2 or 3-year tier). Paint correction before coating is quoted separately.",
     benefits: [
       {
@@ -262,23 +262,23 @@ export const SERVICES_DATA: ServiceData[] = [
   {
     slug: "interior-detail",
     eyebrow: "Interior Restoration",
-    title: "Premium Interior Detail",
+    title: "Interior Detail",
     heroImage: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     tagline: "Your cabin, looking and smelling brand new.",
     description:
-      "Complete interior restoration — vacuuming, hot steam cleaning, leather conditioning, odor elimination and trim detailing. We leave your cabin looking and smelling brand new.",
+      "Complete interior restoration in two tiers — Express for a quick refresh, or Premium for a deep clean with steam, leather conditioning, odor elimination and full trim detailing.",
     longDescription:
-      "The interior is where you spend all your time, yet it's often the most neglected part of a vehicle. Our premium interior detail goes beyond a vacuum and wipe-down. We use professional steam cleaners that sanitize every surface, penetrating fabric and killing bacteria. Leather is cleaned and conditioned to prevent cracking. Every vent, button, seam and corner gets attention.",
+      "The interior is where you spend all your time, yet it's often the most neglected part of a vehicle. Our Interior Express covers the essentials: vacuum, wipe-down and glass cleaning. Our Interior Premium goes much further — professional steam cleaners sanitize every surface, leather is cleaned and conditioned to prevent cracking, and every vent, button, seam and corner gets attention.",
     features: [
-      "Full vacuum — seats, carpets, trunk",
-      "Hot steam clean & sanitization",
-      "Leather / fabric deep treatment",
-      "Odor elimination treatment",
+      "Express ($70–$100): Basic vacuum, wipe-down & glass clean",
+      "Premium ($140–$180): Full steam clean & sanitization",
+      "Leather / fabric deep treatment (Premium)",
+      "Odor elimination treatment (Premium)",
       "Dashboard, trim & vent detailing",
       "Window interior clean",
     ],
-    price: "Starting at $150",
-    priceNote: "Price varies by vehicle size and interior condition. Heavily soiled vehicles or odor treatments may be quoted higher.",
+    price: "$70 – $180",
+    priceNote: "Interior Express: $70–$100 · Interior Premium: $140–$180. Price varies by vehicle size and condition.",
     benefits: [
       {
         icon: ICONS.shield,
@@ -324,23 +324,23 @@ export const SERVICES_DATA: ServiceData[] = [
   {
     slug: "exterior-detail",
     eyebrow: "Exterior Restoration",
-    title: "Exterior Premium Detail",
+    title: "Exterior Detail",
     heroImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     tagline: "Hand wash, clay bar, polish and protective sealant.",
     description:
-      "Two-bucket hand wash, clay bar decontamination, one-stage polish and paint sealant. Your vehicle's exterior restored to showroom condition with protection that lasts months.",
+      "Two tiers of exterior care — Express for a quality hand wash and dry, or Premium with clay bar decontamination, one-stage polish and paint sealant for showroom results.",
     longDescription:
-      "A true exterior detail is far more than a car wash. We start with a two-bucket hand wash to safely remove surface dirt without inflicting swirl marks. Then clay bar decontamination pulls embedded contaminants that washing can't remove — industrial fallout, tree sap, brake dust that bonded to the paint. A one-stage machine polish removes light swirls and restores gloss. Finally, a paint sealant locks in the finish for months of protection.",
+      "A true exterior detail is far more than a car wash. Our Exterior Express delivers a thorough two-bucket hand wash, tire cleaning, and hand drying. Our Exterior Premium goes further — clay bar decontamination pulls embedded contaminants, a one-stage machine polish removes light swirls and restores gloss, and a paint sealant locks in the finish for months of protection.",
     features: [
-      "Two-bucket hand wash (swirl-free method)",
+      "Express ($50–$70): Two-bucket hand wash & hand dry",
+      "Premium ($120–$150): Full decontamination & polish",
       "Wheel & tire deep clean",
-      "Clay bar decontamination",
-      "One-stage machine polish",
-      "Paint sealant protection",
-      "Tire dressing & trim protection",
+      "Clay bar decontamination (Premium)",
+      "One-stage machine polish (Premium)",
+      "Paint sealant & tire dressing (Premium)",
     ],
-    price: "Starting at $120",
-    priceNote: "Price varies by vehicle size. Trucks and SUVs may be quoted higher. Add paint correction for deeper scratch removal.",
+    price: "$50 – $150",
+    priceNote: "Exterior Express: $50–$70 · Exterior Premium: $120–$150. Price varies by vehicle size.",
     benefits: [
       {
         icon: ICONS.droplet,
@@ -518,15 +518,14 @@ export const SERVICES_DATA: ServiceData[] = [
     longDescription:
       "Our detailing packages make it simple to choose the right level of service. Whether you need a quick maintenance clean before a meeting or a full interior and exterior restoration for a car sale or gift, we have a package for it. All three packages are performed mobile — we come to your home, office or wherever the car is parked.",
     features: [
-      "Express ($80) — exterior wash + basic interior clean",
-      "Standard ($150) — full interior & exterior with protection",
-      "Premium Deluxe ($300) — complete restoration package",
-      "All packages include tire dressing",
-      "Performed at your location",
+      "Express ($80–$120): Basic vacuum & blow out, wipe-down, glass, tire cleaning, exterior wash & hand dry",
+      "Standard ($130–$160): All Express + carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing",
+      "Premium Deluxe: All Standard + inside waxing & UV protection, fabric/seat/floor shampoo & steam, windows ceramic protection (+1 month), liquid wax, FREE ozone treatment",
+      "All packages performed at your location",
       "Gift certificates available",
     ],
-    price: "$80 — $300",
-    priceNote: "Express $80 · Standard $150 · Premium Deluxe $300. Price may vary for large vehicles (trucks, SUVs, vans).",
+    price: "$80 – $160+",
+    priceNote: "Express $80–$120 · Standard Full $130–$160 · Premium Deluxe: contact for pricing. Price varies by vehicle size.",
     benefits: [
       {
         icon: ICONS.car,
@@ -555,7 +554,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
     faqs: [
-      { question: "What's included in each package?", answer: "Express: exterior wash, wheels, windows, interior vacuum and dashboard wipe. Standard: everything in Express + clay bar, paint sealant, leather/fabric treatment, odor spray. Premium Deluxe: everything in Standard + single-stage paint correction, engine bay, headlight restoration, steam interior clean, ceramic sealant." },
+      { question: "What's included in each package?", answer: "Express ($80–$120): basic vacuum & blow out, interior wipe-down, glass cleaning, tire cleaning, exterior wash & hand dry. Standard Full ($130–$160): all Express plus carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing. Premium Deluxe: all Standard plus inside waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection (+1 month), liquid wax protection and FREE ozone treatment." },
       { question: "How long does each package take?", answer: "Express: 1–1.5 hours. Standard: 2.5–3.5 hours. Premium Deluxe: 5–7 hours. Times may vary by vehicle size and condition." },
       { question: "Can I customize a package?", answer: "Yes — we can add or remove specific services to build a custom package. Just let us know what you need and we'll quote accordingly." },
     ],
@@ -565,7 +564,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
-    metaDescription: "Car detailing packages in Fresno, CA. Express $80, Standard $150, Premium Deluxe $300. Full mobile service — we come to you. Book your package today.",
+    metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
   },
 
   /* ── 9. HEADLIGHTS RESTORATION ─────────────────────────── */
@@ -587,7 +586,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Both headlights included",
       "Before & after photos provided",
     ],
-    price: "Starting at $80",
+    price: "$70",
     priceNote: "Price is for both headlights. Severely damaged or cracked lenses may need replacement instead of restoration — we'll advise during inspection.",
     benefits: [
       {
@@ -649,7 +648,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Microfiber dry & detailing",
       "Suitable for all engine types",
     ],
-    price: "Starting at $80",
+    price: "$70",
     priceNote: "Price may vary for heavily soiled or complex engine bays. Often included in our Premium Deluxe package.",
     benefits: [
       {

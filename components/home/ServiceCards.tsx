@@ -30,7 +30,7 @@ const SERVICES = [
   },
   {
     title:       "Detailing Packages",
-    description: "Express, Standard or Premium Deluxe — tailored packages from $80 to match any need and budget.",
+    description: "Express Detail, Standard Full or Premium Deluxe — tailored packages starting at $80 to match any need and budget.",
     href:        "/services/detailing-packages",
     image:       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
   },

@@ -25,7 +25,7 @@ const BANNERS: Banner[] = [
   {
     title:    "Interior Premium & Express",
     subtitle: "Deep clean of every surface, seats, carpets and trim.",
-    price:    "Starting at $150",
+    price:    "$70 – $180",
     href:     "/services/interior-detail",
     image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     checks:   [
@@ -38,7 +38,7 @@ const BANNERS: Banner[] = [
   {
     title:    "Exterior Premium & Express",
     subtitle: "Hand wash, clay bar, polish and protective sealant.",
-    price:    "Starting at $120",
+    price:    "$50 – $150",
     href:     "/services/exterior-detail",
     image:    "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     checks:   [
@@ -51,14 +51,14 @@ const BANNERS: Banner[] = [
   {
     title:    "Headlights Restoration",
     subtitle: "Restore clarity and improve night visibility.",
-    price:    "Starting at $80",
+    price:    "$70",
     href:     "/services/headlights-restoration",
     image:    "/images/services/HeadLights.png",
   },
   {
     title:    "Engine Detailing",
     subtitle: "Safely degrease and detail your engine bay.",
-    price:    "Starting at $80",
+    price:    "$70",
     href:     "/services/engine-detailing",
     image:    "/images/services/EngineDetailing.jpg",
   },
