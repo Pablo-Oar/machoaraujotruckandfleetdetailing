@@ -114,8 +114,69 @@ function FAQAccordion({ faqs }: { faqs: ServiceData["faqs"] }) {
   )
 }
 
+/* ── Lightbox Modal ──────────────────────────────────────── */
+function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  return (
+    <div
+      onClick={onClose}
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 9999,
+        backgroundColor: "rgba(0,0,0,0.92)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "zoom-out",
+        padding: "24px",
+      }}
+    >
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        style={{
+          position: "absolute",
+          top: "20px",
+          right: "20px",
+          width: "44px",
+          height: "44px",
+          borderRadius: "50%",
+          border: "1px solid rgba(255,255,255,0.25)",
+          background: "rgba(0,0,0,0.6)",
+          color: "#FFFFFF",
+          fontSize: "22px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 10000,
+        }}
+      >
+        ✕
+      </button>
+      <Image
+        src={src}
+        alt={alt}
+        width={1400}
+        height={900}
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          maxWidth: "92vw",
+          maxHeight: "90vh",
+          width: "auto",
+          height: "auto",
+          objectFit: "contain",
+          borderRadius: "8px",
+          cursor: "default",
+        }}
+      />
+    </div>
+  )
+}
+
 /* ── Main Component ──────────────────────────────────────── */
 export default function ServiceDetailPage({ service }: { service: ServiceData }) {
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
   return (
     <>
       <style>{`
@@ -134,8 +195,9 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           inset: 0;
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
           object-position: center;
+          background-color: #0D0D0D;
         }
         .sdp-hero-overlay {
           position: absolute;
@@ -231,6 +293,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           height: 420px;
           border-radius: 12px;
           overflow: hidden;
+          cursor: zoom-in;
         }
         .sdp-features-list {
           list-style: none;
@@ -392,6 +455,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           height: 260px;
           border-radius: 8px;
           overflow: hidden;
+          cursor: zoom-in;
         }
         .sdp-gallery-item img {
           transition: transform 0.45s ease;
@@ -557,7 +621,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           alt={service.title}
           fill
           className="sdp-hero-img"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
           priority
         />
         <div className="sdp-hero-overlay" />
@@ -573,12 +637,13 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         <div className="sdp-container">
           <div className="sdp-overview-grid">
             {/* Image */}
-            <div className="sdp-overview-img-wrap">
+            <div className="sdp-overview-img-wrap"
+              onClick={() => setLightbox({ src: service.heroImage, alt: service.title })}>
               <Image
                 src={service.heroImage}
                 alt={service.title}
                 fill
-                style={{ objectFit: "cover", borderRadius: "12px" }}
+                style={{ objectFit: "contain", borderRadius: "12px", backgroundColor: "#0D0D0D" }}
               />
             </div>
             {/* Text */}
@@ -667,12 +732,13 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           <h2 className="sdp-section-h2">Gallery</h2>
           <div className="sdp-gallery-grid">
             {service.gallery.map((img, i) => (
-              <div key={i} className="sdp-gallery-item">
+              <div key={i} className="sdp-gallery-item"
+                onClick={() => setLightbox({ src: img, alt: `${service.title} gallery ${i + 1}` })}>
                 <Image
                   src={img}
                   alt={`${service.title} gallery ${i + 1}`}
                   fill
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
                 />
               </div>
             ))}
@@ -703,7 +769,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
                   src={r.image}
                   alt={r.title}
                   fill
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
                 />
                 <div className="sdp-related-overlay" />
                 <div className="sdp-related-label">
@@ -730,6 +796,11 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+
+      {/* ── LIGHTBOX MODAL ───────────────────────────────── */}
+      {lightbox && (
+        <Lightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />
+      )}
     </>
   )
 }

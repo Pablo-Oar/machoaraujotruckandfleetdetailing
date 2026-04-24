@@ -15,24 +15,23 @@ type DropdownItem = PlainItem | SubmenuItem
 /* ─────────────────────────────────────────────────────────────
    NAVIGATION DATA
    ───────────────────────────────────────────────────────────── */
-const SUBSCRIPTION_ITEMS: PlainItem[] = [
-  { label: "Interior Premium & Express", href: "/services/interior-detail"          },
-  { label: "Exterior Premium & Express", href: "/services/exterior-detail"          },
-  { label: "Headlights Restoration",     href: "/services/headlights-restoration"   },
-  { label: "Engine Detailing",           href: "/services/engine-detailing"         },
-  { label: "Ozone Treatment",            href: "/services/ozone-treatment"          },
-  { label: "Industrial Pressure Washing",href: "/services/pressure-washing"         },
-  { label: "Solar Panel Cleaning",       href: "/services/solar-panel-cleaning"     },
+const PACKAGES_ITEMS: PlainItem[] = [
+  { label: "Express Detail",        href: "/services/detailing-packages" },
+  { label: "Standard Full Detail",  href: "/services/detailing-packages" },
+  { label: "Premium Deluxe",        href: "/services/detailing-packages" },
 ]
 
 const SERVICES_DROPDOWN: DropdownItem[] = [
-  { label: "Paint Correction",   href: "/services/paint-correction"   },
-  { label: "Fleet Detailing",    href: "/services/fleet-detailing"    },
-  { label: "Ceramic Coating",    href: "/services/ceramic-coating"    },
-  { label: "Detailing Packages", href: "/services/detailing-packages" },
-  { label: "Aircraft Detailing", href: "/services/aircraft-detailing" },
-  { label: "Boat Detailing",     href: "/services/boat-detailing"     },
-  { label: "Subscription Plan",  href: "/services/subscription-plan", type: "submenu", items: SUBSCRIPTION_ITEMS },
+  { label: "Paint Correction",        href: "/services/paint-correction"        },
+  { label: "Ceramic Coating",         href: "/services/ceramic-coating"         },
+  { label: "Interior Premium",        href: "/services/interior-detail"         },
+  { label: "Exterior Premium",        href: "/services/exterior-detail"         },
+  { label: "Fleet Detailing",         href: "/services/fleet-detailing"         },
+  { label: "Headlights Restoration",  href: "/services/headlights-restoration"  },
+  { label: "Aircraft Detailing",      href: "/services/aircraft-detailing"      },
+  { label: "Engine Detailing",        href: "/services/engine-detailing"        },
+  { label: "Boat Detailing",          href: "/services/boat-detailing"          },
+  { label: "Detailing Packages",      href: "/services/detailing-packages", type: "submenu", items: PACKAGES_ITEMS },
 ]
 
 const NAV_LINKS = [
@@ -84,7 +83,7 @@ export default function Navbar() {
   const [dropdownOpen,      setDropdownOpen]       = useState(false)
   const [subMenuOpen,       setSubMenuOpen]        = useState(false)
   const [mobileServices,    setMobileServices]     = useState(false)
-  const [mobileSubscription,setMobileSubscription] = useState(false)
+  const [mobilePackages,setMobilePackages] = useState(false)
 
   const closeTimer    = useRef<ReturnType<typeof setTimeout> | null>(null)
   const subCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -166,7 +165,7 @@ export default function Navbar() {
                       padding: "6px 0", minWidth: "230px", zIndex: 100,
                     }}>
                       {link.dropdown.map((item) => {
-                        /* Subscription Plan — flyout trigger */
+                        /* Detailing Packages — flyout trigger */
                         if (item.type === "submenu") return (
                           <div key={item.label} style={{ position: "relative" }}
                             onMouseEnter={openSub} onMouseLeave={closeSub}>
@@ -352,10 +351,10 @@ export default function Navbar() {
                 {mobileServices && (
                   <div style={{ borderBottom: "0.5px solid #1A1A1A" }}>
                     {link.dropdown.map((item) => {
-                      /* Subscription Plan — accordion */
+                      /* Detailing Packages — accordion */
                       if (item.type === "submenu") return (
                         <div key={item.label}>
-                          <button onClick={() => setMobileSubscription((v) => !v)}
+                          <button onClick={() => setMobilePackages((v) => !v)}
                             style={{
                               width: "100%", background: "none", border: "none",
                               borderTop: "0.5px solid #222222", cursor: "pointer",
@@ -370,13 +369,13 @@ export default function Navbar() {
                               display: "inline-flex", alignItems: "center", justifyContent: "center",
                               width: "24px", height: "24px", border: "1px solid #C9A84C",
                               borderRadius: "20px", color: "#C9A84C",
-                              transform: mobileSubscription ? "rotate(180deg)" : "rotate(0deg)",
+                              transform: mobilePackages ? "rotate(180deg)" : "rotate(0deg)",
                               transition: "transform 0.25s ease",
                               flexShrink: 0,
                             }}><ChevronDown /></span>
                           </button>
 
-                          {mobileSubscription && (
+                          {mobilePackages && (
                             <div style={{ backgroundColor: "#0D0D0D" }}>
                               {item.items.map((sub) => (
                                 <Link key={sub.label} href={sub.href}

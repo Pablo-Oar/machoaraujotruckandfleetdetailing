@@ -53,14 +53,14 @@ const BANNERS: Banner[] = [
     subtitle: "Restore clarity and improve night visibility.",
     price:    "$70",
     href:     "/services/headlights-restoration",
-    image:    "/images/services/HeadLights.png",
+    image:    "/images/services/headlights-restoration/ImgHeadLights.png",
   },
   {
     title:    "Engine Detailing",
     subtitle: "Safely degrease and detail your engine bay.",
     price:    "$70",
     href:     "/services/engine-detailing",
-    image:    "/images/services/EngineDetailing.jpg",
+    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
   },
 ]
 
@@ -284,7 +284,6 @@ export default function AdditionalServices() {
 
         {/* ── HEADING ─────────────────────────────────────── */}
         <div className="additional-heading">
-          <span className="eyebrow">Subscription Plan</span>
           <h2 className="section-h2">
             Additional Detailing Services<br />in Fresno, California
           </h2>

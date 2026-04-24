@@ -24,6 +24,13 @@ type MediaItem = {
 const MEDIA: MediaItem[] = [
   /* ── Videos ──────────────────────────────────────────────── */
   {
+    id: "v6",
+    type: "video",
+    src: "/videos/Edit01.mp4",
+    category: "Full Detail",
+    label: "Professional Detailing Showcase",
+  },
+  {
     id: "v1",
     type: "video",
     src: "/videos/LavadoCamion_web.mp4",
@@ -177,7 +184,7 @@ function VideoCard({
           onPlay={() => onPlay(item.id)}
           controls
           poster={item.poster ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${item.poster}` : undefined}
-          preload="none"
+          preload={item.poster ? "none" : "metadata"}
           playsInline
           style={{
             position: "absolute",
@@ -275,6 +282,10 @@ export default function BlogPage() {
     if (activeFilter === "Interior")         return item.category === "Interior Detail"
     return true
   })
+
+  const filteredVideos = filtered.filter((item) => item.type === "video")
+  const filteredPhotos = filtered.filter((item) => item.type === "photo")
+  const showSplit = activeFilter === "All" && filteredVideos.length > 0 && filteredPhotos.length > 0
 
   return (
     <>
@@ -668,17 +679,57 @@ export default function BlogPage() {
           <p className="media-count">
             {filtered.length} item{filtered.length !== 1 ? "s" : ""}
           </p>
-          <div className="media-grid">
-            {filtered.length === 0 ? (
+
+          {filtered.length === 0 ? (
+            <div className="media-grid">
               <p className="media-empty">No items in this category.</p>
-            ) : (
-              filtered.map((item) =>
+            </div>
+          ) : showSplit ? (
+            <>
+              {/* ── Videos ──────────────────────────────────── */}
+              <p style={{
+                fontSize: "11px", fontWeight: 700, color: "#C9A84C",
+                textTransform: "uppercase", letterSpacing: "0.12em",
+                marginBottom: "16px",
+              }}>
+                Videos
+              </p>
+              <div className="media-grid" style={{ marginBottom: "48px" }}>
+                {filteredVideos.map((item) => (
+                  <VideoCard key={item.id} item={item} registerRef={registerRef} onPlay={handleVideoPlay} />
+                ))}
+              </div>
+
+              {/* ── Divider ─────────────────────────────────── */}
+              <div style={{
+                height: "1px",
+                background: "linear-gradient(to right, transparent, #2A2A2A, transparent)",
+                marginBottom: "48px",
+              }} />
+
+              {/* ── Photos ──────────────────────────────────── */}
+              <p style={{
+                fontSize: "11px", fontWeight: 700, color: "#C9A84C",
+                textTransform: "uppercase", letterSpacing: "0.12em",
+                marginBottom: "16px",
+              }}>
+                Photos
+              </p>
+              <div className="media-grid">
+                {filteredPhotos.map((item) => (
+                  <PhotoCard key={item.id} item={item} />
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="media-grid">
+              {filtered.map((item) =>
                 item.type === "video"
                   ? <VideoCard key={item.id} item={item} registerRef={registerRef} onPlay={handleVideoPlay} />
                   : <PhotoCard key={item.id} item={item} />
-              )
-            )}
-          </div>
+              )}
+            </div>
+          )}
         </div>
       </section>
 

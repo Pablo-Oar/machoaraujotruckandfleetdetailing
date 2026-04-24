@@ -77,7 +77,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "paint-correction",
     eyebrow: "Surface Restoration",
     title: "Paint Correction",
-    heroImage: "/images/services/PaintCorrection.jpg",
+    heroImage: "/images/services/paint-correction/PaintCorrection.jpg",
     tagline: "Eliminate swirl marks, scratches and oxidation permanently.",
     description:
       "Multi-stage machine polishing that permanently eliminates swirl marks, water spots, light scratches and oxidation. We restore your paint's original clarity — not just mask defects.",
@@ -91,7 +91,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Decontamination wash + clay bar prep",
       "Final LSP (Last Step Product) protection",
     ],
-    price: "$200 – $350",
+    price: "Starting at $200",
     priceNote: "Final price depends on vehicle size, paint condition and stages required. Free inspection included.",
     benefits: [
       {
@@ -116,7 +116,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Final Polish & LSP", body: "Ultra-fine finishing polish followed by a paint sealant or ceramic coating to lock in the correction." },
     ],
     gallery: [
-      "/images/services/PaintCorrection.jpg",
+      "/images/services/paint-correction/PaintCorrection.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
@@ -126,7 +126,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Do I need paint correction before ceramic coating?", answer: "Yes. Ceramic coating locks the paint's current condition permanently. Any defects present before coating will be sealed in. We always recommend correction before coating." },
     ],
     related: [
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/CeramicCoating.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
@@ -139,7 +139,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "ceramic-coating",
     eyebrow: "Long-Term Protection",
     title: "Ceramic Coating",
-    heroImage: "/images/services/CeramicCoating.jpg",
+    heroImage: "/images/services/ceramic-coating/CeramicCoating.jpg",
     tagline: "3+ years of hydrophobic, UV-resistant paint protection.",
     description:
       "Professional-grade nano-ceramic formula that bonds permanently to your paint, delivering 3–5 years of hydrophobic, UV-resistant, self-cleaning protection. The best investment for any vehicle.",
@@ -153,7 +153,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Bird dropping & acid rain resistance",
       "Paint correction prep included",
     ],
-    price: "$350 – $550",
+    price: "Starting at $350",
     priceNote: "Price varies by vehicle size and coating package (1, 2 or 3-year tier). Paint correction before coating is quoted separately.",
     benefits: [
       {
@@ -178,7 +178,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic Application", body: "Each panel is coated individually in controlled sections. Ceramic cures over 24–48 hours — we recommend keeping the vehicle dry during this period." },
     ],
     gallery: [
-      "/images/services/CeramicCoating.jpg",
+      "/images/services/ceramic-coating/CeramicCoating.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     ],
@@ -188,7 +188,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I get ceramic coating without paint correction?", answer: "Technically yes, but we don't recommend it. Ceramic seals the paint permanently — any swirl marks or defects will be locked in for years. Correction first ensures the best possible result." },
     ],
     related: [
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
@@ -201,7 +201,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "fleet-detailing",
     eyebrow: "Commercial Services",
     title: "Fleet Detailing",
-    heroImage: "/images/services/FleetDetailing.jpg",
+    heroImage: "/images/services/fleet-detailing/FleetDetailing.jpg",
     tagline: "Scheduled programs for businesses with multiple vehicles.",
     description:
       "Scheduled maintenance programs designed for businesses with multiple vehicles. Weekly, bi-weekly or monthly contracts. We keep your fleet looking professional and your drivers proud.",
@@ -240,7 +240,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Consistent Service", body: "Our team shows up on schedule, every time. You get the same quality on visit #1 as visit #50." },
     ],
     gallery: [
-      "/images/services/FleetDetailing.jpg",
+      "/images/services/fleet-detailing/FleetDetailing.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
@@ -251,7 +251,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
-      { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/EngineDetailing.jpg" },
+      { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Fleet Detailing Fresno CA | Macho Araujo Truck & Fleet",
@@ -263,7 +263,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "interior-detail",
     eyebrow: "Interior Restoration",
     title: "Interior Detail",
-    heroImage: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+    heroImage: "/images/services/interior-detail/InteriorPremium.jpg",
     tagline: "Your cabin, looking and smelling brand new.",
     description:
       "Complete interior restoration in two tiers — Express for a quick refresh, or Premium for a deep clean with steam, leather conditioning, odor elimination and full trim detailing.",
@@ -277,7 +277,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Dashboard, trim & vent detailing",
       "Window interior clean",
     ],
-    price: "$70 – $180",
+    price: "Starting at $70",
     priceNote: "Interior Express: $70–$100 · Interior Premium: $140–$180. Price varies by vehicle size and condition.",
     benefits: [
       {
@@ -314,7 +314,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
-      { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/EngineDetailing.jpg" },
+      { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
     ],
     metaTitle: "Interior Detail Fresno CA | Macho Araujo Detailing",
     metaDescription: "Premium interior detailing in Fresno, CA. Steam clean, leather conditioning, odor elimination. We come to you. Book your interior detail today.",
@@ -325,7 +325,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "exterior-detail",
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
-    heroImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+    heroImage: "/images/services/exterior-detail/ExteriorPremium.jpg",
     tagline: "Hand wash, clay bar, polish and protective sealant.",
     description:
       "Two tiers of exterior care — Express for a quality hand wash and dry, or Premium with clay bar decontamination, one-stage polish and paint sealant for showroom results.",
@@ -339,7 +339,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "One-stage machine polish (Premium)",
       "Paint sealant & tire dressing (Premium)",
     ],
-    price: "$50 – $150",
+    price: "Starting at $50",
     priceNote: "Exterior Express: $50–$70 · Exterior Premium: $120–$150. Price varies by vehicle size.",
     benefits: [
       {
@@ -366,7 +366,7 @@ export const SERVICES_DATA: ServiceData[] = [
     gallery: [
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/services/PaintCorrection.jpg",
+      "/images/services/paint-correction/PaintCorrection.jpg",
     ],
     faqs: [
       { question: "What's the difference between a wash and an exterior detail?", answer: "A car wash removes surface dirt. An exterior detail includes decontamination, machine polishing and paint protection — it restores the paint, not just cleans it." },
@@ -374,8 +374,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Do I need to be home during the service?", answer: "No — as long as we have access to the vehicle and a water source nearby, you don't need to be present. We'll send photos when done." },
     ],
     related: [
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/CeramicCoating.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Exterior Detail Fresno CA | Macho Araujo Detailing",
@@ -387,7 +387,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "aircraft-detailing",
     eyebrow: "Specialty Vehicles",
     title: "Aircraft Detailing",
-    heroImage: "/images/services/AircraftDetailing.jpg",
+    heroImage: "/images/services/aircraft-detailing/AircraftDetailing.jpg",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
       "Meticulous interior and exterior detailing for private and commercial aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
@@ -426,7 +426,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Exterior Polish", body: "Exterior wash, deoxidation and polishing of aluminum or composite surfaces using non-corrosive aviation compounds." },
     ],
     gallery: [
-      "/images/services/AircraftDetailing.jpg",
+      "/images/services/aircraft-detailing/AircraftDetailing.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
@@ -436,9 +436,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "How often should an aircraft be detailed?", answer: "We recommend a full detail every 6–12 months, depending on how often the aircraft flies and where it's stored. Hangared aircraft need less frequent detailing than tie-downs." },
     ],
     related: [
-      { title: "Boat Detailing", slug: "boat-detailing", image: "/images/services/BoatDetailing.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/FleetDetailing.jpg" },
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
+      { title: "Boat Detailing", slug: "boat-detailing", image: "/images/services/boat-detailing/ImgBoatDetailing.jpg" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
     ],
     metaTitle: "Aircraft Detailing Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional aircraft detailing in Fresno and Central Valley. Aviation-safe products for private and commercial aircraft. Interior cabin and exterior polishing. Get a quote.",
@@ -449,7 +449,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "boat-detailing",
     eyebrow: "Marine Detailing",
     title: "Boat Detailing",
-    heroImage: "/images/services/BoatDetailing.jpg",
+    heroImage: "/images/services/boat-detailing/BoatDetailing.jpg",
     tagline: "Restore your vessel to showroom condition.",
     description:
       "Marine-grade cleaning, oxidation removal, waxing and protective coating for your vessel. We come to the marina or dock. Restore gelcoat, brightwork and upholstery to showroom condition.",
@@ -488,7 +488,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Protection & Interior", body: "Marine wax or ceramic coat applied for lasting protection. Interior cabin vacuumed, upholstery treated, brightwork polished." },
     ],
     gallery: [
-      "/images/services/BoatDetailing.jpg",
+      "/images/services/boat-detailing/BoatDetailing.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     ],
@@ -498,9 +498,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "How often should a boat be detailed?", answer: "We recommend a full detail once or twice per season, plus a rinse and basic clean after each use. UV protection (wax or ceramic) is the key to preventing oxidation between full details." },
     ],
     related: [
-      { title: "Aircraft Detailing", slug: "aircraft-detailing", image: "/images/services/AircraftDetailing.jpg" },
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/CeramicCoating.jpg" },
+      { title: "Aircraft Detailing", slug: "aircraft-detailing", image: "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
     ],
     metaTitle: "Boat Detailing Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional boat detailing in Fresno and Central Valley. Gelcoat restoration, oxidation removal, marine wax and interior cleaning. We come to your marina.",
@@ -511,7 +511,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "detailing-packages",
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
-    heroImage: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+    heroImage: "/images/services/detailing-packages/PackagesDetailing.jpg",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
       "Three comprehensive packages designed to fit any need and budget. From a quick refresh to a full restoration, every package is performed with the same premium-quality products and care.",
@@ -524,7 +524,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "All packages performed at your location",
       "Gift certificates available",
     ],
-    price: "$80 – $160+",
+    price: "Starting at $80",
     priceNote: "Express $80–$120 · Standard Full $130–$160 · Premium Deluxe: contact for pricing. Price varies by vehicle size.",
     benefits: [
       {
@@ -561,7 +561,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
     metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
@@ -572,7 +572,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "headlights-restoration",
     eyebrow: "Visibility & Safety",
     title: "Headlights Restoration",
-    heroImage: "/images/services/HeadlightsRestoration.png",
+    heroImage: "/images/services/headlights-restoration/HeadlightsRestoration.jpg",
     tagline: "Clear headlights. Better visibility. Safer nights.",
     description:
       "Professional headlight restoration removes UV oxidation and yellowing to restore clarity and improve night visibility. Results that last — backed by a UV-resistant protective coating.",
@@ -586,7 +586,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Both headlights included",
       "Before & after photos provided",
     ],
-    price: "$70",
+    price: "Starting at $70",
     priceNote: "Price is for both headlights. Severely damaged or cracked lenses may need replacement instead of restoration — we'll advise during inspection.",
     benefits: [
       {
@@ -611,8 +611,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "UV Coating Application", body: "A professional UV-resistant coating is applied to protect the lens and prevent re-yellowing for years." },
     ],
     gallery: [
-      "/images/services/HeadlightsRestoration.png",
-      "/images/services/HeadLights.png",
+      "/images/services/headlights-restoration/HeadlightsRestoration.jpg",
+      "/images/services/headlights-restoration/ImgHeadLights.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
     faqs: [
@@ -622,7 +622,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/PaintCorrection.jpg" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Headlight Restoration Fresno CA | Macho Araujo Detailing",
@@ -634,7 +634,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "engine-detailing",
     eyebrow: "Under the Hood",
     title: "Engine Bay Detailing",
-    heroImage: "/images/services/EngineDetailing.jpg",
+    heroImage: "/images/services/engine-detailing/EngineDetailing.jpg",
     tagline: "Safely degrease and detail your engine bay.",
     description:
       "Safe, thorough engine bay degreasing and detailing. We remove built-up grease, dust and road grime, then dress all plastics and hoses for a clean, protected engine bay.",
@@ -648,7 +648,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Microfiber dry & detailing",
       "Suitable for all engine types",
     ],
-    price: "$70",
+    price: "Starting at $70",
     priceNote: "Price may vary for heavily soiled or complex engine bays. Often included in our Premium Deluxe package.",
     benefits: [
       {
@@ -673,7 +673,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Dry & Dress", body: "All surfaces dried with microfiber and compressed air. Plastics and hoses dressed with UV protectant for a clean, finished look." },
     ],
     gallery: [
-      "/images/services/EngineDetailing.jpg",
+      "/images/services/engine-detailing/EngineDetailing.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
@@ -684,7 +684,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/FleetDetailing.jpg" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
     ],
     metaTitle: "Engine Bay Detailing Fresno CA | Macho Araujo Detailing",

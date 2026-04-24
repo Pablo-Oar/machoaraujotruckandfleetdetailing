@@ -14,19 +14,19 @@ const SERVICES = [
     title:       "Paint Correction",
     description: "Multi-stage polishing to eliminate swirl marks, scratches and oxidation. Your paint, flawless again.",
     href:        "/services/paint-correction",
-    image:       "/images/services/PaintCorrection.jpg",
+    image:       "/images/services/paint-correction/ImgPaintCorrection.jpg",
   },
   {
     title:       "Fleet Detailing",
     description: "Scheduled cleaning programs for your entire fleet — weekly, biweekly or monthly at competitive rates.",
     href:        "/services/fleet-detailing",
-    image:       "/images/services/FleetDetailing.jpg",
+    image:       "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
   },
   {
     title:       "Ceramic Coating",
     description: "Professional-grade ceramic protection with 3+ years of hydrophobic, UV-resistant shield.",
     href:        "/services/ceramic-coating",
-    image:       "/images/services/CeramicCoating.jpg",
+    image:       "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
   },
   {
     title:       "Detailing Packages",
@@ -38,13 +38,13 @@ const SERVICES = [
     title:       "Aircraft Detailing",
     description: "Meticulous interior and exterior detailing for private and commercial aircraft.",
     href:        "/services/aircraft-detailing",
-    image:       "/images/services/AircraftDetailing.jpg",
+    image:       "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
   },
   {
     title:       "Boat Detailing",
     description: "Marine-grade cleaning, waxing and protection to keep your vessel looking showroom-ready.",
     href:        "/services/boat-detailing",
-    image:       "/images/services/BoatDetailing.jpg",
+    image:       "/images/services/boat-detailing/ImgBoatDetailing.jpg",
   },
 ]
 
