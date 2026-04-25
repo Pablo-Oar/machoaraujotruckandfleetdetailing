@@ -170,19 +170,20 @@ export default function Navbar() {
                           <div key={item.label} style={{ position: "relative" }}
                             onMouseEnter={openSub} onMouseLeave={closeSub}>
 
-                            <div style={{
+                            <Link href={item.href} style={{
                               display: "flex", alignItems: "center",
                               justifyContent: "space-between",
                               padding: "10px 20px", cursor: "pointer",
                               color: subMenuOpen ? "#C9A84C" : "#CCCCCC",
                               fontSize: "13px", fontWeight: 600,
                               letterSpacing: "0.02em",
+                              textDecoration: "none",
                               backgroundColor: subMenuOpen ? "rgba(201,168,76,0.06)" : "transparent",
                               transition: "color 0.15s, background 0.15s",
                             }}>
                               {item.label}
                               <span style={{ color: "#C9A84C", opacity: 0.8 }}><ChevronRight /></span>
-                            </div>
+                            </Link>
 
                             {/* ── LEVEL 2 SUBMENU (flyout) ──── */}
                             {subMenuOpen && (
@@ -354,26 +355,33 @@ export default function Navbar() {
                       /* Detailing Packages — accordion */
                       if (item.type === "submenu") return (
                         <div key={item.label}>
-                          <button onClick={() => setMobilePackages((v) => !v)}
-                            style={{
-                              width: "100%", background: "none", border: "none",
-                              borderTop: "0.5px solid #222222", cursor: "pointer",
+                          <div style={{
+                              width: "100%",
+                              borderTop: "0.5px solid #222222",
                               display: "flex", justifyContent: "space-between", alignItems: "center",
-                              padding: "15px 24px", fontFamily: "inherit",
-                              fontSize: "15px", fontWeight: 600,
-                              color: "#C9A84C", letterSpacing: "0.04em",
-                              textTransform: "uppercase",
+                              padding: "15px 24px",
                             }}>
-                            {item.label}
-                            <span style={{
-                              display: "inline-flex", alignItems: "center", justifyContent: "center",
-                              width: "24px", height: "24px", border: "1px solid #C9A84C",
-                              borderRadius: "20px", color: "#C9A84C",
-                              transform: mobilePackages ? "rotate(180deg)" : "rotate(0deg)",
-                              transition: "transform 0.25s ease",
-                              flexShrink: 0,
-                            }}><ChevronDown /></span>
-                          </button>
+                            <Link href={item.href} onClick={() => setMenuOpen(false)}
+                              style={{
+                                background: "none", border: "none",
+                                fontFamily: "inherit",
+                                fontSize: "15px", fontWeight: 600,
+                                color: "#C9A84C", letterSpacing: "0.04em",
+                                textTransform: "uppercase", textDecoration: "none",
+                              }}>
+                              {item.label}
+                            </Link>
+                            <button onClick={() => setMobilePackages((v) => !v)}
+                              style={{
+                                background: "none", cursor: "pointer",
+                                display: "inline-flex", alignItems: "center", justifyContent: "center",
+                                width: "24px", height: "24px", border: "1px solid #C9A84C",
+                                borderRadius: "20px", color: "#C9A84C",
+                                transform: mobilePackages ? "rotate(180deg)" : "rotate(0deg)",
+                                transition: "transform 0.25s ease",
+                                flexShrink: 0, padding: 0,
+                              }}><ChevronDown /></button>
+                          </div>
 
                           {mobilePackages && (
                             <div style={{ backgroundColor: "#0D0D0D" }}>

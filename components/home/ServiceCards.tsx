@@ -32,7 +32,7 @@ const SERVICES = [
     title:       "Detailing Packages",
     description: "Express Detail, Standard Full or Premium Deluxe — tailored packages starting at $80 to match any need and budget.",
     href:        "/services/detailing-packages",
-    image:       "/images/services/detailing-packages/PackagesDetailing.jpg",
+    image:       "/images/services/detailing-packages/PackagesDetailing1.png",
   },
   {
     title:       "Aircraft Detailing",

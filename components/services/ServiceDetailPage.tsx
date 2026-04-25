@@ -195,9 +195,8 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           inset: 0;
           width: 100%;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
           object-position: center;
-          background-color: #0D0D0D;
         }
         .sdp-hero-overlay {
           position: absolute;
@@ -621,7 +620,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           alt={service.title}
           fill
           className="sdp-hero-img"
-          style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
+          style={{ objectFit: service.heroFit || "cover", backgroundColor: service.heroFit === "contain" ? "#0D0D0D" : undefined }}
           priority
         />
         <div className="sdp-hero-overlay" />
@@ -635,12 +634,13 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       {/* ── 2. OVERVIEW ──────────────────────────────────── */}
       <section className="sdp-section">
         <div className="sdp-container">
-          <div className="sdp-overview-grid">
+          <div className="sdp-overview-grid" style={service.slug === "detailing-packages" ? { alignItems: "stretch" } : undefined}>
             {/* Image */}
             <div className="sdp-overview-img-wrap"
-              onClick={() => setLightbox({ src: service.heroImage, alt: service.title })}>
+              style={service.slug === "detailing-packages" ? { height: "auto", minHeight: "420px" } : undefined}
+              onClick={() => setLightbox({ src: service.overviewImage, alt: service.title })}>
               <Image
-                src={service.heroImage}
+                src={service.overviewImage}
                 alt={service.title}
                 fill
                 style={{ objectFit: "contain", borderRadius: "12px", backgroundColor: "#0D0D0D" }}
@@ -708,6 +708,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       </section>
 
       {/* ── 5. PRICING ───────────────────────────────────── */}
+      {service.slug !== "detailing-packages" && (
       <section className="sdp-section-alt">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>Investment</p>
@@ -724,6 +725,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+      )}
 
       {/* ── 6. GALLERY ───────────────────────────────────── */}
       <section className="sdp-section">

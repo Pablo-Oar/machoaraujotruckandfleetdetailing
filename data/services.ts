@@ -31,6 +31,8 @@ export interface ServiceData {
   eyebrow: string
   title: string
   heroImage: string
+  heroFit?: "cover" | "contain"
+  overviewImage: string
   tagline: string
   description: string
   longDescription: string
@@ -77,7 +79,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "paint-correction",
     eyebrow: "Surface Restoration",
     title: "Paint Correction",
-    heroImage: "/images/services/paint-correction/PaintCorrection.jpg",
+    heroImage: "/images/services/paint-correction/ImgPaintCorrection.jpg",
+    overviewImage: "/images/services/paint-correction/PaintCorrection1.png",
     tagline: "Eliminate swirl marks, scratches and oxidation permanently.",
     description:
       "Multi-stage machine polishing that permanently eliminates swirl marks, water spots, light scratches and oxidation. We restore your paint's original clarity — not just mask defects.",
@@ -116,7 +119,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Final Polish & LSP", body: "Ultra-fine finishing polish followed by a paint sealant or ceramic coating to lock in the correction." },
     ],
     gallery: [
-      "/images/services/paint-correction/PaintCorrection.jpg",
+      "/images/services/paint-correction/PaintCorrection1.png",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
@@ -139,7 +142,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "ceramic-coating",
     eyebrow: "Long-Term Protection",
     title: "Ceramic Coating",
-    heroImage: "/images/services/ceramic-coating/CeramicCoating.jpg",
+    heroImage: "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
+    overviewImage: "/images/services/ceramic-coating/CeramicCoating1.png",
     tagline: "3+ years of hydrophobic, UV-resistant paint protection.",
     description:
       "Professional-grade nano-ceramic formula that bonds permanently to your paint, delivering 3–5 years of hydrophobic, UV-resistant, self-cleaning protection. The best investment for any vehicle.",
@@ -178,7 +182,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic Application", body: "Each panel is coated individually in controlled sections. Ceramic cures over 24–48 hours — we recommend keeping the vehicle dry during this period." },
     ],
     gallery: [
-      "/images/services/ceramic-coating/CeramicCoating.jpg",
+      "/images/services/ceramic-coating/CeramicCoating1.png",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     ],
@@ -201,7 +205,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "fleet-detailing",
     eyebrow: "Commercial Services",
     title: "Fleet Detailing",
-    heroImage: "/images/services/fleet-detailing/FleetDetailing.jpg",
+    heroImage: "/images/services/fleet-detailing/ImgFleetDetailing1.png",
+    overviewImage: "/images/services/fleet-detailing/FleetDetailing1.png",
     tagline: "Scheduled programs for businesses with multiple vehicles.",
     description:
       "Scheduled maintenance programs designed for businesses with multiple vehicles. Weekly, bi-weekly or monthly contracts. We keep your fleet looking professional and your drivers proud.",
@@ -240,7 +245,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Consistent Service", body: "Our team shows up on schedule, every time. You get the same quality on visit #1 as visit #50." },
     ],
     gallery: [
-      "/images/services/fleet-detailing/FleetDetailing.jpg",
+      "/images/services/fleet-detailing/FleetDetailing1.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
@@ -263,7 +268,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "interior-detail",
     eyebrow: "Interior Restoration",
     title: "Interior Detail",
-    heroImage: "/images/services/interior-detail/InteriorPremium.jpg",
+    heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
+    overviewImage: "/images/services/interior-detail/InteriorPremium1.png",
     tagline: "Your cabin, looking and smelling brand new.",
     description:
       "Complete interior restoration in two tiers — Express for a quick refresh, or Premium for a deep clean with steam, leather conditioning, odor elimination and full trim detailing.",
@@ -325,7 +331,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "exterior-detail",
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
-    heroImage: "/images/services/exterior-detail/ExteriorPremium.jpg",
+    heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
+    overviewImage: "/images/services/exterior-detail/ExteriorPremium1.png",
     tagline: "Hand wash, clay bar, polish and protective sealant.",
     description:
       "Two tiers of exterior care — Express for a quality hand wash and dry, or Premium with clay bar decontamination, one-stage polish and paint sealant for showroom results.",
@@ -366,7 +373,7 @@ export const SERVICES_DATA: ServiceData[] = [
     gallery: [
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/services/paint-correction/PaintCorrection.jpg",
+      "/images/services/paint-correction/PaintCorrection1.png",
     ],
     faqs: [
       { question: "What's the difference between a wash and an exterior detail?", answer: "A car wash removes surface dirt. An exterior detail includes decontamination, machine polishing and paint protection — it restores the paint, not just cleans it." },
@@ -387,7 +394,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "aircraft-detailing",
     eyebrow: "Specialty Vehicles",
     title: "Aircraft Detailing",
-    heroImage: "/images/services/aircraft-detailing/AircraftDetailing.jpg",
+    heroImage: "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
+    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing.jpg",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
       "Meticulous interior and exterior detailing for private and commercial aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
@@ -437,7 +445,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Boat Detailing", slug: "boat-detailing", image: "/images/services/boat-detailing/ImgBoatDetailing.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing1.png" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
     ],
     metaTitle: "Aircraft Detailing Fresno CA | Macho Araujo Detailing",
@@ -449,7 +457,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "boat-detailing",
     eyebrow: "Marine Detailing",
     title: "Boat Detailing",
-    heroImage: "/images/services/boat-detailing/BoatDetailing.jpg",
+    heroImage: "/images/services/boat-detailing/ImgBoatDetailing.jpg",
+    overviewImage: "/images/services/boat-detailing/BoatDetailing.jpg",
     tagline: "Restore your vessel to showroom condition.",
     description:
       "Marine-grade cleaning, oxidation removal, waxing and protective coating for your vessel. We come to the marina or dock. Restore gelcoat, brightwork and upholstery to showroom condition.",
@@ -511,7 +520,9 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "detailing-packages",
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
-    heroImage: "/images/services/detailing-packages/PackagesDetailing.jpg",
+    heroImage: "/images/services/detailing-packages/ImgDetailingpackages1.png",
+    heroFit: "contain",
+    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
       "Three comprehensive packages designed to fit any need and budget. From a quick refresh to a full restoration, every package is performed with the same premium-quality products and care.",
@@ -572,7 +583,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "headlights-restoration",
     eyebrow: "Visibility & Safety",
     title: "Headlights Restoration",
-    heroImage: "/images/services/headlights-restoration/HeadlightsRestoration.jpg",
+    heroImage: "/images/services/headlights-restoration/ImgHeadlightsRestoration.png",
+    overviewImage: "/images/services/headlights-restoration/HeadlightsRestoration1.png",
     tagline: "Clear headlights. Better visibility. Safer nights.",
     description:
       "Professional headlight restoration removes UV oxidation and yellowing to restore clarity and improve night visibility. Results that last — backed by a UV-resistant protective coating.",
@@ -611,7 +623,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "UV Coating Application", body: "A professional UV-resistant coating is applied to protect the lens and prevent re-yellowing for years." },
     ],
     gallery: [
-      "/images/services/headlights-restoration/HeadlightsRestoration.jpg",
+      "/images/services/headlights-restoration/HeadlightsRestoration1.png",
       "/images/services/headlights-restoration/ImgHeadLights.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
@@ -634,7 +646,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "engine-detailing",
     eyebrow: "Under the Hood",
     title: "Engine Bay Detailing",
-    heroImage: "/images/services/engine-detailing/EngineDetailing.jpg",
+    heroImage: "/images/services/engine-detailing/ImgEngineDetailing.jpg",
+    overviewImage: "/images/services/engine-detailing/EngineDetailing.jpg",
     tagline: "Safely degrease and detail your engine bay.",
     description:
       "Safe, thorough engine bay degreasing and detailing. We remove built-up grease, dust and road grime, then dress all plastics and hoses for a clean, protected engine bay.",
@@ -684,7 +697,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing1.png" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
     ],
     metaTitle: "Engine Bay Detailing Fresno CA | Macho Araujo Detailing",
