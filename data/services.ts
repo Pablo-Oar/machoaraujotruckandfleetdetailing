@@ -205,7 +205,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "fleet-detailing",
     eyebrow: "Commercial Services",
     title: "Fleet Detailing",
-    heroImage: "/images/services/fleet-detailing/ImgFleetDetailing1.png",
+    heroImage: "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
     overviewImage: "/images/services/fleet-detailing/FleetDetailing1.png",
     tagline: "Scheduled programs for businesses with multiple vehicles.",
     description:
@@ -445,7 +445,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Boat Detailing", slug: "boat-detailing", image: "/images/services/boat-detailing/ImgBoatDetailing.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing1.png" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
     ],
     metaTitle: "Aircraft Detailing Fresno CA | Macho Araujo Detailing",
@@ -583,7 +583,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "headlights-restoration",
     eyebrow: "Visibility & Safety",
     title: "Headlights Restoration",
-    heroImage: "/images/services/headlights-restoration/ImgHeadlightsRestoration.png",
+    heroImage: "/images/services/headlights-restoration/HeadLights.png",
     overviewImage: "/images/services/headlights-restoration/HeadlightsRestoration1.png",
     tagline: "Clear headlights. Better visibility. Safer nights.",
     description:
@@ -623,7 +623,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "UV Coating Application", body: "A professional UV-resistant coating is applied to protect the lens and prevent re-yellowing for years." },
     ],
     gallery: [
-      "/images/services/headlights-restoration/HeadlightsRestoration1.png",
+      "/images/services/headlights-restoration/BeforeAfter.png",
       "/images/services/headlights-restoration/ImgHeadLights.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
@@ -697,7 +697,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
-      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing1.png" },
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
     ],
     metaTitle: "Engine Bay Detailing Fresno CA | Macho Araujo Detailing",

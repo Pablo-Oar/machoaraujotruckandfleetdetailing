@@ -201,7 +201,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         .sdp-hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.72) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.50) 100%);
         }
         .sdp-hero-content {
           position: relative;
@@ -740,7 +740,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
                   src={img}
                   alt={`${service.title} gallery ${i + 1}`}
                   fill
-                  style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             ))}

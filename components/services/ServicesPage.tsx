@@ -25,7 +25,7 @@ const PRIMARY_SERVICES = [
       "Paint thickness measurement",
     ],
     price:  "$200 – $350",
-    image:  "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+    image:  "/images/services/paint-correction/ImgPaintCorrection.jpg",
     href:   "/contact",
     flip:   false,
   },
@@ -41,7 +41,7 @@ const PRIMARY_SERVICES = [
       "Deep gloss amplification",
     ],
     price:  "$350 – $550",
-    image:  "/images/services/ceramic-coating/CeramicCoating1.png",
+    image:  "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
     href:   "/contact",
     flip:   true,
   },
@@ -57,7 +57,7 @@ const PRIMARY_SERVICES = [
       "Semi-trucks, vans & heavy vehicles",
     ],
     price:  "Custom Quote",
-    image:  "/images/services/fleet-detailing/FleetDetailing1.png",
+    image:  "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
     href:   "/contact",
     flip:   false,
   },
@@ -89,7 +89,7 @@ const PRIMARY_SERVICES = [
       "Private & commercial aircraft",
     ],
     price:  "Custom Quote",
-    image:  "/images/services/aircraft-detailing/AircraftDetailing.jpg",
+    image:  "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
     href:   "/contact",
     flip:   false,
   },
@@ -105,7 +105,7 @@ const PRIMARY_SERVICES = [
       "Stainless & brightwork polish",
     ],
     price:  "Custom Quote",
-    image:  "/images/services/boat-detailing/BoatDetailing.jpg",
+    image:  "/images/services/boat-detailing/ImgBoatDetailing.jpg",
     href:   "/contact",
     flip:   true,
   },
@@ -163,25 +163,25 @@ const ADDITIONAL = [
   {
     title:    "Exterior Express & Premium",
     price:    "$50 – $150",
-    image:    "/images/blog/Screenshot_20260416_102653_Instagram.jpg",
+    image:    "/images/services/exterior-detail/ImgExteriorPremium.jpg",
     href:     "/contact",
   },
   {
     title:    "Headlights Restoration",
     price:    "$70",
-    image:    "/images/blog/Screenshot_20260416_102531_Instagram.jpg",
+    image:    "/images/services/headlights-restoration/ImgHeadLights.png",
     href:     "/contact",
   },
   {
     title:    "Engine Bay Detailing",
     price:    "$70",
-    image:    "/images/blog/Screenshot_20260416_102346_Gallery.jpg",
+    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
     href:     "/contact",
   },
   {
     title:    "Mobile On-Site Service",
     price:    "We Come To You",
-    image:    "/images/blog/Screenshot_20260416_102234_Gallery.jpg",
+    image:    "/images/blog/EliasServices.png",
     href:     "/contact",
   },
 ]
@@ -216,7 +216,7 @@ export default function ServicesPage() {
         ════════════════════════════════════════════════════ */
         .srv-hero {
           position: relative;
-          height: 360px;
+          height: 620px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -227,7 +227,7 @@ export default function ServicesPage() {
         .srv-hero-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(0,0,0,0.68);
+          background: rgba(0,0,0,0.20);
           z-index: 1;
         }
 
@@ -847,20 +847,14 @@ export default function ServicesPage() {
       ════════════════════════════════════════════════════ */}
       <section className="srv-hero">
         <Image
-          src="/images/blog/Screenshot_20260416_102234_Gallery.jpg"
+          src="/images/services/OurServices01.jpg"
           alt="Professional car detailing services in Fresno CA"
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "fill", backgroundColor: "#0D0D0D" }}
         />
         <div className="srv-hero-overlay" />
-        <div className="srv-hero-content">
-          <span className="eyebrow">Macho Araujo Detailing</span>
-          <h1 className="srv-hero-h1">
-            Professional Detailing<br />Services in Fresno, CA
-          </h1>
-        </div>
       </section>
 
       {/* ════════════════════════════════════════════════════

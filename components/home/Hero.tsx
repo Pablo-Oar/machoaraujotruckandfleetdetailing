@@ -46,8 +46,8 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/portfolio/Screenshot_20260415_134651_Instagram.jpg`}
         style={{
+          backgroundColor: "#0D0D0D",
           position: "absolute",
           inset: 0,
           width: "100%",
