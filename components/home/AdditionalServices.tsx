@@ -254,6 +254,10 @@ export default function AdditionalServices() {
             align-items: center;
           }
 
+          .additional-heading {
+            padding-bottom: 86px;
+          }
+
           .add-banner-overlay {
             background: rgba(0,0,0,0.68) !important;
           }

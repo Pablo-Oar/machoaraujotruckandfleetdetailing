@@ -101,9 +101,12 @@ export default function ServiceCards() {
           right: -50px;
         }
 
-        /* Sin zoom — solo se revela más al expandirse el wrapper */
+        /* Zoom suave en hover */
         .service-card-img {
-          transition: none;
+          transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .service-card:hover .service-card-img {
+          transform: scale(1.08);
         }
 
         /* Overlay degradado */
@@ -203,6 +206,31 @@ export default function ServiceCards() {
           .service-card-title {
             font-size: 17px;
           }
+
+          /* En mobile la imagen se expande pero dentro del contenedor */
+          .service-card:hover,
+          .service-card:active {
+            overflow: hidden;
+          }
+          .service-card:hover .service-card-media,
+          .service-card:active .service-card-media {
+            left: -50px;
+            right: -50px;
+          }
+          .service-card:hover .service-card-title,
+          .service-card:active .service-card-title {
+            color: #C9A84C;
+          }
+          .service-card:hover .service-card-line,
+          .service-card:active .service-card-line {
+            width: 100%;
+          }
+
+          /* Detailing Packages — imagen ajustada al ancho en mobile */
+          .service-card[data-slug="detailing-packages"] .service-card-img {
+            object-fit: cover !important;
+            object-position: top center !important;
+          }
         }
       `}</style>
 
@@ -223,6 +251,7 @@ export default function ServiceCards() {
             key={service.title}
             href={service.href}
             className="service-card"
+            data-slug={service.href.split("/").pop()}
             aria-label={service.title}
           >
             {/* Imagen + overlay se expanden juntos hacia los lados */}

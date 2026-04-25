@@ -598,7 +598,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-container { padding: 0 24px; }
           .sdp-section, .sdp-section-alt { padding: 60px 0; }
           .sdp-overview-grid { grid-template-columns: 1fr; gap: 32px; }
-          .sdp-overview-img-wrap { height: 300px; }
+          .sdp-overview-img-wrap { height: auto; aspect-ratio: 4/3; }
           .sdp-benefits-grid { grid-template-columns: 1fr; gap: 16px; }
           .sdp-gallery-grid { grid-template-columns: 1fr 1fr; }
           .sdp-related-grid { grid-template-columns: 1fr; }
