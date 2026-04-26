@@ -190,6 +190,30 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           text-align: center;
           overflow: hidden;
         }
+        .sdp-hero.aircraft-detailing {
+          height: 520px;
+        }
+        .sdp-hero.aircraft-detailing .sdp-hero-img {
+          transform: scale(1.02) translateX(15px);
+        }
+        .sdp-hero.aircraft-detailing .sdp-hero-content {
+          display: none;
+        }
+        .sdp-hero.paint-correction {
+          height: 370px;
+        }
+        .sdp-hero.paint-correction .sdp-hero-img {
+          transform: scale(1.02) translateX(15px);
+        }
+        .sdp-hero.paint-correction .sdp-hero-content {
+          display: none;
+        }
+        .sdp-hero.detailing-packages {
+          height: 540px;
+        }
+        .sdp-hero.detailing-packages .sdp-hero-content {
+          display: none;
+        }
         .sdp-hero-img {
           position: absolute;
           inset: 0;
@@ -598,7 +622,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-container { padding: 0 24px; }
           .sdp-section, .sdp-section-alt { padding: 60px 0; }
           .sdp-overview-grid { grid-template-columns: 1fr; gap: 32px; }
-          .sdp-overview-img-wrap { height: auto; aspect-ratio: 4/3; }
+          .sdp-overview-img-wrap { height: auto; aspect-ratio: 4/3; min-height: unset !important; }
           .sdp-benefits-grid { grid-template-columns: 1fr; gap: 16px; }
           .sdp-gallery-grid { grid-template-columns: 1fr 1fr; }
           .sdp-related-grid { grid-template-columns: 1fr; }
@@ -608,19 +632,29 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         }
         @media (max-width: 600px) {
           .sdp-hero { height: 320px; }
+          .sdp-hero.aircraft-detailing { height: 300px; }
+          .sdp-hero.aircraft-detailing .sdp-hero-img { transform: scale(1.0); object-position: left; }
+          .sdp-hero.paint-correction { height: 300px; }
+          .sdp-hero.paint-correction .sdp-hero-img { transform: scale(1.0); object-position: left; }
+          .sdp-hero.detailing-packages { height: auto !important; overflow: hidden; width: 100%; }
+          .sdp-hero.detailing-packages .sdp-hero-img { position: relative !important; inset: auto !important; width: 100% !important; height: auto !important; object-fit: contain !important; background-color: #0D0D0D; }
           .sdp-gallery-grid { grid-template-columns: 1fr; }
           .sdp-benefits-grid { grid-template-columns: 1fr; }
+          .detailing-packages-overview { margin: 0 -24px; border-radius: 0 !important; }
         }
       `}</style>
 
       {/* ── 1. PAGE HERO ─────────────────────────────────── */}
-      <section className="sdp-hero">
+      <section className={`sdp-hero${service.slug === "aircraft-detailing" ? " aircraft-detailing" : ""}${service.slug === "paint-correction" ? " paint-correction" : ""}${service.slug === "detailing-packages" ? " detailing-packages" : ""}`}>
         <Image
           src={service.heroImage}
           alt={service.title}
           fill
           className="sdp-hero-img"
-          style={{ objectFit: service.heroFit || "cover", backgroundColor: service.heroFit === "contain" ? "#0D0D0D" : undefined }}
+          style={{
+            objectFit: service.heroFit || "cover",
+            backgroundColor: service.heroFit === "contain" ? "#0D0D0D" : undefined
+          }}
           priority
         />
         <div className="sdp-hero-overlay" />
@@ -636,7 +670,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         <div className="sdp-container">
           <div className="sdp-overview-grid" style={service.slug === "detailing-packages" ? { alignItems: "stretch" } : undefined}>
             {/* Image */}
-            <div className="sdp-overview-img-wrap"
+            <div className={`sdp-overview-img-wrap${service.slug === "detailing-packages" ? " detailing-packages-overview" : ""}`}
               style={service.slug === "detailing-packages" ? { height: "auto", minHeight: "420px" } : undefined}
               onClick={() => setLightbox({ src: service.overviewImage, alt: service.title })}>
               <Image

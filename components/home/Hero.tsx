@@ -90,7 +90,7 @@ export default function Hero() {
             letterSpacing: "0.15em",
             marginBottom: "20px",
           }}>
-            Elias Car Detailing · Fresno, CA
+            Macho Araujo Truck & Fleet Detailing . Fresno, CA
           </span>
 
           {/* H1 */}

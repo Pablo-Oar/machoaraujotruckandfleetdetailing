@@ -255,7 +255,7 @@ export default function WhyChooseUs() {
                 Fresno&apos;s Most Trusted<br />Detailing Specialists
               </h2>
               <p className="why-heading-desc">
-                Macho Araujo Car Detailing brings certified expertise and premium products directly to your door.
+                Macho Araujo Truck & Fleet Detailing brings certified expertise and premium products directly to your door.
                 We&apos;ve built our reputation one vehicle at a time since 2020.
               </p>
               <a href="/about" className="why-cta-link">

@@ -216,7 +216,7 @@ export default function ServicesPage() {
         ════════════════════════════════════════════════════ */
         .srv-hero {
           position: relative;
-          height: 620px;
+          height: 540px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -249,7 +249,7 @@ export default function ServicesPage() {
           text-transform: uppercase;
           letter-spacing: -0.01em;
           line-height: 1.08;
-          max-width: 780px;
+          max-width: 1020px;
           margin: 0 auto;
         }
 
@@ -427,7 +427,8 @@ export default function ServicesPage() {
         }
 
         .pkg-card:hover {
-          border-color: rgba(201,168,76,0.35);
+          border-color: #C9A84C;
+          background-color: #111111;
         }
 
         .pkg-card.highlight {
@@ -779,7 +780,7 @@ export default function ServicesPage() {
 
         @media (max-width: 640px) {
           /* Hero */
-          .srv-hero { height: 280px; }
+          .srv-hero { height: 240px; }
 
           /* Services section */
           .srv-section { padding: 64px 0; }

@@ -79,7 +79,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "paint-correction",
     eyebrow: "Surface Restoration",
     title: "Paint Correction",
-    heroImage: "/images/services/paint-correction/ImgPaintCorrection.jpg",
+    heroImage: "/images/services/paint-correction/HeroPaintCorrection.png",
     overviewImage: "/images/services/paint-correction/PaintCorrection1.png",
     tagline: "Eliminate swirl marks, scratches and oxidation permanently.",
     description:
@@ -119,7 +119,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Final Polish & LSP", body: "Ultra-fine finishing polish followed by a paint sealant or ceramic coating to lock in the correction." },
     ],
     gallery: [
-      "/images/services/paint-correction/PaintCorrection1.png",
+      "/images/services/paint-correction/ImgPaintCorrection.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
     ],
@@ -394,8 +394,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "aircraft-detailing",
     eyebrow: "Specialty Vehicles",
     title: "Aircraft Detailing",
-    heroImage: "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
-    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing.jpg",
+    heroImage: "/images/services/aircraft-detailing/HeroAircraft.png",
+    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing1.png",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
       "Meticulous interior and exterior detailing for private and commercial aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
@@ -434,7 +434,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Exterior Polish", body: "Exterior wash, deoxidation and polishing of aluminum or composite surfaces using non-corrosive aviation compounds." },
     ],
     gallery: [
-      "/images/services/aircraft-detailing/AircraftDetailing.jpg",
+      "/images/services/aircraft-detailing/AircraftDetailing1.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
@@ -458,7 +458,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Marine Detailing",
     title: "Boat Detailing",
     heroImage: "/images/services/boat-detailing/ImgBoatDetailing.jpg",
-    overviewImage: "/images/services/boat-detailing/BoatDetailing.jpg",
+    overviewImage: "/images/services/boat-detailing/BoatDetailing1.png",
     tagline: "Restore your vessel to showroom condition.",
     description:
       "Marine-grade cleaning, oxidation removal, waxing and protective coating for your vessel. We come to the marina or dock. Restore gelcoat, brightwork and upholstery to showroom condition.",
@@ -497,7 +497,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Protection & Interior", body: "Marine wax or ceramic coat applied for lasting protection. Interior cabin vacuumed, upholstery treated, brightwork polished." },
     ],
     gallery: [
-      "/images/services/boat-detailing/BoatDetailing.jpg",
+      "/images/services/boat-detailing/BoatDetailing1.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     ],
@@ -520,8 +520,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "detailing-packages",
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
-    heroImage: "/images/services/detailing-packages/ImgDetailingpackages1.png",
-    heroFit: "contain",
+    heroImage: "/images/services/detailing-packages/HeroPackages.png",
     overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
@@ -647,7 +646,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Under the Hood",
     title: "Engine Bay Detailing",
     heroImage: "/images/services/engine-detailing/ImgEngineDetailing.jpg",
-    overviewImage: "/images/services/engine-detailing/EngineDetailing.jpg",
+    overviewImage: "/images/services/engine-detailing/EngineDetailing1.png",
     tagline: "Safely degrease and detail your engine bay.",
     description:
       "Safe, thorough engine bay degreasing and detailing. We remove built-up grease, dust and road grime, then dress all plastics and hoses for a clean, protected engine bay.",
@@ -686,7 +685,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Dry & Dress", body: "All surfaces dried with microfiber and compressed air. Plastics and hoses dressed with UV protectant for a clean, finished look." },
     ],
     gallery: [
-      "/images/services/engine-detailing/EngineDetailing.jpg",
+      "/images/services/engine-detailing/EngineDetailing1.png",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     ],
