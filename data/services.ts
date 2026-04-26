@@ -457,7 +457,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "boat-detailing",
     eyebrow: "Marine Detailing",
     title: "Boat Detailing",
-    heroImage: "/images/services/boat-detailing/ImgBoatDetailing.jpg",
+    heroImage: "/images/services/boat-detailing/HeroBoatDetailing.png",
     overviewImage: "/images/services/boat-detailing/BoatDetailing1.png",
     tagline: "Restore your vessel to showroom condition.",
     description:

@@ -24,6 +24,13 @@ type MediaItem = {
 const MEDIA: MediaItem[] = [
   /* ── Videos ──────────────────────────────────────────────── */
   {
+    id: "v7",
+    type: "video",
+    src: "/videos/proceso_web.mp4",
+    category: "Full Detail",
+    label: "Our Detailing Process",
+  },
+  {
     id: "v6",
     type: "video",
     src: "/videos/Edit01.mp4",

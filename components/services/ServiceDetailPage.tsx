@@ -214,6 +214,12 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         .sdp-hero.detailing-packages .sdp-hero-content {
           display: none;
         }
+        .sdp-hero.boat-detailing {
+          height: 540px;
+        }
+        .sdp-hero.boat-detailing .sdp-hero-content {
+          display: none;
+        }
         .sdp-hero-img {
           position: absolute;
           inset: 0;
@@ -638,6 +644,8 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-hero.paint-correction .sdp-hero-img { transform: scale(1.0); object-position: left; }
           .sdp-hero.detailing-packages { height: auto !important; overflow: hidden; width: 100%; }
           .sdp-hero.detailing-packages .sdp-hero-img { position: relative !important; inset: auto !important; width: 100% !important; height: auto !important; object-fit: contain !important; background-color: #0D0D0D; }
+          .sdp-hero.boat-detailing { height: auto !important; overflow: hidden; width: 100%; }
+          .sdp-hero.boat-detailing .sdp-hero-img { position: relative !important; inset: auto !important; width: 100% !important; height: auto !important; object-fit: contain !important; background-color: #0D0D0D; }
           .sdp-gallery-grid { grid-template-columns: 1fr; }
           .sdp-benefits-grid { grid-template-columns: 1fr; }
           .detailing-packages-overview { margin: 0 -24px; border-radius: 0 !important; }
@@ -645,7 +653,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       `}</style>
 
       {/* ── 1. PAGE HERO ─────────────────────────────────── */}
-      <section className={`sdp-hero${service.slug === "aircraft-detailing" ? " aircraft-detailing" : ""}${service.slug === "paint-correction" ? " paint-correction" : ""}${service.slug === "detailing-packages" ? " detailing-packages" : ""}`}>
+      <section className={`sdp-hero${service.slug === "aircraft-detailing" ? " aircraft-detailing" : ""}${service.slug === "paint-correction" ? " paint-correction" : ""}${service.slug === "detailing-packages" ? " detailing-packages" : ""}${service.slug === "boat-detailing" ? " boat-detailing" : ""}`}>
         <Image
           src={service.heroImage}
           alt={service.title}

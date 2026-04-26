@@ -56,7 +56,7 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/videos/lavadoAuto.mp4`} type="video/mp4" />
+        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/videos/proceso_web.mp4`} type="video/mp4" />
       </video>
 
       {/* ── OVERLAY ────────────────────────────────────────── */}
