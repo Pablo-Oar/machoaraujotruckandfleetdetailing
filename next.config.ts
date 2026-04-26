@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production"
 
 const nextConfig: NextConfig = {
   output: "export",
-  distDir: "docs",
+  trailingSlash: true,
   basePath: isProd ? "/machoaraujotruckandfleetdetailing" : "",
   assetPrefix: isProd ? "/machoaraujotruckandfleetdetailing/" : "",
   images: { unoptimized: true },
