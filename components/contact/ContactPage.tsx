@@ -13,7 +13,7 @@ import Image from "@/components/ui/AppImage"
 /* ── Reemplazar con el endpoint real de Formspree ───────────── */
 /* Ir a https://formspree.io, crear cuenta gratuita, copiar el  */
 /* endpoint y reemplazar este placeholder.                       */
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojybkjl"
 
 /* ── Datos de contacto ──────────────────────────────────────── */
 const CONTACT_INFO = [
@@ -105,17 +105,22 @@ const SOCIAL_LINKS = [
 
 const SERVICE_OPTIONS = [
   "Select a service...",
+  // Individual Services
   "Paint Correction",
   "Ceramic Coating",
-  "Fleet Detailing",
-  "Interior Detail",
-  "Exterior Detail",
-  "Full Detail Package",
-  "Aircraft Detailing",
-  "Boat Detailing",
+  "Interior Express Detail",
+  "Interior Premium Detail",
+  "Exterior Express Detail",
+  "Exterior Premium Detail",
   "Headlights Restoration",
   "Engine Bay Detailing",
-  "Mobile On-Site Service",
+  "Fleet Detailing",
+  "Aircraft Detailing",
+  "Boat Detailing",
+  // Packages
+  "Express Detail Package",
+  "Standard Full Detail Package",
+  "Premium Deluxe Package",
   "Other",
 ]
 
