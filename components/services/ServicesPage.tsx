@@ -125,7 +125,8 @@ const PACKAGES = [
       "Exterior wash & hand drying",
     ],
     highlight: false,
-    cta:       "Book Express",
+    cta:       "See Express Detail",
+    href:      "/services/express-detail",
   },
   {
     name:      "Standard Full Detail",
@@ -139,7 +140,8 @@ const PACKAGES = [
       "Tire waxing",
     ],
     highlight: true,
-    cta:       "Book Standard",
+    cta:       "See Standard Full",
+    href:      "/services/standard-full-detail",
   },
   {
     name:      "Premium Deluxe",
@@ -154,7 +156,8 @@ const PACKAGES = [
       "FREE ozone treatment",
     ],
     highlight: false,
-    cta:       "Book Premium",
+    cta:       "See Premium Deluxe",
+    href:      "/services/premium-deluxe",
   },
 ]
 
@@ -953,7 +956,7 @@ export default function ServicesPage() {
                   ))}
                 </ul>
 
-                <Link href="/contact" className="pkg-cta">
+                <Link href={pkg.href} className="pkg-cta">
                   {pkg.cta}
                 </Link>
               </div>

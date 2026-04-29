@@ -569,9 +569,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I customize a package?", answer: "Yes — we can add or remove specific services to build a custom package. Just let us know what you need and we'll quote accordingly." },
     ],
     related: [
-      { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
-      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
+      { title: "Express Detail", slug: "express-detail", image: "/images/services/detailing-packages/HeroPackages.png" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
     metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
@@ -638,6 +638,195 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     metaTitle: "Headlight Restoration Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional headlight restoration in Fresno, CA. Remove yellowing and oxidation, restore clarity and improve night visibility. Mobile service — we come to you.",
+  },
+
+  /* ── 11. EXPRESS DETAIL ─────────────────────────────────── */
+  {
+    slug: "express-detail",
+    eyebrow: "Quick Refresh",
+    title: "Express Detail",
+    heroImage: "/images/services/detailing-packages/HeroPackages.png",
+    overviewImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+    tagline: "Quick, thorough refresh — in and out in under 90 minutes.",
+    description:
+      "Our entry-level package covers everything your vehicle needs for day-to-day maintenance. A proper hand wash, full interior vacuum, wipe-down, glass cleaning and tire care — done right, every time.",
+    longDescription:
+      "The Express Detail is designed for busy people who want their car looking sharp without committing to a full day of service. It's the ideal maintenance detail between deeper cleans, or the go-to option before a meeting, a trip, or a weekend out. We use the same professional-grade products and microfiber tools on every package — Express included. No shortcuts, just a tighter scope.",
+    features: [
+      "Basic vacuum & blow out (seats, floors, trunk)",
+      "Interior wipe-down (dash, doors, console)",
+      "Glass cleaning (interior & exterior)",
+      "Tire cleaning & dressing",
+      "Exterior two-bucket hand wash & hand drying",
+      "Completed in 1–1.5 hours",
+    ],
+    price: "Starting at $80",
+    priceNote: "Express Detail: $80–$120 depending on vehicle size and condition. SUVs and trucks at the higher end.",
+    benefits: [
+      {
+        icon: ICONS.clock,
+        title: "Fast Turnaround",
+        body: "In and out in 60–90 minutes. Perfect for a quick refresh before a trip, meeting or event without rearranging your day.",
+      },
+      {
+        icon: ICONS.mobile,
+        title: "We Come to You",
+        body: "No drop-off, no waiting room. Book a time and we show up at your home, office or wherever the car is parked.",
+      },
+      {
+        icon: ICONS.star,
+        title: "Professional Quality",
+        body: "Same premium products and microfiber tools used in our higher-tier packages. Express scope — not express standards.",
+      },
+    ],
+    steps: [
+      { number: "01", title: "Vacuum & Blow Out", body: "Full interior vacuum including under seats, door pockets and trunk. Compressed air to clear vents, crevices and tight corners." },
+      { number: "02", title: "Interior Wipe-Down & Glass", body: "Dashboard, console, door panels and trim wiped clean. All glass cleaned inside and out for clear visibility." },
+      { number: "03", title: "Exterior Wash & Tires", body: "Two-bucket hand wash, tire cleaning and hand drying with plush microfiber — no swirl-inducing brushes or spin dryers." },
+    ],
+    gallery: [
+      "/images/services/detailing-packages/HeroPackages.png",
+      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+    ],
+    faqs: [
+      { question: "How long does the Express Detail take?", answer: "Typically 60–90 minutes for a standard car. SUVs and trucks may take up to 2 hours. We confirm the estimated time when you book." },
+      { question: "What's not included in Express?", answer: "The Express Detail does not include carpet shampooing, leather conditioning, clay bar, machine polishing or steam cleaning. For those services, see our Standard Full Detail or Premium Deluxe packages." },
+      { question: "Can I upgrade from Express to Standard the same day?", answer: "Yes — if schedule allows, we can upgrade your appointment on the spot. Just let us know before we start and we'll adjust the time and quote accordingly." },
+    ],
+    related: [
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
+      { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+    ],
+    metaTitle: "Express Detail Fresno CA | Macho Araujo Detailing",
+    metaDescription: "Express car detail in Fresno, CA. Quick hand wash, vacuum, wipe-down and glass cleaning. Done in 90 minutes. Mobile — we come to you. Starting at $80.",
+  },
+
+  /* ── 12. STANDARD FULL DETAIL ───────────────────────────── */
+  {
+    slug: "standard-full-detail",
+    eyebrow: "Most Popular",
+    title: "Standard Full Detail",
+    heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
+    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
+    tagline: "Complete inside and out — our most popular package.",
+    description:
+      "Everything in the Express Detail plus carpet cleaning, interior degreaser, dashboard shining, leather conditioning and tire waxing. The go-to choice for a thorough clean that covers all the bases.",
+    longDescription:
+      "The Standard Full Detail is what most customers choose — and for good reason. It goes beyond the basics to give your vehicle a true deep clean inside and out. Carpets get properly cleaned, leather is conditioned to prevent cracking, and every surface is degreased and dressed. It's the right package for monthly maintenance, pre-sale prep, or any time your car needs more than a quick refresh.",
+    features: [
+      "Everything in Express Detail",
+      "Carpet cleaning",
+      "Interior degreaser & dashboard shining",
+      "Leather conditioning",
+      "Tire waxing",
+      "Completed in 2.5–3.5 hours",
+    ],
+    price: "Starting at $130",
+    priceNote: "Standard Full Detail: $130–$160 depending on vehicle size and condition. Ideal for sedans, SUVs and light trucks.",
+    benefits: [
+      {
+        icon: ICONS.check,
+        title: "Leather Care Included",
+        body: "We clean and condition your leather seats to restore softness, remove grime and prevent cracking and fading over time.",
+      },
+      {
+        icon: ICONS.spray,
+        title: "Carpet & Interior Deep Clean",
+        body: "Carpet cleaning and interior degreaser tackle embedded dirt, stains and built-up grime that vacuuming alone can't remove.",
+      },
+      {
+        icon: ICONS.car,
+        title: "Best Value Package",
+        body: "Our most popular tier for a reason — full interior and exterior coverage at a price that fits regular maintenance budgets.",
+      },
+    ],
+    steps: [
+      { number: "01", title: "Express Foundation", body: "We start with the full Express Detail: vacuum, blow out, interior wipe-down, glass cleaning, tire cleaning and exterior hand wash." },
+      { number: "02", title: "Carpet & Interior Deep Clean", body: "Carpet cleaning with interior degreaser applied to all high-contact surfaces. Dashboard and trim shined and dressed." },
+      { number: "03", title: "Leather & Tire Finish", body: "Leather seats cleaned and conditioned. Tires waxed and dressed for a clean, long-lasting finish." },
+    ],
+    gallery: [
+      "/images/services/interior-detail/InteriorPremium1.png",
+      "/images/services/detailing-packages/PackagesDetailing1.png",
+      "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+    ],
+    faqs: [
+      { question: "How long does the Standard Full Detail take?", answer: "Typically 2.5 to 3.5 hours depending on vehicle size and condition. We confirm the estimated time when you book." },
+      { question: "Does it include steam cleaning?", answer: "The Standard Full Detail includes carpet cleaning and interior degreaser. Steam sanitization is part of our Premium Deluxe package. If you want steam added, we can quote it as an add-on." },
+      { question: "Is this package good for pre-sale prep?", answer: "Yes — the Standard Full Detail is one of the most popular options for pre-sale preparation. It makes the interior look and smell fresh and the exterior clean and presentable without the full Premium investment." },
+    ],
+    related: [
+      { title: "Express Detail", slug: "express-detail", image: "/images/services/detailing-packages/HeroPackages.png" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+    ],
+    metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
+    metaDescription: "Standard Full Detail in Fresno, CA. Carpet cleaning, leather conditioning, interior degreaser and tire waxing. Most popular package. Mobile — starting at $130.",
+  },
+
+  /* ── 13. PREMIUM DELUXE ─────────────────────────────────── */
+  {
+    slug: "premium-deluxe",
+    eyebrow: "Full Restoration",
+    title: "Premium Deluxe",
+    heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
+    overviewImage: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+    tagline: "Our best package — full restoration inside and out.",
+    description:
+      "Everything in Standard Full Detail plus full interior waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection, liquid wax and a FREE ozone treatment. Our most comprehensive package.",
+    longDescription:
+      "The Premium Deluxe is for when you want everything done right — no compromises. It builds on the Standard Full Detail with steam sanitization of every surface, fabric and carpet shampooing, ceramic protection on the windows and full liquid wax on the exterior. The free ozone treatment eliminates odors at the molecular level — smoke, pets, mildew — leaving your cabin smelling completely neutral. If you want your car to feel brand new, this is the package.",
+    features: [
+      "Everything in Standard Full Detail",
+      "All inside waxing & UV protection",
+      "Fabric, seat & floor shampoo + steam clean",
+      "Windows ceramic protection (+1 month)",
+      "Liquid wax protection (exterior)",
+      "FREE ozone treatment (odor elimination)",
+    ],
+    price: "Contact Us for Pricing",
+    priceNote: "Premium Deluxe pricing varies by vehicle size, condition and time required (5–7 hours). Contact us for an accurate quote.",
+    benefits: [
+      {
+        icon: ICONS.shield,
+        title: "Steam Sanitization",
+        body: "Hot steam kills 99% of bacteria, allergens and mold spores on every surface — seats, carpet, vents, trim and door pockets.",
+      },
+      {
+        icon: ICONS.droplet,
+        title: "Ceramic Window Protection",
+        body: "A ceramic layer on all glass improves water beading, reduces glare and keeps windows cleaner for up to a month after service.",
+      },
+      {
+        icon: ICONS.zap,
+        title: "FREE Ozone Treatment",
+        body: "Ozone gas neutralizes odors at the molecular level — smoke, pet, mildew and food odors eliminated completely, not masked.",
+      },
+    ],
+    steps: [
+      { number: "01", title: "Standard Detail Foundation", body: "We complete the full Standard Detail first — express base, carpet cleaning, degreaser, leather and tires — as the foundation." },
+      { number: "02", title: "Steam & Shampoo", body: "Hot steam applied to all interior surfaces. Fabric seats, floor mats and carpets shampooed and extracted for a deep clean." },
+      { number: "03", title: "Wax, Ceramic & Ozone", body: "Interior UV wax applied, exterior liquid waxed, windows ceramic coated. Vehicle sealed and ozone treatment run to eliminate all odors." },
+    ],
+    gallery: [
+      "/images/services/exterior-detail/ExteriorPremium1.png",
+      "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+      "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
+    ],
+    faqs: [
+      { question: "How long does the Premium Deluxe take?", answer: "The Premium Deluxe takes 5–7 hours depending on vehicle size and condition. We recommend booking it on a day when you don't need the vehicle — we'll let you know when it's ready." },
+      { question: "What exactly is ozone treatment?", answer: "Ozone (O3) is a gas that neutralizes odor molecules on contact. We seal the vehicle, run the ozone generator for 30–60 minutes, then ventilate. It eliminates smoke, pet, food and mildew odors completely — not just masks them with fragrance." },
+      { question: "Is the ceramic window protection the same as ceramic coating?", answer: "No — the window ceramic protection included in Premium Deluxe is a maintenance-grade glass sealant that lasts approximately 1 month. Full ceramic coating is a separate service. The window protection improves water beading and reduces glare at no extra cost." },
+    ],
+    related: [
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
+      { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
+    ],
+    metaTitle: "Premium Deluxe Detail Fresno CA | Macho Araujo Detailing",
+    metaDescription: "Premium Deluxe car detail in Fresno, CA. Full steam clean, shampoo, ozone treatment, ceramic windows and liquid wax. Our best package. Mobile — contact us for pricing.",
   },
 
   /* ── 10. ENGINE DETAILING ───────────────────────────────── */

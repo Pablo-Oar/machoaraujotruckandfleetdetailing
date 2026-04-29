@@ -16,9 +16,9 @@ type DropdownItem = PlainItem | SubmenuItem
    NAVIGATION DATA
    ───────────────────────────────────────────────────────────── */
 const PACKAGES_ITEMS: PlainItem[] = [
-  { label: "Express Detail",        href: "/services/detailing-packages" },
-  { label: "Standard Full Detail",  href: "/services/detailing-packages" },
-  { label: "Premium Deluxe",        href: "/services/detailing-packages" },
+  { label: "Express Detail",        href: "/services/express-detail"       },
+  { label: "Standard Full Detail",  href: "/services/standard-full-detail" },
+  { label: "Premium Deluxe",        href: "/services/premium-deluxe"       },
 ]
 
 const SERVICES_DROPDOWN: DropdownItem[] = [
