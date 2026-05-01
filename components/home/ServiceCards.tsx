@@ -12,7 +12,7 @@ import Image from "@/components/ui/AppImage"
 const SERVICES = [
   {
     title:       "Paint Correction",
-    description: "Multi-stage polishing to eliminate swirl marks, scratches and oxidation. Your paint, flawless again.",
+    description: "Remove scratches, imperfections and bring the shine back while restoring depth, gloss and clarity.",
     href:        "/services/paint-correction",
     image:       "/images/services/paint-correction/ImgPaintCorrection.jpg",
   },
@@ -24,7 +24,7 @@ const SERVICES = [
   },
   {
     title:       "Ceramic Coating",
-    description: "Professional-grade ceramic protection with 3+ years of hydrophobic, UV-resistant shield.",
+    description: "Protect your paint with a professional grade ceramic coating with 5+ years of hydrophobic, UV-resistant shield.",
     href:        "/services/ceramic-coating",
     image:       "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
   },
@@ -32,17 +32,17 @@ const SERVICES = [
     title:       "Detailing Packages",
     description: "Express Detail, Standard Full or Premium Deluxe — tailored packages starting at $80 to match any need and budget.",
     href:        "/services/detailing-packages",
-    image:       "/images/services/detailing-packages/ImgDetailingpackages1.png",
+    image:       "/images/services/detailing-packages/ImgHomeDetailingPackages.png",
   },
   {
     title:       "Aircraft Detailing",
-    description: "Meticulous interior and exterior detailing for private and commercial aircraft.",
+    description: "Meticulous Interior and exterior detailing for private and charter aircrafts.",
     href:        "/services/aircraft-detailing",
     image:       "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
   },
   {
     title:       "Boat Detailing",
-    description: "Marine-grade cleaning, waxing and protection to keep your vessel looking showroom-ready.",
+    description: "Keep your boat looking its best with our detailing service. From hull washing to interior deep cleaning and wax protection.",
     href:        "/services/boat-detailing",
     image:       "/images/services/boat-detailing/ImgBoatDetailing.jpg",
   },

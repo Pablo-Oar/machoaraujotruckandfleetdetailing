@@ -24,8 +24,8 @@ type Banner = {
 const BANNERS: Banner[] = [
   {
     title:    "Interior Premium & Express",
-    subtitle: "Deep clean of every surface, seats, carpets and trim.",
-    price:    "$70 – $180",
+    subtitle: "Contact us today for a clean, fresh smelling interior that enhances your driving experience and maintains your car's value.",
+    price:    "Starting at $65",
     href:     "/services/interior-detail",
     image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     checks:   [
@@ -37,8 +37,8 @@ const BANNERS: Banner[] = [
   },
   {
     title:    "Exterior Premium & Express",
-    subtitle: "Hand wash, clay bar, polish and protective sealant.",
-    price:    "$50 – $150",
+    subtitle: "We don't just \"wash your car\", your exterior also deserves a proper detail car wash and that's what you'll be getting with our detailing service.",
+    price:    "Starting at $50",
     href:     "/services/exterior-detail",
     image:    "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     checks:   [
@@ -51,15 +51,22 @@ const BANNERS: Banner[] = [
   {
     title:    "Headlights Restoration",
     subtitle: "Restore clarity and improve night visibility.",
-    price:    "$70",
+    price:    "$80",
     href:     "/services/headlights-restoration",
     image:    "/images/services/headlights-restoration/ImgHeadLights.png",
   },
   {
     title:    "Engine Detailing",
-    subtitle: "Safely degrease and detail your engine bay.",
-    price:    "$70",
+    subtitle: "Safely remove dust, dirt & debris to get a Like-New car engine again.",
+    price:    "$80",
     href:     "/services/engine-detailing",
+    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
+  },
+  {
+    title:    "Ozone Treatment",
+    subtitle: "Ozone gas treatment is the MOST EFFECTIVE way to eliminate odors inside your vehicle; it eliminates odors at the molecular level rather than just masking them with fragrances.",
+    price:    "$70",
+    href:     "/services/ozone-treatment",
     image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
   },
 ]
@@ -289,7 +296,7 @@ export default function AdditionalServices() {
         {/* ── HEADING ─────────────────────────────────────── */}
         <div className="additional-heading">
           <h2 className="section-h2">
-            Additional Detailing Services<br />in Fresno, California
+            Additional Services in Fresno &amp; Central Valley
           </h2>
         </div>
 

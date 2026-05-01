@@ -649,16 +649,16 @@ export const SERVICES_DATA: ServiceData[] = [
     overviewImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     tagline: "Quick, thorough refresh — in and out in under 90 minutes.",
     description:
-      "Our entry-level package covers everything your vehicle needs for day-to-day maintenance. A proper hand wash, full interior vacuum, wipe-down, glass cleaning and tire care — done right, every time.",
+      "Our entry-level package covers everything your vehicle needs for day-to-day maintenance. A proper exterior foam washing, full interior vacuum, wipe-down, glass cleaning and tire care — done right, every time.",
     longDescription:
       "The Express Detail is designed for busy people who want their car looking sharp without committing to a full day of service. It's the ideal maintenance detail between deeper cleans, or the go-to option before a meeting, a trip, or a weekend out. We use the same professional-grade products and microfiber tools on every package — Express included. No shortcuts, just a tighter scope.",
     features: [
       "Basic vacuum & blow out (seats, floors, trunk)",
       "Interior wipe-down (dash, doors, console)",
       "Glass cleaning (interior & exterior)",
-      "Tire cleaning & dressing",
-      "Exterior two-bucket hand wash & hand drying",
-      "Completed in 1–1.5 hours",
+      "Tire cleaning",
+      "Exterior washing & hand drying",
+      "Complete in 1.5 - 2 hours",
     ],
     price: "Starting at $80",
     priceNote: "Express Detail: $80–$120 depending on vehicle size and condition. SUVs and trucks at the higher end.",
@@ -682,7 +682,7 @@ export const SERVICES_DATA: ServiceData[] = [
     steps: [
       { number: "01", title: "Vacuum & Blow Out", body: "Full interior vacuum including under seats, door pockets and trunk. Compressed air to clear vents, crevices and tight corners." },
       { number: "02", title: "Interior Wipe-Down & Glass", body: "Dashboard, console, door panels and trim wiped clean. All glass cleaned inside and out for clear visibility." },
-      { number: "03", title: "Exterior Wash & Tires", body: "Two-bucket hand wash, tire cleaning and hand drying with plush microfiber — no swirl-inducing brushes or spin dryers." },
+      { number: "03", title: "Exterior Wash & Tires", body: "Exterior foam washing, tire cleaning and hand drying with plush microfiber — no swirl-inducing brushes or spin dryers." },
     ],
     gallery: [
       "/images/services/detailing-packages/HeroPackages.png",
@@ -743,7 +743,7 @@ export const SERVICES_DATA: ServiceData[] = [
       },
     ],
     steps: [
-      { number: "01", title: "Express Foundation", body: "We start with the full Express Detail: vacuum, blow out, interior wipe-down, glass cleaning, tire cleaning and exterior hand wash." },
+      { number: "01", title: "Express Foundation", body: "We start with the full Express Detail: vacuum, blow out, interior wipe-down, glass cleaning, tire cleaning and exterior foam washing." },
       { number: "02", title: "Carpet & Interior Deep Clean", body: "Carpet cleaning with interior degreaser applied to all high-contact surfaces. Dashboard and trim shined and dressed." },
       { number: "03", title: "Leather & Tire Finish", body: "Leather seats cleaned and conditioned. Tires waxed and dressed for a clean, long-lasting finish." },
     ],
@@ -775,19 +775,19 @@ export const SERVICES_DATA: ServiceData[] = [
     overviewImage: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     tagline: "Our best package — full restoration inside and out.",
     description:
-      "Everything in Standard Full Detail plus full interior waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection, liquid wax and a FREE ozone treatment. Our most comprehensive package.",
+      "Everything in Standard Full Detail plus full interior waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection, Hydro-speed ceramic protection and a FREE ozone treatment. Our most comprehensive package.",
     longDescription:
-      "The Premium Deluxe is for when you want everything done right — no compromises. It builds on the Standard Full Detail with steam sanitization of every surface, fabric and carpet shampooing, ceramic protection on the windows and full liquid wax on the exterior. The free ozone treatment eliminates odors at the molecular level — smoke, pets, mildew — leaving your cabin smelling completely neutral. If you want your car to feel brand new, this is the package.",
+      "The Premium Deluxe is for when you want everything done right — no compromises. It builds on the Standard Full Detail with steam sanitization of every surface, fabric and carpet shampooing, ceramic protection on the windows and Hydro-speed ceramic protection on the exterior. The free ozone treatment eliminates odors at the molecular level — smoke, pets, mildew — leaving your cabin smelling completely neutral. If you want your car to feel brand new, this is the package.",
     features: [
       "Everything in Standard Full Detail",
       "All inside waxing & UV protection",
       "Fabric, seat & floor shampoo + steam clean",
       "Windows ceramic protection (+1 month)",
-      "Liquid wax protection (exterior)",
+      "Hydro-speed ceramic protection",
       "FREE ozone treatment (odor elimination)",
     ],
-    price: "Contact Us for Pricing",
-    priceNote: "Premium Deluxe pricing varies by vehicle size, condition and time required (5–7 hours). Contact us for an accurate quote.",
+    price: "Starting at $200",
+    priceNote: "Premium Deluxe pricing varies by vehicle size, condition and time required (3.5 - 4.5 hours). Contact us for an accurate quote.",
     benefits: [
       {
         icon: ICONS.shield,
@@ -808,7 +808,7 @@ export const SERVICES_DATA: ServiceData[] = [
     steps: [
       { number: "01", title: "Standard Detail Foundation", body: "We complete the full Standard Detail first — express base, carpet cleaning, degreaser, leather and tires — as the foundation." },
       { number: "02", title: "Steam & Shampoo", body: "Hot steam applied to all interior surfaces. Fabric seats, floor mats and carpets shampooed and extracted for a deep clean." },
-      { number: "03", title: "Wax, Ceramic & Ozone", body: "Interior UV wax applied, exterior liquid waxed, windows ceramic coated. Vehicle sealed and ozone treatment run to eliminate all odors." },
+      { number: "03", title: "Ceramic & Ozone", body: "Interior UV wax applied, exterior ceramic protection applied, windows ceramic coated. Vehicle sealed and ozone treatment run to eliminate all odors." },
     ],
     gallery: [
       "/images/services/exterior-detail/ExteriorPremium1.png",

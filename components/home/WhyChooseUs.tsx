@@ -1,3 +1,5 @@
+import React from "react"
+
 /* ─────────────────────────────────────────────────────────────
    WHY CHOOSE US — FEATURE CARDS
    - Fondo #0D0D0D, separación visual del AdditionalServices
@@ -16,7 +18,7 @@ const FEATURES = [
       </svg>
     ),
     title:       "5+ Years of Experience",
-    description: "Since 2020, Elias Araujo has been delivering precision detailing in Fresno. The same discipline from a boxing career — applied to every vehicle.",
+    description: <>Since 2020, Elias Araujo has been delivering precision detailing in Fresno. <strong>The same discipline from a professional boxing career — applied to every vehicle.</strong></>,
   },
   {
     icon: (
@@ -26,7 +28,7 @@ const FEATURES = [
       </svg>
     ),
     title:       "Certified Professional",
-    description: "Trained in ceramic coating application, paint correction and interior deep cleaning — using only professional-grade products and techniques.",
+    description: "Trained in ceramic coating application, paint correction and engine detailing — using only professional-grade products and techniques.",
   },
   {
     icon: (
@@ -39,7 +41,7 @@ const FEATURES = [
       </svg>
     ),
     title:       "We Come To You",
-    description: "Our fully equipped mobile detailing van arrives at your home, office or any location. No drop-offs, no waiting — premium car care on your schedule.",
+    description: "Our fully equipped mobile detailing truck arrives at your home, office or any location. No drop-offs, no waiting — premium car care on your schedule.",
   },
   {
     icon: (

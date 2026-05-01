@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "What services are included in a detailing package?",
-    a: "Depending on the package, services range from exterior hand wash, clay bar treatment, and tire dressing (Express) to full interior deep clean, leather conditioning, engine bay cleaning, and paint decontamination (Premium Deluxe). We tailor every detail to your vehicle's needs.",
+    a: "Services range from interior wipe down, exterior foam bath, and glass & tire cleaning (Express Detail) to full interior deep clean, leather, fabric, seat & floor conditioning, windows & exterior ceramic protection, and wheel & tire dressing (Premium Deluxe). We'll go to every corner in your car, ensuring a spotless, fresh and inviting experience when riding a car that feels like new.",
   },
   {
     q: "How does ceramic coating protect a vehicle's paint?",

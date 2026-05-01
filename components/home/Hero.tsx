@@ -90,7 +90,7 @@ export default function Hero() {
             letterSpacing: "0.15em",
             marginBottom: "20px",
           }}>
-            Macho Araujo Truck & Fleet Detailing . Fresno, CA
+            Macho Araujo Truck, Fleet &amp; Car Detailing
           </span>
 
           {/* H1 */}
@@ -103,7 +103,7 @@ export default function Hero() {
             lineHeight: 1.04,
             marginBottom: "24px",
           }}>
-            Premium Car<br />Detailing in<br className="mobile-only" />
+            Premium Mobile<br />Detailing in<br className="mobile-only" />
             {" "}Fresno, CA
           </h1>
 
@@ -123,8 +123,7 @@ export default function Hero() {
             maxWidth: "520px",
             margin: "0 auto 40px",
           }}>
-            Ceramic coating, paint correction, PPF and premium
-            interior detailing. Serving the entire Central Valley.
+            Ceramic coating, paint correction, Fleet Detailing, Detailing Packages, Aircraft Detailing &amp; Boat Detailing. Servicing the entire Central Valley.
           </p>
 
           {/* CTA Pair */}

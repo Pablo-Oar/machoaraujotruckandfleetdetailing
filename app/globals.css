@@ -96,6 +96,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {

@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "@/components/ui/AppImage"
 import Link from "next/link"
 
@@ -17,14 +18,28 @@ const PRIMARY_SERVICES = [
     id:          "paint-correction",
     eyebrow:     "Surface Restoration",
     title:       "Paint Correction",
-    description: "Multi-stage machine polishing to permanently eliminate swirl marks, water spots, light scratches and oxidation. We restore your paint's original clarity — not just mask defects.",
+    description: (<>
+      <p>Paint correction is a meticulous process designed to restore a car&apos;s paint to its original glory. It involves eliminating imperfections such as scratches and/or stains that can decrease the quality of the vehicle&apos;s exterior.</p>
+      <p>Remember paint correction is all about reviving your vehicle&apos;s aesthetics to its pristine state, ensuring it radiates brilliance and gloss.</p>
+      <p>If you are looking for a smooth mirror glaze finish, correcting or restoring the finish of your vehicle, this is the way to go. Finished with a protective sealant.</p>
+      <p>In order to achieve a safe and impeccable result, every vehicle is carefully treated from start to finish following the steps below:</p>
+      <ul style={{ paddingLeft: "1.2em", margin: "8px 0 0" }}>
+        <li>Wash the vehicle throughout including door jambs, gas cap and removing bugs off the front end.</li>
+        <li>Clay Bar the paint for a smooth paint finish and to remove remaining contaminators.</li>
+        <li>Tape off sensitive areas like plastic trims to protect them.</li>
+        <li>One pass of compound or polish with a dual action buffer.</li>
+        <li>Wipe down vehicle with remover to inspect the car paint true condition after treatment.</li>
+        <li>Apply synthetic sealant for an extended protection.</li>
+        <li>Wax tires, clean exterior glass and windows and touch up any detailed areas.</li>
+      </ul>
+    </>),
     features: [
       "Single or multi-stage polishing",
       "Swirl marks & scratch removal",
       "Oxidation & water spot elimination",
       "Paint thickness measurement",
     ],
-    price:  "$200 – $350",
+    price:  "Starting at $300",
     image:  "/images/services/paint-correction/ImgPaintCorrection.jpg",
     href:   "/contact",
     flip:   false,
@@ -33,14 +48,17 @@ const PRIMARY_SERVICES = [
     id:          "ceramic-coating",
     eyebrow:     "Long-Term Protection",
     title:       "Ceramic Coating",
-    description: "Professional-grade nano-ceramic formula that bonds to your paint and delivers 3+ years of hydrophobic, UV-resistant, self-cleaning protection. Best investment for any vehicle.",
+    description: (<>
+      <p>With its fantastic hydrophobic properties your car will repel water over and over, staying cleaner for longer periods of time.</p>
+      <p>At Macho Araujo Car detailing we take pride in our application methods. We perform a variety of crucial preparation steps before applying the ceramic coating to your vehicle, including clay treatment and paint correction (if necessary).</p>
+    </>),
     features: [
       "3–5 year durability warranty",
       "Hydrophobic self-cleaning surface",
       "UV & oxidation protection",
       "Deep gloss amplification",
     ],
-    price:  "$350 – $550",
+    price:  "Starting at $400",
     image:  "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
     href:   "/contact",
     flip:   true,
@@ -49,46 +67,133 @@ const PRIMARY_SERVICES = [
     id:          "fleet-detailing",
     eyebrow:     "Commercial Services",
     title:       "Fleet Detailing",
-    description: "Scheduled maintenance programs designed for businesses with multiple vehicles. Weekly, bi-weekly or monthly contracts. We keep your fleet looking professional and your drivers proud.",
-    features: [
-      "Custom scheduling & contracts",
-      "Weekly / bi-weekly / monthly plans",
-      "Competitive per-unit pricing",
-      "Semi-trucks, vans & heavy vehicles",
-    ],
-    price:  "Custom Quote",
-    image:  "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
-    href:   "/contact",
-    flip:   false,
-  },
-  {
-    id:          "interior-detail",
-    eyebrow:     "Interior Restoration",
-    title:       "Interior Detail",
-    description: "Express or Premium interior care — from a quick vacuum and wipe-down to a full steam clean with leather conditioning and odor elimination.",
-    features: [
-      "Express: vacuum, wipe-down & glass clean",
-      "Premium: full steam clean & sanitization",
-      "Leather conditioning & odor elimination",
-      "Dashboard, trim & vent detailing",
-    ],
-    price:  "$70 – $180",
-    image:  "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
-    href:   "/contact",
-    flip:   true,
+    description: (<>
+      <p><strong>Why Fleet Detailing Matters</strong></p>
+
+      <p><strong>1. Enhances Brand Image and Customer Perception:</strong> Your fleet vehicles are moving advertisements for your business. Clean, well-maintained vehicles convey a sense of professionalism and attention to detail. Whether you&apos;re a small or corporate business or a transportation company, a pristine fleet can create a lasting positive impression on your clients and the public.</p>
+
+      <p><strong>2. Increases Vehicle Lifespan:</strong> Regular detailing not only keeps your vehicles looking great but also protects them from the elements. Professional detailing services include waxing and sealants that shield the vehicle&apos;s paint from environmental damage such as UV rays, road salt, and pollutants. By maintaining the exterior and interior of your fleet, you&apos;re effectively extending the lifespan of your vehicles and preserving their value.</p>
+
+      <p><strong>3. Boosts Employee Morale and Satisfaction:</strong> Clean and well-maintained vehicles are also a morale booster for employees. Drivers who operate spotless and fresh-smelling vehicles are likely to take more pride in their work, drive more carefully, and feel more satisfied with their job. This can lead to improved productivity and reduced turnover rates among staff.</p>
+
+      <p><strong>4. Improves Safety and Compliance:</strong> Professional detailing services go beyond aesthetics. Clean vehicles ensure better visibility through spotless windows and mirrors, and a well-maintained interior can prevent issues like mold or allergens that could affect drivers&apos; health. Moreover, for transportation companies, regular fleet detailing can help keep vehicles compliant with industry cleanliness standards.</p>
+
+      <p>Unlike personal vehicles, fleet cars endure significantly higher usage and a broader range of driving conditions. They&apos;re exposed to environmental pollutants, road grime, tree sap, and much more on a daily basis. This is why maintaining a regular cleaning schedule is so important in order to remove all corrosive agents, extending the life of your vehicle&apos;s exterior and undercarriage, while maintaining a professional image of your business. A spotless truck doesn&apos;t just look good; it conveys confidence and professionalism to your customers.</p>
+
+      <div style={{ marginTop: "28px" }}>
+        <p>At Macho Araujo Truck &amp; Fleet Detailing, we specialized in fleet cleaning making your brand shine every mile.</p>
+        <div style={{
+          margin: "16px 0",
+          padding: "16px 20px",
+          borderLeft: "3px solid #C9A84C",
+          backgroundColor: "rgba(201,168,76,0.06)",
+          borderRadius: "0 4px 4px 0",
+        }}>
+          <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
+            Your fleet is a big investment — it is crucial to keep it clean and safe on the road.
+          </p>
+        </div>
+      </div>
+
+      <div style={{ marginTop: "28px", borderTop: "1px solid rgba(201,168,76,0.25)", paddingTop: "24px" }}>
+        <p style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "20px" }}>
+          Our Services
+        </p>
+
+        <div style={{ marginBottom: "16px" }}>
+          <p style={{ fontWeight: 700, color: "#FFFFFF", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "10px" }}>
+            Truck &amp; Trailer — Exterior Maintenance Wash
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
+            {["Exterior Foam Wash", "Tires & Wheels Cleaning", "Glass, Windows & Mirrors", "Soft Microfiber Hand Drying (Small, medium & large vehicles)"].map((item) => (
+              <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "13px", color: "#AAAAAA" }}>
+                <span style={{ color: "#C9A84C", fontWeight: 700, marginTop: "1px", flexShrink: 0 }}>—</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div style={{ overflowX: "auto", margin: "8px 0 16px", maxWidth: "100%" }}><table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px" }}>
+        <thead>
+          <tr style={{ borderBottom: "1px solid rgba(201,168,76,0.4)" }}>
+            <th style={{ textAlign: "left", padding: "6px 8px", color: "#C9A84C" }}>Vehicle Class</th>
+            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Weekly/Unit</th>
+            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Biweekly/Unit</th>
+            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Monthly/Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: "6px 8px" }}>Small/Medium/Large (Sedan/SUV/Van-Pickup)</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$30</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$35</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$40</td>
+          </tr>
+          <tr>
+            <td style={{ padding: "6px 8px" }}>Trucks</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$80</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$90</td>
+            <td style={{ textAlign: "center", padding: "6px 8px" }}>$100</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+      <p><strong>Tractor &amp; Truck Cabin — Interior Cleaning:</strong> We offer a complete interior cleaning including trash removal, vacuum and surface wipe-down. We focus on high visibility areas and driver touch points. This service is strictly customized to meet your needs. Please contact us for further pricing and information.</p>
+
+      <p><strong>Trailer Washout:</strong> Our interior washout provides a comprehensive cleaning for the cargo area of your vehicles, including trailers, box trucks and cargo vans.</p>
+
+      <p><strong>Industrial Pressure Washing:</strong> Our industrial pressure washing service is highly effective for cleaning various surfaces, including sidewalks, parking areas, dock doors, compactor pads, and more. We utilize advanced techniques and equipment to ensure thorough cleaning and removal of tough stains, grime, and debris.</p>
+
+      <div style={{ marginTop: "28px", borderTop: "1px solid rgba(201,168,76,0.25)", paddingTop: "24px" }}>
+        <p style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "16px" }}>
+          Our Clients
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+          {["Maldonado Brothers", "HVL Construction", "J & E Brokerage LLC", "AgPro Organics", "Ramcast Ornamental", "Rollo Bins Transportation"].map((client) => (
+            <span key={client} style={{
+              display: "inline-block",
+              padding: "6px 14px",
+              border: "1px solid rgba(201,168,76,0.35)",
+              borderRadius: "2px",
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.05em",
+              color: "#FFFFFF",
+              backgroundColor: "rgba(201,168,76,0.07)",
+              textTransform: "uppercase",
+            }}>
+              {client}
+            </span>
+          ))}
+        </div>
+      </div>
+    </>),
+    features: [],
+    price:    "Custom Quote",
+    image:    "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
+    href:     "/contact",
+    flip:     false,
+    stackTop: true,
   },
   {
     id:          "aircraft-detailing",
     eyebrow:     "Specialty Vehicles",
     title:       "Aircraft Detailing",
-    description: "Meticulous interior and exterior detailing for private and commercial aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
-    features: [
-      "Interior cabin deep clean",
-      "Exterior wash & polish",
-      "Aviation-safe products",
-      "Private & commercial aircraft",
-    ],
-    price:  "Custom Quote",
+    description: (<>
+      <p>Experience convenient aircraft detailing that combines safety and a flawless finish. From small planes to private jets.</p>
+      <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0", display: "flex", flexDirection: "column", gap: "6px" }}>
+        {["Interior cabin deep clean", "Exterior wash and polish", "Aviation-safe products", "Private aircraft"].map((item) => (
+          <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "13px", color: "#AAAAAA" }}>
+            <span style={{ color: "#C9A84C", fontWeight: 700, marginTop: "1px", flexShrink: 0 }}>—</span>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>),
+    features: [],
+    price:  "",
     image:  "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg",
     href:   "/contact",
     flip:   false,
@@ -97,14 +202,9 @@ const PRIMARY_SERVICES = [
     id:          "boat-detailing",
     eyebrow:     "Marine Detailing",
     title:       "Boat Detailing",
-    description: "Marine-grade cleaning, oxidation removal, waxing and protective coating for your vessel. We come to the marina or dock. Restore gelcoat, brightwork and upholstery to showroom condition.",
-    features: [
-      "Hull wash & oxidation removal",
-      "Gelcoat restoration & wax",
-      "Upholstery & interior cleaning",
-      "Stainless & brightwork polish",
-    ],
-    price:  "Custom Quote",
+    description: "Cleaning and protecting your boat from interior to exterior hull. We will treat all surfaces including Vinyl, Chrome and leather.",
+    features: [],
+    price:  "",
     image:  "/images/services/boat-detailing/ImgBoatDetailing.jpg",
     href:   "/contact",
     flip:   true,
@@ -115,7 +215,7 @@ const PRIMARY_SERVICES = [
 const PACKAGES = [
   {
     name:      "Express Detail",
-    price:     "$80–$120",
+    price:     "Starting at $80",
     subtitle:  "Quick refresh for day-to-day maintenance",
     features: [
       "Basic vacuum & blow out",
@@ -130,7 +230,7 @@ const PACKAGES = [
   },
   {
     name:      "Standard Full Detail",
-    price:     "$130–$160",
+    price:     "Starting at $130",
     subtitle:  "Most popular — thorough inside & out",
     features: [
       "Everything in Express Detail",
@@ -145,7 +245,7 @@ const PACKAGES = [
   },
   {
     name:      "Premium Deluxe",
-    price:     "Contact Us",
+    price:     "Starting at $200",
     subtitle:  "Full restoration — our best package",
     features: [
       "Everything in Standard Full",
@@ -164,19 +264,31 @@ const PACKAGES = [
 /* ── ADDITIONAL BANNERS ────────────────────────────────────── */
 const ADDITIONAL = [
   {
+    title:    "Interior Express & Premium",
+    price:    "Starting at $70",
+    image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+    href:     "/contact",
+  },
+  {
     title:    "Exterior Express & Premium",
-    price:    "$50 – $150",
+    price:    "Starting at $50",
     image:    "/images/services/exterior-detail/ImgExteriorPremium.jpg",
     href:     "/contact",
   },
   {
     title:    "Headlights Restoration",
-    price:    "$70",
+    price:    "$80",
     image:    "/images/services/headlights-restoration/ImgHeadLights.png",
     href:     "/contact",
   },
   {
-    title:    "Engine Bay Detailing",
+    title:    "Engine Detailing",
+    price:    "$80",
+    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
+    href:     "/contact",
+  },
+  {
+    title:    "Ozone Treatment",
     price:    "$70",
     image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
     href:     "/contact",
@@ -300,6 +412,15 @@ export default function ServicesPage() {
         .srv-row.flip { direction: rtl; }
         .srv-row.flip > * { direction: ltr; }
 
+        /* Stack variant: image on top, content below full-width */
+        .srv-row--stack {
+          grid-template-columns: 1fr;
+        }
+
+        .srv-row--stack .srv-row-img {
+          height: 420px;
+        }
+
         /* Image side */
         .srv-row-img {
           position: relative;
@@ -342,6 +463,8 @@ export default function ServicesPage() {
         .srv-row-desc {
           font-size: 14px;
           color: #AAAAAA;
+          word-break: break-word;
+          overflow-wrap: break-word;
           line-height: 1.75;
           margin-bottom: 24px;
         }
@@ -465,7 +588,7 @@ export default function ServicesPage() {
         }
 
         .pkg-price {
-          font-size: 44px;
+          font-size: 28px;
           font-weight: 900;
           color: #FFFFFF;
           line-height: 1;
@@ -779,6 +902,10 @@ export default function ServicesPage() {
           .srv-row-img {
             height: 300px;
           }
+
+          .srv-row--stack .srv-row-img {
+            height: 340px;
+          }
         }
 
         @media (max-width: 640px) {
@@ -800,6 +927,11 @@ export default function ServicesPage() {
           .srv-row.flip { direction: ltr; }
 
           .srv-row-img { height: 240px; }
+
+          .srv-row--stack .srv-row-img {
+            height: auto;
+            aspect-ratio: 16 / 7;
+          }
 
           /* Packages */
           .pkg-section { padding: 64px 0; }
@@ -875,7 +1007,7 @@ export default function ServicesPage() {
           {PRIMARY_SERVICES.map((svc) => (
             <div
               key={svc.id}
-              className={`srv-row${svc.flip ? " flip" : ""}`}
+              className={`srv-row${"stackTop" in svc && svc.stackTop ? " srv-row--stack" : ""}${svc.flip ? " flip" : ""}`}
             >
               {/* Image */}
               <div className="srv-row-img">
@@ -892,7 +1024,7 @@ export default function ServicesPage() {
               <div className="srv-row-content">
                 <span className="srv-row-eyebrow">{svc.eyebrow}</span>
                 <h2 className="srv-row-title">{svc.title}</h2>
-                <p className="srv-row-desc">{svc.description}</p>
+                <div className="srv-row-desc">{svc.description}</div>
 
                 <ul className="srv-row-features">
                   {svc.features.map((f) => (
@@ -904,7 +1036,7 @@ export default function ServicesPage() {
                 </ul>
 
                 <div className="srv-row-footer">
-                  <span className="srv-row-price">{svc.price}</span>
+                  {svc.price && <span className="srv-row-price">{svc.price}</span>}
                   <Link href={svc.href} className="btn-gold">
                     Get a Quote
                   </Link>
@@ -925,6 +1057,11 @@ export default function ServicesPage() {
           <div className="pkg-header">
             <span className="eyebrow">Transparent Pricing</span>
             <h2 className="section-h2">Detailing Packages</h2>
+            <p style={{ color: "#AAAAAA", fontSize: "15px", lineHeight: 1.75, maxWidth: "700px", margin: "24px auto 0" }}>
+              No time to spare? Our mobile detailing service is designed for your busy lifestyle. Experience efficient and complete cleaning that fits seamlessly into your schedule.<br /><br />
+              We understand your vehicle is not just transportation, but an extension of your style and personality. We are passionately committed to elevate your car&apos;s appearance and value.<br /><br />
+              Book a complete mobile detailing service package today. Offering full interior and exterior detailing, upholstery shampoo, leather conditioning, paint restoration and more.
+            </p>
           </div>
 
           <div className="pkg-grid">
