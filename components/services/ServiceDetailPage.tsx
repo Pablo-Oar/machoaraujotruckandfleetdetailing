@@ -623,6 +623,56 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         }
         .btn-outline:hover { border-color: #C9A84C; color: #C9A84C; }
 
+        /* ── Tier cards (Express / Premium) ───────────── */
+        .sdp-tiers-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          margin-top: 24px;
+        }
+        .sdp-tier-card {
+          border: 1px solid rgba(201,168,76,0.3);
+          border-radius: 8px;
+          padding: 24px;
+        }
+        .sdp-tier-card--premium {
+          background: rgba(201,168,76,0.04);
+        }
+        .sdp-tier-name {
+          font-size: 12px;
+          font-weight: 700;
+          color: #C9A84C;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 6px;
+        }
+        .sdp-tier-price {
+          font-size: 22px;
+          font-weight: 900;
+          color: #C9A84C;
+          margin-bottom: 16px;
+        }
+        .sdp-tier-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        .sdp-tier-list li {
+          display: flex;
+          gap: 8px;
+          font-size: 13px;
+          color: #CCCCCC;
+          line-height: 1.5;
+        }
+        .sdp-tier-check {
+          color: #C9A84C;
+          flex-shrink: 0;
+          font-weight: 700;
+        }
+
         /* ── Responsive ────────────────────────────────── */
         @media (max-width: 900px) {
           .sdp-container { padding: 0 24px; }
@@ -649,6 +699,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-gallery-grid { grid-template-columns: 1fr; }
           .sdp-benefits-grid { grid-template-columns: 1fr; }
           .detailing-packages-overview { margin: 0 -24px; border-radius: 0 !important; }
+          .sdp-tiers-grid { grid-template-columns: 1fr; }
         }
       `}</style>
 
@@ -692,24 +743,29 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
             <div>
               <p className="sdp-section-label">{service.eyebrow}</p>
               <h2 className="sdp-section-h2">{service.title}</h2>
-              <p className="sdp-section-body">{service.description}</p>
-              <p className="sdp-section-body" style={{ marginTop: "16px" }}>
-                {service.longDescription}
-              </p>
-              <ul className="sdp-features-list">
-                {service.features.map((f, i) => (
-                  <li key={i}>
-                    <CheckIcon />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="sdp-section-body">{service.description}</div>
+              {service.longDescription && (
+                <div className="sdp-section-body" style={{ marginTop: "16px" }}>
+                  {service.longDescription}
+                </div>
+              )}
+              {service.features.length > 0 && (
+                <ul className="sdp-features-list">
+                  {service.features.map((f, i) => (
+                    <li key={i}>
+                      <CheckIcon />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
       </section>
 
       {/* ── 3. BENEFITS ──────────────────────────────────── */}
+      {service.benefits.length > 0 && (
       <section className="sdp-section-alt">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>Why Choose Us</p>
@@ -729,8 +785,10 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+      )}
 
       {/* ── 4. PROCESS ───────────────────────────────────── */}
+      {service.steps.length > 0 && (
       <section className="sdp-section">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>How It Works</p>
@@ -748,9 +806,10 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+      )}
 
       {/* ── 5. PRICING ───────────────────────────────────── */}
-      {service.slug !== "detailing-packages" && (
+      {service.slug !== "detailing-packages" && service.slug !== "exterior-detail" && service.slug !== "interior-detail" && (
       <section className="sdp-section-alt">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>Investment</p>
@@ -767,6 +826,11 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+      )}
+
+      {/* Divisor si no hay Benefits ni Process (ej. exterior-detail) */}
+      {service.benefits.length === 0 && service.steps.length === 0 && (
+        <div style={{ borderTop: "1px solid rgba(201,168,76,0.18)", margin: "0 80px" }} />
       )}
 
       {/* ── 6. GALLERY ───────────────────────────────────── */}

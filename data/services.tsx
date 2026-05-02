@@ -3,6 +3,8 @@
    Fuente de verdad para todas las páginas /services/[slug]
    ───────────────────────────────────────────────────────────── */
 
+import React from "react"
+
 export interface ServiceBenefit {
   icon: string   // SVG path data
   title: string
@@ -34,8 +36,8 @@ export interface ServiceData {
   heroFit?: "cover" | "contain"
   overviewImage: string
   tagline: string
-  description: string
-  longDescription: string
+  description: React.ReactNode
+  longDescription: React.ReactNode
   features: string[]
   price: string
   priceNote: string
@@ -94,7 +96,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Decontamination wash + clay bar prep",
       "Final LSP (Last Step Product) protection",
     ],
-    price: "Starting at $200",
+    price: "Starting at $300",
     priceNote: "Final price depends on vehicle size, paint condition and stages required. Free inspection included.",
     benefits: [
       {
@@ -150,14 +152,14 @@ export const SERVICES_DATA: ServiceData[] = [
     longDescription:
       "Ceramic coating is a liquid polymer that chemically bonds to your vehicle's factory paint, creating a hard, semi-permanent layer of protection. Unlike wax (which lasts weeks) or sealant (which lasts months), ceramic coating lasts years. It makes washing easier, keeps your car looking freshly detailed, and protects against UV rays, bird droppings, acid rain and environmental contaminants.",
     features: [
-      "3–5 year durability (warranty available)",
+      "3 - 5 years durability",
       "Hydrophobic self-cleaning surface",
       "UV ray & oxidation protection",
       "Deep gloss amplification",
       "Bird dropping & acid rain resistance",
       "Paint correction prep included",
     ],
-    price: "Starting at $350",
+    price: "Starting at $400",
     priceNote: "Price varies by vehicle size and coating package (1, 2 or 3-year tier). Paint correction before coating is quoted separately.",
     benefits: [
       {
@@ -271,42 +273,45 @@ export const SERVICES_DATA: ServiceData[] = [
     heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
     overviewImage: "/images/services/interior-detail/InteriorPremium1.png",
     tagline: "Your cabin, looking and smelling brand new.",
-    description:
-      "Complete interior restoration in two tiers — Express for a quick refresh, or Premium for a deep clean with steam, leather conditioning, odor elimination and full trim detailing.",
-    longDescription:
-      "The interior is where you spend all your time, yet it's often the most neglected part of a vehicle. Our Interior Express covers the essentials: vacuum, wipe-down and glass cleaning. Our Interior Premium goes much further — professional steam cleaners sanitize every surface, leather is cleaned and conditioned to prevent cracking, and every vent, button, seam and corner gets attention.",
-    features: [
-      "Express ($70–$100): Basic vacuum, wipe-down & glass clean",
-      "Premium ($140–$180): Full steam clean & sanitization",
-      "Leather / fabric deep treatment (Premium)",
-      "Odor elimination treatment (Premium)",
-      "Dashboard, trim & vent detailing",
-      "Window interior clean",
-    ],
+    description: (
+      <>
+        <p style={{ margin: 0, marginBottom: "12px" }}>Complete interior restoration in two tiers — Express for a quick refresh, or Premium for a deep clean with steam, leather conditioning, odor elimination and full trim detailing.</p>
+        <p style={{ margin: 0, marginBottom: "28px" }}>The interior is where you spend all your time, yet it&apos;s often the most neglected part of a vehicle. Our Interior Express covers the essentials: vacuum, wipe-down and glass cleaning. Our Interior Premium goes much further — professional steam cleaners sanitize every surface, leather is cleaned and conditioned to prevent cracking, and every vent, button, seam and corner gets attention.</p>
+        <div className="sdp-tiers-grid">
+          <div className="sdp-tier-card">
+            <div className="sdp-tier-name">Express</div>
+            <div className="sdp-tier-price">Starting at $70</div>
+            <ul className="sdp-tier-list">
+              {["Complete Interior vacuum", "ALL surfaces wipe down", "Disinfection of surfaces", "Dashboard UV Protection", "Windows and mirrors cleaning"].map(item => (
+                <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="sdp-tier-card sdp-tier-card--premium">
+            <div className="sdp-tier-name">Premium</div>
+            <div className="sdp-tier-price">Starting at $120</div>
+            <ul className="sdp-tier-list">
+              {["All \"Express\" plus", "Shampoo/Steam clean of ALL surfaces (seats, mats and carpets)", "Clean and disinfect of ALL surfaces (plastic and leather)", "UV Protection in ALL inside surfaces", "Streak free windows and mirrors"].map(item => (
+                <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
+              ))}
+              <li style={{ marginTop: "10px", background: "rgba(201,168,76,0.10)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "4px", padding: "6px 10px" }}>
+                <span style={{ color: "#C9A84C", flexShrink: 0, fontWeight: 700 }}>✓</span>
+                <span style={{ color: "#C9A84C", fontWeight: 700 }}>FREE Ozone treatment</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p style={{ margin: 0, marginTop: "20px", fontSize: "12px", color: "#888888" }}>
+          *Price is based on size, condition and type of vehicle
+        </p>
+      </>
+    ),
+    longDescription: "",
+    features: [],
     price: "Starting at $70",
-    priceNote: "Interior Express: $70–$100 · Interior Premium: $140–$180. Price varies by vehicle size and condition.",
-    benefits: [
-      {
-        icon: ICONS.shield,
-        title: "Steam Sanitization",
-        body: "Hot steam kills 99% of bacteria, allergens and mold spores without harsh chemicals. Safe for children and pets.",
-      },
-      {
-        icon: ICONS.star,
-        title: "Odor Elimination",
-        body: "We treat the source of odors — not just mask them. Smoke, pets, mildew — gone after a proper treatment.",
-      },
-      {
-        icon: ICONS.check,
-        title: "Leather Care",
-        body: "We clean, condition and protect your leather seats to restore softness and prevent cracking and fading.",
-      },
-    ],
-    steps: [
-      { number: "01", title: "Full Vacuum & Pre-Clean", body: "Every surface vacuumed including under seats, in crevices and the trunk. Loose debris and pet hair removed." },
-      { number: "02", title: "Steam Clean & Treat", body: "Hot steam applied to all hard surfaces, vents, trim and fabric. Leather cleaned and conditioned. Odor treatment applied." },
-      { number: "03", title: "Finish & Detail", body: "Trim dressed with UV protectant, windows cleaned, final inspection to ensure every corner is spotless." },
-    ],
+    priceNote: "Price varies by vehicle size and condition.",
+    benefits: [],
+    steps: [],
     gallery: [
       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
@@ -333,43 +338,41 @@ export const SERVICES_DATA: ServiceData[] = [
     title: "Exterior Detail",
     heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
     overviewImage: "/images/services/exterior-detail/ExteriorPremium1.png",
-    tagline: "Hand wash, clay bar, polish and protective sealant.",
-    description:
-      "Two tiers of exterior care — Express for a quality hand wash and dry, or Premium with clay bar decontamination, one-stage polish and paint sealant for showroom results.",
-    longDescription:
-      "A true exterior detail is far more than a car wash. Our Exterior Express delivers a thorough two-bucket hand wash, tire cleaning, and hand drying. Our Exterior Premium goes further — clay bar decontamination pulls embedded contaminants, a one-stage machine polish removes light swirls and restores gloss, and a paint sealant locks in the finish for months of protection.",
-    features: [
-      "Express ($50–$70): Two-bucket hand wash & hand dry",
-      "Premium ($120–$150): Full decontamination & polish",
-      "Wheel & tire deep clean",
-      "Clay bar decontamination (Premium)",
-      "One-stage machine polish (Premium)",
-      "Paint sealant & tire dressing (Premium)",
-    ],
+    tagline: "Two tiers of exterior care — Express & Premium.",
+    description: (
+      <>
+        <p style={{ margin: 0, marginBottom: "12px" }}>Two tiers of exterior care</p>
+        <p style={{ margin: 0, marginBottom: "10px" }}>— Experience a remarkable transformation in your vehicle&apos;s appearance, see the visual improvement and feel the smoothness of the paint after our Express service.</p>
+        <p style={{ margin: 0, marginBottom: "20px" }}>— If you are interested in taking your car&apos;s shine to the next level and add a +1 month protection, check out our Premium package.</p>
+        <p style={{ margin: 0, marginBottom: "28px" }}>We handle it all, leaving your car with a long-lasting, sparkling shine. Book now for a premium exterior car wash experience that&apos;s unmatched.</p>
+        <div className="sdp-tiers-grid">
+          <div className="sdp-tier-card">
+            <div className="sdp-tier-name">Express</div>
+            <div className="sdp-tier-price">Starting at $50</div>
+            <ul className="sdp-tier-list">
+              {["Foam bath", "Complete wash of vehicle and tires", "Soft microfiber hand drying", "Clean exterior glass and windows", "Tires waxing"].map(item => (
+                <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="sdp-tier-card sdp-tier-card--premium">
+            <div className="sdp-tier-name">Premium</div>
+            <div className="sdp-tier-price">Starting at $120</div>
+            <ul className="sdp-tier-list">
+              {["Foam bath", "Complete wash of vehicle including door jams, gas cap and bugs remove", "Clean wheels, tires and fenders with a variety of brushes to reach ALL AREAS", "Soft microfiber hand drying", "Spray wax for extra shine & protection", "Clean exterior glass and windows", "Tires waxing"].map(item => (
+                <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </>
+    ),
+    longDescription: "",
+    features: [],
     price: "Starting at $50",
-    priceNote: "Exterior Express: $50–$70 · Exterior Premium: $120–$150. Price varies by vehicle size.",
-    benefits: [
-      {
-        icon: ICONS.droplet,
-        title: "Swirl-Free Wash",
-        body: "The two-bucket method keeps dirty rinse water separate from your wash mitt, preventing the swirl marks caused by traditional car washes.",
-      },
-      {
-        icon: ICONS.paint,
-        title: "Deep Decontamination",
-        body: "Clay bar removes bonded contaminants invisible to the eye — fallout, sap, road tar — leaving paint glass-smooth before polishing.",
-      },
-      {
-        icon: ICONS.shield,
-        title: "Months of Protection",
-        body: "Paint sealant bonds to the clear coat and protects against UV, water spots and contamination for up to 6 months.",
-      },
-    ],
-    steps: [
-      { number: "01", title: "Hand Wash & Rinse", body: "Two-bucket method, wheel & tire clean, full rinse and drying with plush microfiber towels to prevent water spots." },
-      { number: "02", title: "Decontamination", body: "Clay bar treatment on all painted surfaces to remove embedded fallout and contaminants after washing." },
-      { number: "03", title: "Polish & Protect", body: "One-stage machine polish to remove light swirls, followed by a professional paint sealant for months of protection." },
-    ],
+    priceNote: "Exterior Express: Starting at $50 · Exterior Premium: Starting at $120. Price varies by vehicle size.",
+    benefits: [],
+    steps: [],
     gallery: [
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
@@ -565,7 +568,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     faqs: [
       { question: "What's included in each package?", answer: "Express ($80–$120): basic vacuum & blow out, interior wipe-down, glass cleaning, tire cleaning, exterior wash & hand dry. Standard Full ($130–$160): all Express plus carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing. Premium Deluxe: all Standard plus inside waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection (+1 month), liquid wax protection and FREE ozone treatment." },
-      { question: "How long does each package take?", answer: "Express: 1–1.5 hours. Standard: 2.5–3.5 hours. Premium Deluxe: 5–7 hours. Times may vary by vehicle size and condition." },
+      { question: "How long does each package take?", answer: "Express: 1.5–2 hours. Standard: 2.5–3 hours. Premium Deluxe: 3.5–4.5 hours. Times may vary by vehicle size and condition." },
       { question: "Can I customize a package?", answer: "Yes — we can add or remove specific services to build a custom package. Just let us know what you need and we'll quote accordingly." },
     ],
     related: [
@@ -816,7 +819,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
     ],
     faqs: [
-      { question: "How long does the Premium Deluxe take?", answer: "The Premium Deluxe takes 5–7 hours depending on vehicle size and condition. We recommend booking it on a day when you don't need the vehicle — we'll let you know when it's ready." },
+      { question: "How long does the Premium Deluxe take?", answer: "The Premium Deluxe takes 3.5 - 4.5 hours depending on vehicle size and condition. We recommend booking it on a day when you don't need the vehicle — we'll let you know when it's ready." },
       { question: "What exactly is ozone treatment?", answer: "Ozone (O3) is a gas that neutralizes odor molecules on contact. We seal the vehicle, run the ozone generator for 30–60 minutes, then ventilate. It eliminates smoke, pet, food and mildew odors completely — not just masks them with fragrance." },
       { question: "Is the ceramic window protection the same as ceramic coating?", answer: "No — the window ceramic protection included in Premium Deluxe is a maintenance-grade glass sealant that lasts approximately 1 month. Full ceramic coating is a separate service. The window protection improves water beading and reduces glare at no extra cost." },
     ],
