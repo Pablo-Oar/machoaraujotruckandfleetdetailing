@@ -293,7 +293,7 @@ const ADDITIONAL = [
   {
     title:    "Ozone Treatment",
     price:    "$70",
-    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
+    image:    "/images/services/ozone-treatment/04.jpg",
     href:     "/contact",
   },
   {
