@@ -774,7 +774,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "premium-deluxe",
     eyebrow: "Full Restoration",
     title: "Premium Deluxe",
-    heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
+    heroImage: "/images/services/premium-deluxe/hero/heroPremiumDeluxe.jpg",
     overviewImage: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     tagline: "Our best package — full restoration inside and out.",
     description:

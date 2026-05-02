@@ -40,7 +40,7 @@ const BANNERS: Banner[] = [
     subtitle: "We don't just \"wash your car\", your exterior also deserves a proper detail car wash and that's what you'll be getting with our detailing service.",
     price:    "Starting at $50",
     href:     "/services/exterior-detail",
-    image:    "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+    image:    "/images/services/exterior-detail/AdditionalServices/ExteriorPremium.jpg",
     checks:   [
       "Two-bucket hand wash",
       "Clay bar decontamination",
@@ -67,7 +67,7 @@ const BANNERS: Banner[] = [
     subtitle: "Ozone gas treatment is the MOST EFFECTIVE way to eliminate odors inside your vehicle; it eliminates odors at the molecular level rather than just masking them with fragrances.",
     price:    "$70",
     href:     "/services/ozone-treatment",
-    image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
+    image:    "/images/services/ozone-treatment/AdditionalServices/ozonePortada.jpg",
   },
 ]
 

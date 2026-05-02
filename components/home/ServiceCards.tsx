@@ -20,13 +20,13 @@ const SERVICES = [
     title:       "Fleet Detailing",
     description: "Scheduled cleaning programs for your entire fleet — weekly, biweekly or monthly at competitive rates.",
     href:        "/services/fleet-detailing",
-    image:       "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
+    image:       "/images/services/fleet-detailing/FleetDetailingPortada.JPG",
   },
   {
     title:       "Ceramic Coating",
     description: "Protect your paint with a professional grade ceramic coating with 5+ years of hydrophobic, UV-resistant shield.",
     href:        "/services/ceramic-coating",
-    image:       "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
+    image:       "/images/services/ceramic-coating/CeramicCoatingPortada.jpg",
   },
   {
     title:       "Detailing Packages",

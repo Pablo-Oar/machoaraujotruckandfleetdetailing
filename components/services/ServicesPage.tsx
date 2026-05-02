@@ -1,6 +1,9 @@
 import React from "react"
 import Image from "@/components/ui/AppImage"
 import Link from "next/link"
+import PaintCorrectionCarousel from "@/components/services/PaintCorrectionCarousel"
+import CeramicCoatingCarousel from "@/components/services/CeramicCoatingCarousel"
+import FleetDetailingCarousel from "@/components/services/FleetDetailingCarousel"
 
 /* ─────────────────────────────────────────────────────────────
    SERVICES PAGE
@@ -171,7 +174,7 @@ const PRIMARY_SERVICES = [
       </div>
     </>),
     features: [],
-    price:    "Custom Quote",
+    price:    "",
     image:    "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
     href:     "/contact",
     flip:     false,
@@ -1010,15 +1013,23 @@ export default function ServicesPage() {
               className={`srv-row${"stackTop" in svc && svc.stackTop ? " srv-row--stack" : ""}${svc.flip ? " flip" : ""}`}
             >
               {/* Image */}
-              <div className="srv-row-img">
-                <Image
-                  src={svc.image}
-                  alt={svc.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+              {svc.id === "paint-correction" ? (
+                <PaintCorrectionCarousel />
+              ) : svc.id === "ceramic-coating" ? (
+                <CeramicCoatingCarousel />
+              ) : svc.id === "fleet-detailing" ? (
+                <FleetDetailingCarousel />
+              ) : (
+                <div className="srv-row-img">
+                  <Image
+                    src={svc.image}
+                    alt={svc.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              )}
 
               {/* Content */}
               <div className="srv-row-content">

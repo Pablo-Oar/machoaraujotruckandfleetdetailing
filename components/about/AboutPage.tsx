@@ -1,4 +1,5 @@
 import Image from "@/components/ui/AppImage"
+import AboutHeroCarousel from "@/components/about/AboutHeroCarousel"
 
 /* ─────────────────────────────────────────────────────────────
    ABOUT US PAGE
@@ -58,12 +59,17 @@ const TIMELINE = [
 
 /* ── Gallery Images ─────────────────────────────────────────── */
 const GALLERY = [
-  { src: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg", alt: "Mercedes S580 Full Detail" },
-  { src: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg", alt: "Mercedes S580 Interior" },
-  { src: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg", alt: "Jeep Wrangler Unlimited" },
-  { src: "/images/blog/Screenshot_20260416_102442_Gallery.jpg",        alt: "HVL Commercial Van" },
-  { src: "/images/blog/Screenshot_20260416_102531_Instagram.jpg",      alt: "Semi-Trailer Wheel Detail" },
-  { src: "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg", alt: "Mercedes Foam Pre-Wash" },
+  { src: "/images/about/Carousel-Hero/01.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/02.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/03.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/04.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/05.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/06.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/07.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/08.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/09.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/10.jpg", alt: "Macho Araujo Detailing" },
+  { src: "/images/about/Carousel-Hero/11.jpg", alt: "Macho Araujo Detailing" },
 ]
 
 /* ── Values ─────────────────────────────────────────────────── */
@@ -127,7 +133,7 @@ export default function AboutPage() {
         .about-hero {
           position: relative;
           width: 100%;
-          height: 380px;
+          height: 540px;
           overflow: hidden;
           display: flex;
           align-items: center;
@@ -468,8 +474,19 @@ export default function AboutPage() {
 
         .gallery-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 10px;
+        }
+
+        /* Las últimas 3 imágenes (fila 3) se centran usando offset */
+        .gallery-item:nth-child(9) {
+          grid-column: 1;
+        }
+        .gallery-item:nth-child(10) {
+          grid-column: 2;
+        }
+        .gallery-item:nth-child(11) {
+          grid-column: 3;
         }
 
         .gallery-item {
@@ -557,7 +574,12 @@ export default function AboutPage() {
           }
 
           .gallery-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .gallery-item:nth-child(9),
+          .gallery-item:nth-child(10),
+          .gallery-item:nth-child(11) {
+            grid-column: auto;
           }
 
           .timeline-track {
@@ -570,7 +592,7 @@ export default function AboutPage() {
            ══════════════════════════════════════════════════════ */
         @media (max-width: 640px) {
           .about-hero {
-            height: 300px;
+            height: 400px;
           }
 
           .about-story,
@@ -646,9 +668,9 @@ export default function AboutPage() {
             to   { opacity: 1; transform: translateX(0); }
           }
 
-          /* Gallery: 1 col */
+          /* Gallery: 2 col mobile */
           .gallery-grid {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
           }
 
           .timeline-heading {
@@ -669,18 +691,7 @@ export default function AboutPage() {
       `}</style>
 
       {/* ── 1. PAGE HERO ────────────────────────────────────── */}
-      <section className="about-hero">
-        <div className="about-hero-img">
-          <Image
-            src="/images/blog/Screenshot_20260416_102234_Gallery.jpg"
-            alt="Elias detailing on-site"
-            fill
-            sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 40%" }}
-            priority
-          />
-        </div>
-        <div className="about-hero-overlay" />
+      <AboutHeroCarousel>
         <div className="about-hero-content">
           <span className="eyebrow">Our Story</span>
           <h1>About Macho Araujo</h1>
@@ -689,7 +700,7 @@ export default function AboutPage() {
             one car at a time.
           </p>
         </div>
-      </section>
+      </AboutHeroCarousel>
 
       {/* ── 2. STORY SECTION ────────────────────────────────── */}
       <section className="about-story">
@@ -795,19 +806,18 @@ export default function AboutPage() {
         <div className="about-inner">
 
           <div className="gallery-heading">
-            <span className="eyebrow">Our Work</span>
-            <h2 className="section-h2">Real Cars,<br />Real Results</h2>
+            <h2 className="section-h2">Gallery</h2>
           </div>
 
           <div className="gallery-grid">
-            {GALLERY.map((img) => (
+            {GALLERY.map((img, i) => (
               <div key={img.src} className="gallery-item">
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover", objectPosition: [2, 5, 6].includes(i) ? "center 30%" : "center" }}
                 />
               </div>
             ))}

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import type { ServiceData } from "@/data/services"
+import PremiumDeluxeCarousel from "@/components/services/PremiumDeluxeCarousel"
 
 /* ─────────────────────────────────────────────────────────────
    SERVICE DETAIL PAGE — Template compartido para los 10 servicios
@@ -729,16 +730,20 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         <div className="sdp-container">
           <div className="sdp-overview-grid" style={service.slug === "detailing-packages" ? { alignItems: "stretch" } : undefined}>
             {/* Image */}
-            <div className={`sdp-overview-img-wrap${service.slug === "detailing-packages" ? " detailing-packages-overview" : ""}`}
-              style={service.slug === "detailing-packages" ? { height: "auto", minHeight: "420px" } : undefined}
-              onClick={() => setLightbox({ src: service.overviewImage, alt: service.title })}>
-              <Image
-                src={service.overviewImage}
-                alt={service.title}
-                fill
-                style={{ objectFit: "contain", borderRadius: "12px", backgroundColor: "#0D0D0D" }}
-              />
-            </div>
+            {service.slug === "premium-deluxe" ? (
+              <PremiumDeluxeCarousel />
+            ) : (
+              <div className={`sdp-overview-img-wrap${service.slug === "detailing-packages" ? " detailing-packages-overview" : ""}`}
+                style={service.slug === "detailing-packages" ? { height: "auto", minHeight: "420px" } : undefined}
+                onClick={() => setLightbox({ src: service.overviewImage, alt: service.title })}>
+                <Image
+                  src={service.overviewImage}
+                  alt={service.title}
+                  fill
+                  style={{ objectFit: "contain", borderRadius: "12px", backgroundColor: "#0D0D0D" }}
+                />
+              </div>
+            )}
             {/* Text */}
             <div>
               <p className="sdp-section-label">{service.eyebrow}</p>
