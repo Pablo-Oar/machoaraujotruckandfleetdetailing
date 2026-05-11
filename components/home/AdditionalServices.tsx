@@ -67,7 +67,7 @@ const BANNERS: Banner[] = [
     subtitle: "Ozone gas treatment is the MOST EFFECTIVE way to eliminate odors inside your vehicle; it eliminates odors at the molecular level rather than just masking them with fragrances.",
     price:    "$70",
     href:     "/services/ozone-treatment",
-    image:    "/images/services/ozone-treatment/AdditionalServices/ozonePortada.jpg",
+    image:    "/images/services/ozone-treatment/Gallery/01.JPG",
   },
 ]
 
