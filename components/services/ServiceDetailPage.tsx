@@ -473,6 +473,27 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           margin-right: auto;
         }
 
+        /* ── Before & After ────────────────────────────── */
+        .sdp-ba-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 6px;
+          margin-top: 48px;
+        }
+        .sdp-ba-item {
+          position: relative;
+          height: 260px;
+          border-radius: 8px;
+          overflow: hidden;
+          cursor: zoom-in;
+        }
+        .sdp-ba-item img {
+          transition: transform 0.45s ease;
+        }
+        .sdp-ba-item:hover img {
+          transform: scale(1.06);
+        }
+
         /* ── Gallery ───────────────────────────────────── */
         .sdp-gallery-grid {
           display: grid;
@@ -838,7 +859,30 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         <div style={{ borderTop: "1px solid rgba(201,168,76,0.18)", margin: "0 80px" }} />
       )}
 
-      {/* ── 6. GALLERY ───────────────────────────────────── */}
+      {/* ── 6. BEFORE & AFTER ────────────────────────────── */}
+      {service.beforeAfter && service.beforeAfter.length > 0 && (
+      <section className="sdp-section-alt">
+        <div className="sdp-container">
+          <p className="sdp-section-label">Transformations</p>
+          <h2 className="sdp-section-h2">Before & After</h2>
+          <div className="sdp-ba-grid">
+            {service.beforeAfter.map((img, i) => (
+              <div key={i} className="sdp-ba-item"
+                onClick={() => setLightbox({ src: img, alt: `Before & After ${i + 1}` })}>
+                <Image
+                  src={img}
+                  alt={`Before & After ${i + 1}`}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      )}
+
+      {/* ── GALLERY ──────────────────────────────────────── */}
       <section className="sdp-section">
         <div className="sdp-container">
           <p className="sdp-section-label">Our Work</p>

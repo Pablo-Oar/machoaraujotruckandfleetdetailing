@@ -44,6 +44,7 @@ export interface ServiceData {
   benefits: ServiceBenefit[]
   steps: ServiceStep[]
   gallery: string[]
+  beforeAfter?: string[]
   faqs: ServiceFAQ[]
   related: RelatedService[]
   metaTitle: string
@@ -313,9 +314,26 @@ export const SERVICES_DATA: ServiceData[] = [
     benefits: [],
     steps: [],
     gallery: [
-      "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
+      "/images/services/interior-detail/Gallery/IMG_8914.jpeg",
+      "/images/services/interior-detail/Gallery/IMG_8916.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8921.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8923.PNG",
+      "/images/services/interior-detail/Gallery/IMG_8924.PNG",
+      "/images/services/interior-detail/Gallery/IMG_8925.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8926.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8927.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8928.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8929.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8930.JPG",
+    ],
+    beforeAfter: [
+      "/images/services/interior-detail/After-Before/IMG_8823.JPG",
+      "/images/services/interior-detail/After-Before/IMG_8824.WEBP",
+      "/images/services/interior-detail/After-Before/IMG_8826.JPG",
+      "/images/services/interior-detail/After-Before/IMG_8828.JPG",
+      "/images/services/interior-detail/After-Before/IMG_8833.JPG",
+      "/images/services/interior-detail/After-Before/IMG_8835.WEBP",
     ],
     faqs: [
       { question: "How long does an interior detail take?", answer: "A standard interior detail takes 2–4 hours depending on vehicle size and condition. Heavily soiled or large vehicles (SUVs, trucks) may take longer." },
@@ -373,10 +391,23 @@ export const SERVICES_DATA: ServiceData[] = [
     priceNote: "Exterior Express: Starting at $50 · Exterior Premium: Starting at $120. Price varies by vehicle size.",
     benefits: [],
     steps: [],
+    beforeAfter: [
+      "/images/services/exterior-detail/Before-After/IMG_8844.PNG",
+      "/images/services/exterior-detail/Before-After/IMG_8845.PNG",
+      "/images/services/exterior-detail/Before-After/IMG_8847.JPG",
+      "/images/services/exterior-detail/Before-After/IMG_8848.JPG",
+      "/images/services/exterior-detail/Before-After/IMG_8849.WEBP",
+    ],
     gallery: [
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/services/paint-correction/PaintCorrection1.png",
+      "/images/services/exterior-detail/Gallery/IMG_8852.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8853.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8854.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8855.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8856.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8857.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8858.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8860.JPG",
+      "/images/services/exterior-detail/Gallery/IMG_8861.WEBP",
     ],
     faqs: [
       { question: "What's the difference between a wash and an exterior detail?", answer: "A car wash removes surface dirt. An exterior detail includes decontamination, machine polishing and paint protection — it restores the paint, not just cleans it." },
@@ -437,9 +468,11 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Exterior Polish", body: "Exterior wash, deoxidation and polishing of aluminum or composite surfaces using non-corrosive aviation compounds." },
     ],
     gallery: [
-      "/images/services/aircraft-detailing/AircraftDetailing1.png",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+      "/images/services/aircraft-detailing/Gallery/IMG_8797.JPG",
+      "/images/services/aircraft-detailing/Gallery/IMG_8801.JPG",
+      "/images/services/aircraft-detailing/Gallery/IMG_8802.JPG",
+      "/images/services/aircraft-detailing/Gallery/IMG_8803.JPG",
+      "/images/services/aircraft-detailing/Gallery/IMG_8805.WEBP",
     ],
     faqs: [
       { question: "Do you come to the airport?", answer: "Yes — we come to your hangar or tie-down at your local airport. We've serviced aircraft at multiple airports in the Fresno and Central Valley area." },
@@ -500,9 +533,14 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Protection & Interior", body: "Marine wax or ceramic coat applied for lasting protection. Interior cabin vacuumed, upholstery treated, brightwork polished." },
     ],
     gallery: [
-      "/images/services/boat-detailing/BoatDetailing1.png",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+      "/images/services/boat-detailing/Gallery/IMG_8807.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8809.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8810.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8813.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8816.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8818.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8819.JPG",
+      "/images/services/boat-detailing/Gallery/IMG_8820.JPG",
     ],
     faqs: [
       { question: "Can you remove heavy oxidation?", answer: "Yes — even heavily oxidized gelcoat that looks chalky and dull can usually be restored with heavy-cut compounds and multi-stage polishing. We'll assess and recommend the right approach." },
@@ -625,9 +663,15 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "UV Coating Application", body: "A professional UV-resistant coating is applied to protect the lens and prevent re-yellowing for years." },
     ],
     gallery: [
-      "/images/services/headlights-restoration/BeforeAfter.png",
-      "/images/services/headlights-restoration/ImgHeadLights.png",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+      "/images/services/headlights-restoration/Gallery/IMG_8881.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8883.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8884.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8885.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8886.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8887.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8888.JPG",
+      "/images/services/headlights-restoration/Gallery/IMG_8889.PNG",
+      "/images/services/headlights-restoration/Gallery/IMG_8890.JPG",
     ],
     faqs: [
       { question: "Can all headlights be restored?", answer: "Most polycarbonate headlights can be restored. Deeply cracked, chipped or internally fogged lenses (condensation inside) cannot be restored by polishing and need replacement." },
@@ -751,9 +795,18 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Leather & Tire Finish", body: "Leather seats cleaned and conditioned. Tires waxed and dressed for a clean, long-lasting finish." },
     ],
     gallery: [
-      "/images/services/interior-detail/InteriorPremium1.png",
-      "/images/services/detailing-packages/PackagesDetailing1.png",
-      "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+      "/images/services/interior-detail/Gallery/IMG_8914.jpeg",
+      "/images/services/interior-detail/Gallery/IMG_8916.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8921.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8923.PNG",
+      "/images/services/interior-detail/Gallery/IMG_8924.PNG",
+      "/images/services/interior-detail/Gallery/IMG_8925.WEBP",
+      "/images/services/interior-detail/Gallery/IMG_8926.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8927.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8928.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8929.JPG",
+      "/images/services/interior-detail/Gallery/IMG_8930.JPG",
     ],
     faqs: [
       { question: "How long does the Standard Full Detail take?", answer: "Typically 2.5 to 3.5 hours depending on vehicle size and condition. We confirm the estimated time when you book." },
@@ -877,9 +930,17 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Dry & Dress", body: "All surfaces dried with microfiber and compressed air. Plastics and hoses dressed with UV protectant for a clean, finished look." },
     ],
     gallery: [
-      "/images/services/engine-detailing/EngineDetailing1.png",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+      "/images/services/engine-detailing/Gallery/IMG_8894.JPG",
+      "/images/services/engine-detailing/Gallery/IMG_8895.JPG",
+      "/images/services/engine-detailing/Gallery/IMG_8899.WEBP",
+      "/images/services/engine-detailing/Gallery/IMG_8902.JPG",
+      "/images/services/engine-detailing/Gallery/IMG_8903.WEBP",
+      "/images/services/engine-detailing/Gallery/IMG_8898.WEBP",
+    ],
+    beforeAfter: [
+      "/images/services/engine-detailing/Before-After/IMG_8896.WEBP",
+      "/images/services/engine-detailing/Before-After/IMG_8897.JPG",
+      "/images/services/engine-detailing/Before-After/IMG_8901.WEBP",
     ],
     faqs: [
       { question: "Will water damage my engine?", answer: "No — when done correctly. We cover all sensitive electrical components and use low pressure. Engines are designed to handle water from rain and steam — the key is avoiding direct high-pressure spray on electrical connections." },
@@ -899,8 +960,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "ozone-treatment",
     eyebrow: "Odor Elimination",
     title: "Ozone Treatment",
-    heroImage: "/images/services/ozone-treatment/01.JPG",
-    overviewImage: "/images/services/ozone-treatment/02.JPG",
+    heroImage: "/images/services/ozone-treatment/Gallery/01.JPG",
+    overviewImage: "/images/services/ozone-treatment/Gallery/02.JPG",
     tagline: "The most effective way to permanently eliminate odors from your vehicle.",
     description:
       "Ozone gas treatment is the MOST EFFECTIVE way to eliminate odors inside your vehicle. Unlike air fresheners or sprays that simply mask smells, ozone eliminates odors at the molecular level — permanently neutralizing the source.",
@@ -939,10 +1000,12 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Airing Out", body: "After the cycle completes, the vehicle is aired out. Ozone converts back to oxygen, leaving no residue — just a fresh, clean interior." },
     ],
     gallery: [
-      "/images/services/ozone-treatment/01.JPG",
-      "/images/services/ozone-treatment/02.JPG",
-      "/images/services/ozone-treatment/04.JPG",
-      "/images/services/ozone-treatment/05.jpg",
+      "/images/services/ozone-treatment/Gallery/01.JPG",
+      "/images/services/ozone-treatment/Gallery/02.JPG",
+      "/images/services/ozone-treatment/Gallery/03.JPG",
+      "/images/services/ozone-treatment/Gallery/04.jpg",
+      "/images/services/ozone-treatment/Gallery/05.JPG",
+      "/images/services/ozone-treatment/Gallery/06.PNG",
     ],
     faqs: [
       { question: "Is ozone treatment safe?", answer: "Yes — when done properly. The vehicle must be unoccupied during the treatment. After the cycle, ozone naturally converts back to oxygen within a short airing-out period, leaving no harmful residue." },
