@@ -123,7 +123,7 @@ export default function Hero() {
             maxWidth: "520px",
             margin: "0 auto 40px",
           }}>
-            Ceramic coating, paint correction, Fleet Detailing, Detailing Packages, Aircraft Detailing &amp; Boat Detailing. Servicing the entire Central Valley.
+            Ceramic Coating, Paint Correction, Fleet Detailing, Detailing Packages, Aircraft Detailing &amp; Boat Detailing. Servicing the entire Central Valley.
           </p>
 
           {/* CTA Pair */}

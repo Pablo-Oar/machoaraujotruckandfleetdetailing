@@ -671,6 +671,18 @@ export default function AboutPage() {
           /* Gallery: 2 col mobile */
           .gallery-grid {
             grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 160px;
+          }
+
+          .gallery-item {
+            aspect-ratio: unset;
+            height: 160px;
+          }
+
+          .gallery-item:nth-child(9),
+          .gallery-item:nth-child(10),
+          .gallery-item:nth-child(11) {
+            grid-column: auto;
           }
 
           .timeline-heading {

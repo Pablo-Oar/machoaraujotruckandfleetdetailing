@@ -26,14 +26,21 @@ const PRIMARY_SERVICES = [
       <p>Remember paint correction is all about reviving your vehicle&apos;s aesthetics to its pristine state, ensuring it radiates brilliance and gloss.</p>
       <p>If you are looking for a smooth mirror glaze finish, correcting or restoring the finish of your vehicle, this is the way to go. Finished with a protective sealant.</p>
       <p>In order to achieve a safe and impeccable result, every vehicle is carefully treated from start to finish following the steps below:</p>
-      <ul style={{ paddingLeft: "1.2em", margin: "8px 0 0" }}>
-        <li>Wash the vehicle throughout including door jambs, gas cap and removing bugs off the front end.</li>
-        <li>Clay Bar the paint for a smooth paint finish and to remove remaining contaminators.</li>
-        <li>Tape off sensitive areas like plastic trims to protect them.</li>
-        <li>One pass of compound or polish with a dual action buffer.</li>
-        <li>Wipe down vehicle with remover to inspect the car paint true condition after treatment.</li>
-        <li>Apply synthetic sealant for an extended protection.</li>
-        <li>Wax tires, clean exterior glass and windows and touch up any detailed areas.</li>
+      <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0", display: "flex", flexDirection: "column", gap: "6px" }}>
+        {[
+          "Wash the vehicle throughout including door jambs, gas cap and removing bugs off the front end.",
+          "Clay Bar the paint for a smooth paint finish and to remove remaining contaminators.",
+          "Tape off sensitive areas like plastic trims to protect them.",
+          "One pass of compound or polish with a dual action buffer.",
+          "Wipe down vehicle with remover to inspect the car paint true condition after treatment.",
+          "Apply synthetic sealant for an extended protection.",
+          "Wax tires, clean exterior glass and windows and touch up any detailed areas.",
+        ].map((item) => (
+          <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "13px", color: "#AAAAAA" }}>
+            <span style={{ color: "#C9A84C", fontWeight: 700, marginTop: "1px", flexShrink: 0 }}>—</span>
+            {item}
+          </li>
+        ))}
       </ul>
     </>),
     features: [
@@ -52,6 +59,7 @@ const PRIMARY_SERVICES = [
     eyebrow:     "Long-Term Protection",
     title:       "Ceramic Coating",
     description: (<>
+      <p>Professional-grade nano-ceramic formula that bonds to your paint and delivers 3+ years of hydrophobic, UV-resistant, self-cleaning protection. Best investment for any vehicle.</p>
       <p>With its fantastic hydrophobic properties your car will repel water over and over, staying cleaner for longer periods of time.</p>
       <p>At Macho Araujo Car detailing we take pride in our application methods. We perform a variety of crucial preparation steps before applying the ceramic coating to your vehicle, including clay treatment and paint correction (if necessary).</p>
     </>),
@@ -71,6 +79,8 @@ const PRIMARY_SERVICES = [
     eyebrow:     "Commercial Services",
     title:       "Fleet Detailing",
     description: (<>
+      <p>Scheduled maintenance programs designed for businesses with multiple vehicles. Weekly, bi-weekly or monthly contracts. We keep your fleet looking professional and your drivers proud.</p>
+
       <p><strong>Why Fleet Detailing Matters</strong></p>
 
       <p><strong>1. Enhances Brand Image and Customer Perception:</strong> Your fleet vehicles are moving advertisements for your business. Clean, well-maintained vehicles convey a sense of professionalism and attention to detail. Whether you&apos;re a small or corporate business or a transportation company, a pristine fleet can create a lasting positive impression on your clients and the public.</p>
@@ -81,10 +91,30 @@ const PRIMARY_SERVICES = [
 
       <p><strong>4. Improves Safety and Compliance:</strong> Professional detailing services go beyond aesthetics. Clean vehicles ensure better visibility through spotless windows and mirrors, and a well-maintained interior can prevent issues like mold or allergens that could affect drivers&apos; health. Moreover, for transportation companies, regular fleet detailing can help keep vehicles compliant with industry cleanliness standards.</p>
 
-      <p>Unlike personal vehicles, fleet cars endure significantly higher usage and a broader range of driving conditions. They&apos;re exposed to environmental pollutants, road grime, tree sap, and much more on a daily basis. This is why maintaining a regular cleaning schedule is so important in order to remove all corrosive agents, extending the life of your vehicle&apos;s exterior and undercarriage, while maintaining a professional image of your business. A spotless truck doesn&apos;t just look good; it conveys confidence and professionalism to your customers.</p>
+      <div style={{
+        margin: "16px 0",
+        padding: "16px 20px",
+        borderLeft: "3px solid #C9A84C",
+        backgroundColor: "rgba(201,168,76,0.06)",
+        borderRadius: "0 4px 4px 0",
+      }}>
+        <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
+          Unlike personal vehicles, fleet cars endure significantly higher usage and a broader range of driving conditions. They&apos;re exposed to environmental pollutants, road grime, tree sap, and much more on a daily basis. This is why maintaining a regular cleaning schedule is so important in order to remove all corrosive agents, extending the life of your vehicle&apos;s exterior and undercarriage, while maintaining a professional image of your business. A spotless truck doesn&apos;t just look good; it conveys confidence and professionalism to your customers.
+        </p>
+      </div>
 
       <div style={{ marginTop: "28px" }}>
-        <p>At Macho Araujo Truck &amp; Fleet Detailing, we specialized in fleet cleaning making your brand shine every mile.</p>
+        <div style={{
+          margin: "0 0 16px",
+          padding: "16px 20px",
+          borderLeft: "3px solid #C9A84C",
+          backgroundColor: "rgba(201,168,76,0.06)",
+          borderRadius: "0 4px 4px 0",
+        }}>
+          <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
+            At Macho Araujo Truck &amp; Fleet Detailing, we specialized in fleet cleaning making your brand shine every mile.
+          </p>
+        </div>
         <div style={{
           margin: "16px 0",
           padding: "16px 20px",
@@ -143,18 +173,30 @@ const PRIMARY_SERVICES = [
         </tbody>
       </table></div>
 
-      <p><strong>Tractor &amp; Truck Cabin — Interior Cleaning:</strong> We offer a complete interior cleaning including trash removal, vacuum and surface wipe-down. We focus on high visibility areas and driver touch points. This service is strictly customized to meet your needs. Please contact us for further pricing and information.</p>
+      <p><strong>Tractor &amp; Truck Cabin — Interior Cleaning:</strong> We offer a complete interior cleaning including trash removal, vacuum and surface wipe-down. We focus on high visibility areas and driver touch points. This service is strictly customized to meet your needs.</p>
 
       <p><strong>Trailer Washout:</strong> Our interior washout provides a comprehensive cleaning for the cargo area of your vehicles, including trailers, box trucks and cargo vans.</p>
 
       <p><strong>Industrial Pressure Washing:</strong> Our industrial pressure washing service is highly effective for cleaning various surfaces, including sidewalks, parking areas, dock doors, compactor pads, and more. We utilize advanced techniques and equipment to ensure thorough cleaning and removal of tough stains, grime, and debris.</p>
+
+      <div style={{
+        margin: "16px 0",
+        padding: "16px 20px",
+        borderLeft: "3px solid #C9A84C",
+        backgroundColor: "rgba(201,168,76,0.06)",
+        borderRadius: "0 4px 4px 0",
+      }}>
+        <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
+          Please contact us for further pricing and information.
+        </p>
+      </div>
 
       <div style={{ marginTop: "28px", borderTop: "1px solid rgba(201,168,76,0.25)", paddingTop: "24px" }}>
         <p style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#C9A84C", marginBottom: "16px" }}>
           Our Clients
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-          {["Maldonado Brothers", "HVL Construction", "J & E Brokerage LLC", "AgPro Organics", "Ramcast Ornamental", "Rollo Bins Transportation"].map((client) => (
+          {["Maldonado Brothers", "HVL Construction", "J & E Brokerage LLC", "AgPro Organics", "Ramcast Ornamental", "Rollo Bins Transportation", "OMG PARTNERS INC"].map((client) => (
             <span key={client} style={{
               display: "inline-block",
               padding: "6px 14px",
@@ -1070,9 +1112,20 @@ export default function ServicesPage() {
             <h2 className="section-h2">Detailing Packages</h2>
             <p style={{ color: "#AAAAAA", fontSize: "15px", lineHeight: 1.75, maxWidth: "700px", margin: "24px auto 0" }}>
               No time to spare? Our mobile detailing service is designed for your busy lifestyle. Experience efficient and complete cleaning that fits seamlessly into your schedule.<br /><br />
-              We understand your vehicle is not just transportation, but an extension of your style and personality. We are passionately committed to elevate your car&apos;s appearance and value.<br /><br />
-              Book a complete mobile detailing service package today. Offering full interior and exterior detailing, upholstery shampoo, leather conditioning, paint restoration and more.
+              We understand your vehicle is not just transportation, but an extension of your style and personality. We are passionately committed to elevate your car&apos;s appearance and value.
             </p>
+            <div style={{
+              margin: "24px auto 0",
+              maxWidth: "700px",
+              padding: "16px 20px",
+              borderLeft: "3px solid #C9A84C",
+              backgroundColor: "rgba(201,168,76,0.06)",
+              borderRadius: "0 4px 4px 0",
+            }}>
+              <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
+                Book a complete mobile detailing service package today. Offering full interior and exterior detailing, upholstery shampoo, leather conditioning, paint restoration and more.
+              </p>
+            </div>
           </div>
 
           <div className="pkg-grid">

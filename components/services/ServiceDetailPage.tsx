@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import type { ServiceData } from "@/data/services"
 import PremiumDeluxeCarousel from "@/components/services/PremiumDeluxeCarousel"
+import ExpressDetailCarousel from "@/components/services/ExpressDetailCarousel"
 
 /* ─────────────────────────────────────────────────────────────
    SERVICE DETAIL PAGE — Template compartido para los 10 servicios
@@ -753,6 +754,8 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
             {/* Image */}
             {service.slug === "premium-deluxe" ? (
               <PremiumDeluxeCarousel />
+            ) : service.slug === "express-detail" ? (
+              <ExpressDetailCarousel />
             ) : (
               <div className={`sdp-overview-img-wrap${service.slug === "detailing-packages" ? " detailing-packages-overview" : ""}`}
                 style={service.slug === "detailing-packages" ? { height: "auto", minHeight: "420px" } : undefined}

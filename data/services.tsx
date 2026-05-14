@@ -83,7 +83,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Surface Restoration",
     title: "Paint Correction",
     heroImage: "/images/services/paint-correction/HeroPaintCorrection.png",
-    overviewImage: "/images/services/paint-correction/PaintCorrection1.png",
+    overviewImage: "/images/services/paint-correction/PaintCorrection01.png",
     tagline: "Eliminate swirl marks, scratches and oxidation permanently.",
     description:
       "Multi-stage machine polishing that permanently eliminates swirl marks, water spots, light scratches and oxidation. We restore your paint's original clarity — not just mask defects.",
@@ -132,8 +132,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Do I need paint correction before ceramic coating?", answer: "Yes. Ceramic coating locks the paint's current condition permanently. Any defects present before coating will be sealed in. We always recommend correction before coating." },
     ],
     related: [
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Carousel/03.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8852.JPG" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Paint Correction Fresno CA | Macho Araujo Detailing",
@@ -145,8 +145,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "ceramic-coating",
     eyebrow: "Long-Term Protection",
     title: "Ceramic Coating",
-    heroImage: "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
-    overviewImage: "/images/services/ceramic-coating/CeramicCoating1.png",
+    heroImage: "/images/services/ceramic-coating/HeroCeramicCoating.jpg",
+    overviewImage: "/images/services/ceramic-coating/CeramicCoating01.jpg",
     tagline: "3+ years of hydrophobic, UV-resistant paint protection.",
     description:
       "Professional-grade nano-ceramic formula that bonds permanently to your paint, delivering 3–5 years of hydrophobic, UV-resistant, self-cleaning protection. The best investment for any vehicle.",
@@ -185,7 +185,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic Application", body: "Each panel is coated individually in controlled sections. Ceramic cures over 24–48 hours — we recommend keeping the vehicle dry during this period." },
     ],
     gallery: [
-      "/images/services/ceramic-coating/CeramicCoating1.png",
+      "/images/services/ceramic-coating/CeramicCoating01.jpg",
       "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
     ],
@@ -248,9 +248,10 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Consistent Service", body: "Our team shows up on schedule, every time. You get the same quality on visit #1 as visit #50." },
     ],
     gallery: [
-      "/images/services/fleet-detailing/FleetDetailing1.png",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+      "/images/services/fleet-detailing/Carousel/01.jpg",
+      "/images/services/fleet-detailing/Carousel/02.jpg",
+      "/images/services/fleet-detailing/Carousel/03.jpg",
+      "/images/services/fleet-detailing/Carousel/04.jpg",
     ],
     faqs: [
       { question: "What's the minimum fleet size?", answer: "We work with fleets as small as 3 vehicles. For very large fleets (20+ units), we offer dedicated team scheduling and priority response times." },
@@ -272,7 +273,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Interior Restoration",
     title: "Interior Detail",
     heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
-    overviewImage: "/images/services/interior-detail/InteriorPremium1.png",
+    overviewImage: "/images/services/interior-detail/InteriorPremium01.png",
     tagline: "Your cabin, looking and smelling brand new.",
     description: (
       <>
@@ -281,7 +282,7 @@ export const SERVICES_DATA: ServiceData[] = [
         <div className="sdp-tiers-grid">
           <div className="sdp-tier-card">
             <div className="sdp-tier-name">Express</div>
-            <div className="sdp-tier-price">Starting at $70</div>
+            <div className="sdp-tier-price">Starting at $65</div>
             <ul className="sdp-tier-list">
               {["Complete Interior vacuum", "ALL surfaces wipe down", "Disinfection of surfaces", "Dashboard UV Protection", "Windows and mirrors cleaning"].map(item => (
                 <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
@@ -333,7 +334,6 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/interior-detail/After-Before/IMG_8826.JPG",
       "/images/services/interior-detail/After-Before/IMG_8828.JPG",
       "/images/services/interior-detail/After-Before/IMG_8833.JPG",
-      "/images/services/interior-detail/After-Before/IMG_8835.WEBP",
     ],
     faqs: [
       { question: "How long does an interior detail take?", answer: "A standard interior detail takes 2–4 hours depending on vehicle size and condition. Heavily soiled or large vehicles (SUVs, trucks) may take longer." },
@@ -355,7 +355,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
     heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
-    overviewImage: "/images/services/exterior-detail/ExteriorPremium1.png",
+    overviewImage: "/images/services/exterior-detail/ExteriorPremium01.png",
     tagline: "Two tiers of exterior care — Express & Premium.",
     description: (
       <>
@@ -368,7 +368,7 @@ export const SERVICES_DATA: ServiceData[] = [
             <div className="sdp-tier-name">Express</div>
             <div className="sdp-tier-price">Starting at $50</div>
             <ul className="sdp-tier-list">
-              {["Foam bath", "Complete wash of vehicle and tires", "Soft microfiber hand drying", "Clean exterior glass and windows", "Tires waxing"].map(item => (
+              {["Foam bath", "Complete wash of vehicle and tires", "Soft microfiber hand drying", "Clean exterior glass and windows", "Tires Cleaning"].map(item => (
                 <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
               ))}
             </ul>
@@ -432,7 +432,7 @@ export const SERVICES_DATA: ServiceData[] = [
     overviewImage: "/images/services/aircraft-detailing/AircraftDetailing1.png",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
-      "Meticulous interior and exterior detailing for private and commercial aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
+      "Meticulous interior and exterior detailing for private and charter aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
     longDescription:
       "Aircraft surfaces demand specialized knowledge. We use only aviation-safe, non-corrosive products that meet FAA-recognized standards — nothing that could compromise aluminum, composites or avionics. Our aircraft detailing covers everything from cabin deep-cleaning to exterior polishing and deoxidation, restoring your aircraft's appearance while protecting critical materials.",
     features: [
@@ -508,7 +508,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Stainless & brightwork polish",
       "We come to the marina or your dock",
     ],
-    price: "Starting at $250",
+    price: "",
     priceNote: "Price depends on boat size, gelcoat condition and scope. Contact us for a quote — we'll assess by photos or an on-site visit.",
     benefits: [
       {
@@ -867,7 +867,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic & Ozone", body: "Interior UV wax applied, exterior ceramic protection applied, windows ceramic coated. Vehicle sealed and ozone treatment run to eliminate all odors." },
     ],
     gallery: [
-      "/images/services/exterior-detail/ExteriorPremium1.png",
+      "/images/services/exterior-detail/ExteriorPremium01.png",
       "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
       "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
     ],
