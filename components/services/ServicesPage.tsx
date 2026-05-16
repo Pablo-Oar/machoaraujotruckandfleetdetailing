@@ -315,7 +315,7 @@ const ADDITIONAL = [
   {
     title:    "Exterior Express & Premium",
     price:    "Starting at $50",
-    image:    "/images/services/exterior-detail/ImgExteriorPremium.jpg",
+    image:    "/images/services/exterior-detail/AdditionalServices/ExteriorPremium.jpg",
     href:     "/services/exterior-detail",
   },
   {

@@ -133,7 +133,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Do I need paint correction before ceramic coating?", answer: "Yes. Ceramic coating locks the paint's current condition permanently. Any defects present before coating will be sealed in. We always recommend correction before coating." },
     ],
     related: [
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Carousel/03.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Carousel/03.JPG" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8852.JPG" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
@@ -146,7 +146,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "ceramic-coating",
     eyebrow: "Long-Term Protection",
     title: "Ceramic Coating",
-    heroImage: "/images/services/ceramic-coating/HeroCeramicCoating.jpg",
+    heroImage: "/images/services/ceramic-coating/HeroCeramicCoating.JPG",
     overviewImage: "/images/services/ceramic-coating/CeramicCoating01.jpg",
     tagline: "3+ years of hydrophobic, UV-resistant paint protection.",
     description:
@@ -447,7 +447,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Exterior wash & deoxidation",
       "Aluminum & composite-safe polishing",
       "Aviation-safe, non-corrosive products",
-      "Private & commercial aircraft",
+      "Private & charter aircraft",
     ],
     price: "Custom Quote",
     priceNote: "Aircraft detailing is quoted individually based on aircraft type, size and scope of work. Contact us for a site visit and estimate.",
@@ -617,8 +617,8 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/01.jpeg" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/01.JPEG" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
     metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
@@ -644,7 +644,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Both headlights included",
       "Before & after photos provided",
     ],
-    price: "Starting at $80",
+    price: "$80",
     priceNote: "Price is for both headlights. Severely damaged or cracked lenses may need replacement instead of restoration — we'll advise during inspection.",
     benefits: [
       {
@@ -714,7 +714,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Complete in 1.5 - 2 hours",
     ],
     price: "Starting at $80",
-    priceNote: "Express Detail: $80–$120 depending on vehicle size and condition. SUVs and trucks at the higher end.",
+    priceNote: "Price depending on vehicle size and condition. SUVs and trucks at the higher end.",
     benefits: [
       {
         icon: ICONS.clock,
@@ -749,8 +749,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I upgrade from Express to Standard the same day?", answer: "Yes — if schedule allows, we can upgrade your appointment on the spot. Just let us know before we start and we'll adjust the time and quote accordingly." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Express Detail Fresno CA | Macho Araujo Detailing",
@@ -762,7 +762,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "standard-full-detail",
     eyebrow: "Most Popular",
     title: "Standard Full Detail",
-    heroImage: "/images/services/Standard-full detail/hero.png",
+    heroImage: "/images/services/standard-full-detail/hero.png",
     overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
     tagline: "Complete inside and out — our most popular package.",
     description:
@@ -806,14 +806,8 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/interior-detail/Gallery/IMG_8916.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8921.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8923.PNG",
-      "/images/services/interior-detail/Gallery/IMG_8924.PNG",
-      "/images/services/interior-detail/Gallery/IMG_8925.WEBP",
-      "/images/services/interior-detail/Gallery/IMG_8926.JPG",
       "/images/services/interior-detail/Gallery/IMG_8927.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8928.JPG",
       "/images/services/interior-detail/Gallery/IMG_8929.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8930.JPG",
     ],
     faqs: [
       { question: "How long does the Standard Full Detail take?", answer: "Typically 2.5 to 3.5 hours depending on vehicle size and condition. We confirm the estimated time when you book." },
@@ -822,7 +816,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8855.JPG" },
     ],
     metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
@@ -887,7 +881,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is the ceramic window protection the same as ceramic coating?", answer: "No — the window ceramic protection included in Premium Deluxe is a maintenance-grade glass sealant that lasts approximately 1 month. Full ceramic coating is a separate service. The window protection improves water beading and reduces glare at no extra cost." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/CeramicCoatingPortada.jpg" },
     ],
@@ -915,7 +909,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Microfiber dry & detailing",
       "Suitable for all engine types",
     ],
-    price: "Starting at $80",
+    price: "$80",
     priceNote: "Price may vary for heavily soiled or complex engine bays. Often included in our Premium Deluxe package.",
     benefits: [
       {
@@ -1038,8 +1032,8 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
     ],
     metaTitle: "Monthly Subscription Plan Fresno CA | Macho Araujo Detailing",
     metaDescription: "Monthly car detailing subscription in Fresno, CA. One maintenance detail per month from $100–$120. Save up to 20% vs one-time bookings. Mobile — we come to you.",

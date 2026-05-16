@@ -185,7 +185,7 @@ const MEDIA: MediaItem[] = [
   {
     id: "p14",
     type: "photo",
-    src: "/images/portfolio/Screenshot_20260415_134651_Instagram.jpg",
+    src: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     category: "Full Detail",
     label: "Premium Full Detail Package",
   },
