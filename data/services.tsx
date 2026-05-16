@@ -83,8 +83,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "paint-correction",
     eyebrow: "Surface Restoration",
     title: "Paint Correction",
-    heroImage: "/images/services/paint-correction/HeroPaintCorrection.png",
-    overviewImage: "/images/services/paint-correction/PaintCorrection01.png",
+    heroImage: "/images/services/paint-correction/HeroPaintCorrection.jpg",
+    overviewImage: "/images/services/paint-correction/PaintCorrection01.jpg",
     tagline: "Eliminate swirl marks, scratches and oxidation permanently.",
     description:
       "Multi-stage machine polishing that permanently eliminates swirl marks, water spots, light scratches and oxidation. We restore your paint's original clarity — not just mask defects.",
@@ -188,11 +188,9 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     gallery: [
       "/images/services/ceramic-coating/Gallery/01.JPG",
-      "/images/services/ceramic-coating/Gallery/02.PNG",
+      "/images/services/ceramic-coating/Gallery/02.jpg",
       "/images/services/ceramic-coating/Gallery/03.JPG",
       "/images/services/ceramic-coating/Gallery/04.JPG",
-      "/images/services/ceramic-coating/Gallery/05.jpg",
-      "/images/services/ceramic-coating/Gallery/06.jpg",
     ],
     faqs: [
       { question: "How long does ceramic coating last?", answer: "Our professional-grade coatings are rated for 3–5 years with proper maintenance. Consumer-grade products available at auto parts stores typically last 6–12 months." },
@@ -214,7 +212,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Commercial Services",
     title: "Fleet Detailing",
     heroImage: "/images/services/fleet-detailing/ImgFleetDetailing.jpg",
-    overviewImage: "/images/services/fleet-detailing/FleetDetailing1.png",
+    overviewImage: "/images/services/fleet-detailing/FleetDetailing1.jpg",
     tagline: "Scheduled programs for businesses with multiple vehicles.",
     description:
       "Scheduled maintenance programs designed for businesses with multiple vehicles. Weekly, bi-weekly or monthly contracts. We keep your fleet looking professional and your drivers proud.",
@@ -282,7 +280,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Interior Restoration",
     title: "Interior Detail",
     heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
-    overviewImage: "/images/services/interior-detail/InteriorPremium01.png",
+    overviewImage: "/images/services/interior-detail/InteriorPremium01.jpg",
     tagline: "Your cabin, looking and smelling brand new.",
     description: (
       <>
@@ -364,7 +362,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
     heroImage: "/images/services/exterior-detail/hero.JPG",
-    overviewImage: "/images/services/exterior-detail/ExteriorPremium01.png",
+    overviewImage: "/images/services/exterior-detail/ExteriorPremium01.jpg",
     tagline: "Two tiers of exterior care — Express & Premium.",
     description: (
       <>
@@ -401,7 +399,7 @@ export const SERVICES_DATA: ServiceData[] = [
     benefits: [],
     steps: [],
     beforeAfter: [
-      "/images/services/exterior-detail/Before-After/IMG_8844.PNG",
+      "/images/services/exterior-detail/Before-After/IMG_8844.jpg",
       "/images/services/exterior-detail/Before-After/IMG_8845.PNG",
       "/images/services/exterior-detail/Before-After/IMG_8847.JPG",
       "/images/services/exterior-detail/Before-After/IMG_8848.JPG",
@@ -437,8 +435,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "aircraft-detailing",
     eyebrow: "Specialty Vehicles",
     title: "Aircraft Detailing",
-    heroImage: "/images/services/aircraft-detailing/HeroAircraft.png",
-    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing1.png",
+    heroImage: "/images/services/aircraft-detailing/HeroAircraft.jpg",
+    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing1.jpg",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
       "Meticulous interior and exterior detailing for private and charter aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",
@@ -502,8 +500,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "boat-detailing",
     eyebrow: "Marine Detailing",
     title: "Boat Detailing",
-    heroImage: "/images/services/boat-detailing/HeroBoatDetailing.png",
-    overviewImage: "/images/services/boat-detailing/BoatDetailing1.png",
+    heroImage: "/images/services/boat-detailing/HeroBoatDetailing.jpg",
+    overviewImage: "/images/services/boat-detailing/BoatDetailing1.jpg",
     tagline: "Restore your vessel to showroom condition.",
     description:
       "Marine-grade cleaning, oxidation removal, waxing and protective coating for your vessel. We come to the marina or dock. Restore gelcoat, brightwork and upholstery to showroom condition.",
@@ -570,8 +568,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "detailing-packages",
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
-    heroImage: "/images/services/detailing-packages/HeroPackages.png",
-    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
+    heroImage: "/images/services/detailing-packages/HeroPackages.jpg",
+    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.jpg",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
       "Three comprehensive packages designed to fit any need and budget. From a quick refresh to a full restoration, every package is performed with the same premium-quality products and care.",
@@ -632,7 +630,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "headlights-restoration",
     eyebrow: "Visibility & Safety",
     title: "Headlights Restoration",
-    heroImage: "/images/services/headlights-restoration/HeadLights.png",
+    heroImage: "/images/services/headlights-restoration/HeadLights.jpg",
     overviewImage: "/images/services/headlights-restoration/HeadlightsRestoration01.jpg",
     tagline: "Clear headlights. Better visibility. Safer nights.",
     description:
@@ -676,7 +674,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/headlights-restoration/Gallery/IMG_8883.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8884.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8886.JPG",
-      "/images/services/headlights-restoration/Gallery/IMG_8889.PNG",
+      "/images/services/headlights-restoration/Gallery/IMG_8889.jpg",
       "/images/services/headlights-restoration/Gallery/IMG_8890.JPG",
     ],
     faqs: [
@@ -698,7 +696,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "express-detail",
     eyebrow: "Quick Refresh",
     title: "Express Detail",
-    heroImage: "/images/services/detailing-packages/HeroPackages.png",
+    heroImage: "/images/services/detailing-packages/HeroPackages.jpg",
     overviewImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     tagline: "Quick, thorough refresh — in and out in under 90 minutes.",
     description:
@@ -762,8 +760,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "standard-full-detail",
     eyebrow: "Most Popular",
     title: "Standard Full Detail",
-    heroImage: "/images/services/standard-full-detail/hero.png",
-    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
+    heroImage: "/images/services/standard-full-detail/hero.jpg",
+    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.jpg",
     tagline: "Complete inside and out — our most popular package.",
     description:
       "Everything in the Express Detail plus carpet cleaning, interior degreaser, dashboard shining, leather conditioning and tire waxing. The go-to choice for a thorough clean that covers all the bases.",
@@ -803,10 +801,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     gallery: [
       "/images/services/interior-detail/Gallery/IMG_8914.jpeg",
-      "/images/services/interior-detail/Gallery/IMG_8916.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
-      "/images/services/interior-detail/Gallery/IMG_8921.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8927.JPG",
       "/images/services/interior-detail/Gallery/IMG_8929.JPG",
       "/images/services/standard-full-detail/Gallery/03.jpg",
       "/images/services/standard-full-detail/Gallery/04.jpg",
@@ -900,7 +895,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Under the Hood",
     title: "Engine Bay Detailing",
     heroImage: "/images/services/engine-detailing/ImgEngineDetailing.jpg",
-    overviewImage: "/images/services/engine-detailing/EngineDetailing01.png",
+    overviewImage: "/images/services/engine-detailing/EngineDetailing01.jpg",
     tagline: "Safely degrease and detail your engine bay.",
     description:
       "Safe, thorough engine bay degreasing and detailing. We remove built-up grease, dust and road grime, then dress all plastics and hoses for a clean, protected engine bay.",
@@ -969,9 +964,9 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "subscription-plan",
     eyebrow: "Monthly Plan",
     title: "Subscription Plan",
-    heroImage: "/images/services/subscription-plan/hero1.png",
+    heroImage: "/images/services/subscription-plan/hero1.jpg",
     heroPosition: "center 95%",
-    overviewImage: "/images/services/subscription-plan/overview.jpg",
+    overviewImage: "/images/services/subscription-plan/descriptionPlan.jpg",
     tagline: "Clean, Protect and Maintain Your Vehicle All Year Long.",
     description: (
       <>
@@ -1049,8 +1044,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "industrial-pressure-washing",
     eyebrow: "Commercial Cleaning",
     title: "Industrial Pressure Washing",
-    heroImage: "/images/services/industrial-pressure-washing/hero.png",
-    overviewImage: "/images/services/industrial-pressure-washing/imgDescription.png",
+    heroImage: "/images/services/industrial-pressure-washing/hero.jpg",
+    overviewImage: "/images/services/industrial-pressure-washing/imgDescription.jpg",
     tagline: "Heavy-duty pressure washing for commercial surfaces.",
     description:
       "Our industrial pressure washing service is highly effective for cleaning various surfaces, including sidewalks, parking areas, dock doors, compactor pads, and more. We utilize advanced techniques and equipment to ensure thorough cleaning and removal of tough stains, grime, and debris.",
@@ -1163,7 +1158,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/hero/heroPremiumDeluxe.jpg" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/services/interior-detail/ImgInteriorPremium.jpg" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/HeroPackages.png" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/HeroPackages.jpg" },
     ],
     metaTitle: "Ozone Treatment Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional ozone odor elimination in Fresno, CA. Remove smoke, pet, mold and mildew odors permanently. Mobile service — $70 or FREE with Premium Deluxe.",

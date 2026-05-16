@@ -24,6 +24,13 @@ type MediaItem = {
 const MEDIA: MediaItem[] = [
   /* ── Videos ──────────────────────────────────────────────── */
   {
+    id: "v11",
+    type: "video",
+    src: "/videos/Add04.mp4",
+    category: "Exterior Detail",
+    label: "Exterior Premium — Showroom Finish",
+  },
+  {
     id: "v8",
     type: "video",
     src: "/videos/Add01.mp4",

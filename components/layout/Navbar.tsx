@@ -320,7 +320,7 @@ export default function Navbar() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "44px" }}>
           <Link href="/" onClick={() => { setMenuOpen(false); if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
             <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing"
-              width={140} height={42} style={{ objectFit: "contain", height: "44px", width: "auto" }} />
+              width={140} height={42} style={{ objectFit: "contain", height: "44px", width: "auto" }} priority />
           </Link>
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu"
             style={{

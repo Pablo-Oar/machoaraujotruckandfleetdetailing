@@ -193,7 +193,6 @@ export default function Footer() {
               <Link href="/services" className="footer-link">Services</Link>
               <Link href="/about" className="footer-link">About Us</Link>
               <Link href="/contact" className="footer-link">Contact</Link>
-              <Link href="/privacy" className="footer-link">Privacy Policy</Link>
             </div>
           </div>
 

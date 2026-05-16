@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import AboutHeroCarousel from "@/components/about/AboutHeroCarousel"
 
@@ -728,8 +729,8 @@ export default function AboutPage() {
                 We only use high quality products to ensure the highest level of protection for your vehicle while still offering a variety of affordable services, so if your number one priority is quality without having to worry about the price then you have found the right mobile detailing.
               </p>
               <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-                <a href="/services" className="btn-gold">View Our Services</a>
-                <a href="/contact" className="btn-outline">Get a Quote</a>
+                <Link href="/services" className="btn-gold">View Our Services</Link>
+                <Link href="/contact" className="btn-outline">Get a Quote</Link>
               </div>
             </div>
 

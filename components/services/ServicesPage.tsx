@@ -339,7 +339,7 @@ const ADDITIONAL = [
   {
     title:    "Subscription Plan",
     price:    "We Come To You",
-    image:    "/images/blog/EliasServices.png",
+    image:    "/images/blog/EliasServices.jpg",
     href:     "/services/subscription-plan",
   },
 ]

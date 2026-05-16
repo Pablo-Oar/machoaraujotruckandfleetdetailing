@@ -26,7 +26,7 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "(559) 569-9415",
-    sub: "Open 25 hours 7 days at week",
+    sub: "Open 24 hours 7 days at week",
     href: "tel:+15595699415",
   },
   {
@@ -600,7 +600,7 @@ export default function ContactPage() {
       <section className="contact-hero">
         <div style={{ position: "absolute", inset: 0 }}>
           <Image
-            src="/images/contact us/hero.png"
+            src="/images/contact us/hero.jpg"
             alt="Contact Macho Araujo Detailing"
             fill
             sizes="100vw"

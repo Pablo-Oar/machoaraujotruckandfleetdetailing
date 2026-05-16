@@ -321,10 +321,40 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         }
         .sdp-overview-img-wrap {
           position: relative;
-          height: 420px;
+          height: 520px;
           border-radius: 12px;
           overflow: hidden;
           cursor: zoom-in;
+          box-shadow:
+            0 0 0 2px rgba(201,168,76,0.55),
+            0 0 20px rgba(201,168,76,0.18),
+            0 24px 64px rgba(0,0,0,0.55);
+          transition: box-shadow 0.4s ease, transform 0.4s ease;
+        }
+        .sdp-overview-img-wrap::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to top,
+            rgba(201,168,76,0.10) 0%,
+            transparent 45%
+          );
+          pointer-events: none;
+          z-index: 1;
+        }
+        .sdp-overview-img-wrap:hover {
+          box-shadow:
+            0 0 0 2px rgba(201,168,76,0.9),
+            0 0 32px rgba(201,168,76,0.28),
+            0 32px 80px rgba(0,0,0,0.65);
+          transform: translateY(-5px);
+        }
+        .sdp-overview-img-wrap img {
+          transition: transform 0.6s ease !important;
+        }
+        .sdp-overview-img-wrap:hover img {
+          transform: scale(1.04) !important;
         }
         .sdp-features-list {
           list-style: none;
@@ -769,7 +799,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
                   src={service.overviewImage}
                   alt={service.title}
                   fill
-                  style={{ objectFit: "contain", borderRadius: "12px", backgroundColor: "#0D0D0D" }}
+                  style={{ objectFit: "cover", borderRadius: "12px" }}
                 />
               </div>
             )}
