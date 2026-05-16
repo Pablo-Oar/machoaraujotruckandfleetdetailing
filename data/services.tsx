@@ -408,12 +408,9 @@ export const SERVICES_DATA: ServiceData[] = [
     gallery: [
       "/images/services/exterior-detail/Gallery/IMG_8852.JPG",
       "/images/services/exterior-detail/Gallery/IMG_8853.JPG",
-      "/images/services/exterior-detail/Gallery/IMG_8854.JPG",
       "/images/services/exterior-detail/Gallery/IMG_8855.JPG",
       "/images/services/exterior-detail/Gallery/IMG_8856.JPG",
-      "/images/services/exterior-detail/Gallery/IMG_8857.JPG",
       "/images/services/exterior-detail/Gallery/IMG_8858.JPG",
-      "/images/services/exterior-detail/Gallery/IMG_8860.JPG",
       "/images/services/exterior-detail/Gallery/IMG_8861.WEBP",
     ],
     faqs: [

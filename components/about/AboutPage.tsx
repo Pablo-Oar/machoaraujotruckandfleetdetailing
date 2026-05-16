@@ -634,32 +634,53 @@ export default function AboutPage() {
             flex-shrink: 0;
           }
 
-          /* Timeline: single column */
+          /* Timeline: alternating mobile — línea central, cards a izq/der */
           .timeline-track::before {
-            left: 13px;
-            transform: none;
+            left: 50%;
+            transform: translateX(-50%);
           }
 
-          .timeline-item.tl-left,
-          .timeline-item.tl-right {
+          .timeline-item.tl-left {
             justify-content: flex-start;
-            padding-left: 44px;
-            padding-right: 0;
+            padding-right: calc(50% + 10px);
+            padding-left: 0;
+          }
+
+          .timeline-item.tl-right {
+            justify-content: flex-end;
+            padding-left: calc(50% + 10px);
+            padding-right: 0 !important;
           }
 
           .timeline-dot {
-            left: 13px;
-            transform: none;
+            left: 50%;
+            top: 16px;
+            transform: translateX(-50%);
           }
 
-          @keyframes fadeInRight {
-            from { opacity: 0; transform: translateX(0); }
-            to   { opacity: 1; transform: translateX(0); }
+          .timeline-card {
+            padding: 12px 10px;
+            animation: fadeInUp 0.45s ease both !important;
           }
 
-          @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(0); }
-            to   { opacity: 1; transform: translateX(0); }
+          .timeline-year {
+            font-size: 10px;
+            margin-bottom: 4px;
+          }
+
+          .timeline-title {
+            font-size: 11px;
+            margin-bottom: 6px;
+          }
+
+          .timeline-body {
+            font-size: 11px;
+            line-height: 1.6;
+          }
+
+          @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
           }
 
           /* Gallery: 2 col mobile */

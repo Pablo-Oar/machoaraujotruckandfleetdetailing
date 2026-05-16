@@ -4,7 +4,7 @@ import Image from "@/components/ui/AppImage"
 
 const IMAGES = [
   "/images/services/ceramic-coating/Carousel/01.JPG",
-  "/images/services/ceramic-coating/Carousel/02.PNG",
+  "/images/services/ceramic-coating/Carousel/02.jpg",
   "/images/services/ceramic-coating/Carousel/03.JPG",
   "/images/services/ceramic-coating/Carousel/04.JPG",
 ]
