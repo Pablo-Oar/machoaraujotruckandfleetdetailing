@@ -776,7 +776,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Completed in 2.5–3.5 hours",
     ],
     price: "Starting at $130",
-    priceNote: "Standard Full Detail: $130–$160 depending on vehicle size and condition. Ideal for sedans, SUVs and light trucks.",
+    priceNote: "Price depending on vehicle size and condition. Ideal for sedans, SUVs and light trucks.",
     benefits: [
       {
         icon: ICONS.check,
@@ -800,7 +800,6 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Leather & Tire Finish", body: "Leather seats cleaned and conditioned. Tires waxed and dressed for a clean, long-lasting finish." },
     ],
     gallery: [
-      "/images/services/interior-detail/Gallery/IMG_8914.jpeg",
       "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8929.JPG",
       "/images/services/standard-full-detail/Gallery/03.jpg",
