@@ -704,6 +704,8 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-overview-img-wrap { height: auto; aspect-ratio: 4/3; min-height: unset !important; }
           .sdp-benefits-grid { grid-template-columns: 1fr; gap: 16px; }
           .sdp-gallery-grid { grid-template-columns: 1fr 1fr; }
+          .sdp-ba-grid { grid-template-columns: 1fr 1fr; }
+          .sdp-ba-item { height: 200px; }
           .sdp-related-grid { grid-template-columns: 1fr; }
           .sdp-pricing-box { padding: 32px 24px; }
           .sdp-process-grid::before { display: none; }
@@ -720,6 +722,8 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           .sdp-hero.boat-detailing { height: auto !important; overflow: hidden; width: 100%; }
           .sdp-hero.boat-detailing .sdp-hero-img { position: relative !important; inset: auto !important; width: 100% !important; height: auto !important; object-fit: contain !important; background-color: #0D0D0D; }
           .sdp-gallery-grid { grid-template-columns: 1fr; }
+          .sdp-ba-grid { grid-template-columns: 1fr; }
+          .sdp-ba-item { height: 240px; }
           .sdp-benefits-grid { grid-template-columns: 1fr; }
           .detailing-packages-overview { margin: 0 -24px; border-radius: 0 !important; }
           .sdp-tiers-grid { grid-template-columns: 1fr; }
@@ -735,6 +739,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           className="sdp-hero-img"
           style={{
             objectFit: service.heroFit || "cover",
+            objectPosition: service.heroPosition || "center",
             backgroundColor: service.heroFit === "contain" ? "#0D0D0D" : undefined
           }}
           priority

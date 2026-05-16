@@ -22,6 +22,7 @@ const PACKAGES_ITEMS: PlainItem[] = [
 ]
 
 const SERVICES_DROPDOWN: DropdownItem[] = [
+  { label: "Detailing Packages",      href: "/services/detailing-packages", type: "submenu", items: PACKAGES_ITEMS },
   { label: "Paint Correction",        href: "/services/paint-correction"        },
   { label: "Ceramic Coating",         href: "/services/ceramic-coating"         },
   { label: "Interior Premium",        href: "/services/interior-detail"         },
@@ -34,7 +35,6 @@ const SERVICES_DROPDOWN: DropdownItem[] = [
   { label: "Ozone Treatment",         href: "/services/ozone-treatment"         },
   { label: "Industrial Pressure Washing", href: "/services/industrial-pressure-washing" },
   { label: "Subscription Plan",       href: "/services/subscription-plan"           },
-  { label: "Detailing Packages",      href: "/services/detailing-packages", type: "submenu", items: PACKAGES_ITEMS },
 ]
 
 const NAV_LINKS = [
@@ -117,6 +117,13 @@ export default function Navbar() {
   const openSub       = () => { if (subCloseTimer.current) clearTimeout(subCloseTimer.current); if (closeTimer.current) clearTimeout(closeTimer.current); setSubMenuOpen(true) }
   const closeSub      = () => { subCloseTimer.current = setTimeout(() => setSubMenuOpen(false), 150) }
 
+  /* current service label */
+  const normalizedPathname = pathname.replace(/\/$/, "") || "/"
+  const allServiceItems: PlainItem[] = SERVICES_DROPDOWN.flatMap((item) =>
+    item.type === "submenu" ? item.items : [item]
+  )
+  const currentService = allServiceItems.find((item) => item.href === normalizedPathname)
+
   return (
     <>
       {/* ── HEADER ─────────────────────────────────────────── */}
@@ -148,13 +155,28 @@ export default function Navbar() {
                   onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
 
                   <Link href={link.href} style={{
-                    display: "flex", alignItems: "center", gap: "5px",
-                    fontSize: "14px", fontWeight: 500,
-                    fontFamily: "inherit", letterSpacing: "0.01em",
-                    textDecoration: "none",
-                    color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
+                    display: "flex", flexDirection: "column", alignItems: "center",
+                    gap: "2px", textDecoration: "none",
                   }}>
-                    {link.label} <ChevronDown />
+                    <span style={{
+                      display: "flex", alignItems: "center", gap: "5px",
+                      fontSize: "14px", fontWeight: 500,
+                      letterSpacing: "0.01em",
+                      color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
+                    }}>
+                      {link.label} <ChevronDown />
+                    </span>
+                    {currentService && (
+                      <span style={{
+                        fontSize: "9px", fontWeight: 700,
+                        color: "#0D0D0D", backgroundColor: "#C9A84C",
+                        borderRadius: "3px", padding: "1px 6px",
+                        letterSpacing: "0.06em", textTransform: "uppercase",
+                        whiteSpace: "nowrap", lineHeight: 1.6,
+                      }}>
+                        {currentService.label}
+                      </span>
+                    )}
                   </Link>
 
                   {/* ── LEVEL 1 DROPDOWN ──────────────────── */}
@@ -332,8 +354,20 @@ export default function Navbar() {
                       padding: "18px 0", fontSize: "22px", fontWeight: 700,
                       color: pathname.startsWith("/services") ? "#C9A84C" : "#FFFFFF",
                       textTransform: "uppercase", letterSpacing: "0.04em",
+                      display: "flex", flexDirection: "column", gap: "6px",
                     }}>
                     {link.label}
+                    {currentService && (
+                      <span style={{
+                        fontSize: "9px", fontWeight: 700,
+                        color: "#0D0D0D", backgroundColor: "#C9A84C",
+                        borderRadius: "3px", padding: "2px 8px",
+                        letterSpacing: "0.06em", textTransform: "uppercase",
+                        alignSelf: "flex-start", lineHeight: 1.6,
+                      }}>
+                        {currentService.label}
+                      </span>
+                    )}
                   </Link>
                   <button onClick={() => setMobileServices((v) => !v)}
                     aria-label="Expand services menu"

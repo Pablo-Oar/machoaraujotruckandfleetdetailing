@@ -34,6 +34,7 @@ export interface ServiceData {
   title: string
   heroImage: string
   heroFit?: "cover" | "contain"
+  heroPosition?: string
   overviewImage: string
   tagline: string
   description: React.ReactNode
@@ -185,9 +186,10 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic Application", body: "Each panel is coated individually in controlled sections. Ceramic cures over 24–48 hours — we recommend keeping the vehicle dry during this period." },
     ],
     gallery: [
-      "/images/services/ceramic-coating/CeramicCoating01.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
+      "/images/services/ceramic-coating/Gallery/01.JPG",
+      "/images/services/ceramic-coating/Gallery/02.PNG",
+      "/images/services/ceramic-coating/Gallery/03.JPG",
+      "/images/services/ceramic-coating/Gallery/04.JPG",
     ],
     faqs: [
       { question: "How long does ceramic coating last?", answer: "Our professional-grade coatings are rated for 3–5 years with proper maintenance. Consumer-grade products available at auto parts stores typically last 6–12 months." },
@@ -196,7 +198,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Ceramic Coating Fresno CA | Macho Araujo Detailing",
@@ -263,7 +265,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can we customize what services each vehicle gets?", answer: "Absolutely. You can specify different service levels per vehicle type — for example, full detail for client-facing vehicles and express wash for work trucks." },
     ],
     related: [
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
       { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
@@ -345,7 +347,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can you remove pet hair?", answer: "Yes — we use specialized tools to pull pet hair from fabric and carpet. Very heavy pet hair may require additional time and is quoted accordingly." },
     ],
     related: [
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
       { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
     ],
@@ -420,7 +422,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Gallery/03.JPG" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Exterior Detail Fresno CA | Macho Araujo Detailing",
@@ -554,7 +556,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Aircraft Detailing", slug: "aircraft-detailing", image: "/images/services/aircraft-detailing/ImgAircraftDetailing.jpg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Gallery/03.JPG" },
     ],
     metaTitle: "Boat Detailing Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional boat detailing in Fresno and Central Valley. Gelcoat restoration, oxidation removal, marine wax and interior cleaning. We come to your marina.",
@@ -573,8 +575,8 @@ export const SERVICES_DATA: ServiceData[] = [
     longDescription:
       "Our detailing packages make it simple to choose the right level of service. Whether you need a quick maintenance clean before a meeting or a full interior and exterior restoration for a car sale or gift, we have a package for it. All three packages are performed mobile — we come to your home, office or wherever the car is parked.",
     features: [
-      "Express ($80–$120): Basic vacuum & blow out, wipe-down, glass, tire cleaning, exterior wash & hand dry",
-      "Standard ($130–$160): All Express + carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing",
+      "Express (Starting at $80): Basic vacuum & blow out, wipe-down, glass, tire cleaning, exterior wash & hand dry",
+      "Standard (Starting at $130): All Express + carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing",
       "Premium Deluxe: All Standard + inside waxing & UV protection, fabric/seat/floor shampoo & steam, windows ceramic protection (+1 month), liquid wax, FREE ozone treatment",
       "All packages performed at your location",
       "Gift certificates available",
@@ -614,9 +616,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I customize a package?", answer: "Yes — we can add or remove specific services to build a custom package. Just let us know what you need and we'll quote accordingly." },
     ],
     related: [
-      { title: "Express Detail", slug: "express-detail", image: "/images/services/detailing-packages/HeroPackages.png" },
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
+      { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/01.jpeg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
     metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
@@ -747,8 +749,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I upgrade from Express to Standard the same day?", answer: "Yes — if schedule allows, we can upgrade your appointment on the spot. Just let us know before we start and we'll adjust the time and quote accordingly." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Express Detail Fresno CA | Macho Araujo Detailing",
@@ -760,7 +762,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "standard-full-detail",
     eyebrow: "Most Popular",
     title: "Standard Full Detail",
-    heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
+    heroImage: "/images/services/Standard-full detail/hero.png",
     overviewImage: "/images/services/detailing-packages/PackagesDetailing1.png",
     tagline: "Complete inside and out — our most popular package.",
     description:
@@ -958,7 +960,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
       { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
     ],
     metaTitle: "Engine Bay Detailing Fresno CA | Macho Araujo Detailing",
     metaDescription: "Safe engine bay detailing in Fresno, CA. Degrease, scrub and dress your engine bay. Mobile service. Included in Premium Deluxe or book as standalone.",
@@ -968,7 +970,8 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "subscription-plan",
     eyebrow: "Monthly Plan",
     title: "Subscription Plan",
-    heroImage: "/images/services/subscription-plan/hero.jpg",
+    heroImage: "/images/services/subscription-plan/hero1.png",
+    heroPosition: "center 95%",
     overviewImage: "/images/services/subscription-plan/overview.jpg",
     tagline: "Clean, Protect and Maintain Your Vehicle All Year Long.",
     description: (
