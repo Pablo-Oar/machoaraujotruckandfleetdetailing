@@ -337,10 +337,10 @@ const ADDITIONAL = [
     href:     "/services/ozone-treatment",
   },
   {
-    title:    "Mobile On-Site Service",
+    title:    "Subscription Plan",
     price:    "We Come To You",
     image:    "/images/blog/EliasServices.png",
-    href:     "/contact",
+    href:     "/services/subscription-plan",
   },
 ]
 

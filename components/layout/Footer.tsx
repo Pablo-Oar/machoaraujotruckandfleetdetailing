@@ -146,7 +146,7 @@ export default function Footer() {
               />
             </Link>
             <p className="footer-tagline">
-              Professional mobile detailing serving Fresno, CA and surrounding areas.
+              Professional mobile detailing serving Fresno, CA and Central Valley.
               We come to you.
             </p>
           </div>

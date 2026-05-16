@@ -123,9 +123,10 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Final Polish & LSP", body: "Ultra-fine finishing polish followed by a paint sealant or ceramic coating to lock in the correction." },
     ],
     gallery: [
-      "/images/services/paint-correction/ImgPaintCorrection.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+      "/images/services/paint-correction/Gallery/01.jpg",
+      "/images/services/paint-correction/Gallery/02.jpg",
+      "/images/services/paint-correction/Gallery/03.jpg",
+      "/images/services/paint-correction/Gallery/04.jpg",
     ],
     faqs: [
       { question: "How long does paint correction take?", answer: "A single-stage correction typically takes 4–6 hours. Multi-stage corrections (for heavily scratched paint) can take 8–12 hours. We never rush the process." },
@@ -190,6 +191,8 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/ceramic-coating/Gallery/02.PNG",
       "/images/services/ceramic-coating/Gallery/03.JPG",
       "/images/services/ceramic-coating/Gallery/04.JPG",
+      "/images/services/ceramic-coating/Gallery/05.jpg",
+      "/images/services/ceramic-coating/Gallery/06.jpg",
     ],
     faqs: [
       { question: "How long does ceramic coating last?", answer: "Our professional-grade coatings are rated for 3–5 years with proper maintenance. Consumer-grade products available at auto parts stores typically last 6–12 months." },
@@ -606,9 +609,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Drive Away Clean", body: "We do a final walkthrough with you, answer any questions and you're done. No waiting, no dropping the car off." },
     ],
     gallery: [
-      "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
+      "/images/services/detailing-packages/Gallery/03.jpg",
+      "/images/services/detailing-packages/Gallery/04.jpg",
+      "/images/services/detailing-packages/Gallery/06.jpg",
     ],
     faqs: [
       { question: "What's included in each package?", answer: "Express ($80–$120): basic vacuum & blow out, interior wipe-down, glass cleaning, tire cleaning, exterior wash & hand dry. Standard Full ($130–$160): all Express plus carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing. Premium Deluxe: all Standard plus inside waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection (+1 month), liquid wax protection and FREE ozone treatment." },
@@ -617,8 +620,8 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/01.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/StandarRelated.jpg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
     metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
@@ -672,10 +675,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/headlights-restoration/Gallery/IMG_8881.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8883.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8884.JPG",
-      "/images/services/headlights-restoration/Gallery/IMG_8885.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8886.JPG",
-      "/images/services/headlights-restoration/Gallery/IMG_8887.JPG",
-      "/images/services/headlights-restoration/Gallery/IMG_8888.JPG",
       "/images/services/headlights-restoration/Gallery/IMG_8889.PNG",
       "/images/services/headlights-restoration/Gallery/IMG_8890.JPG",
     ],
@@ -749,8 +749,8 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Can I upgrade from Express to Standard the same day?", answer: "Yes — if schedule allows, we can upgrade your appointment on the spot. Just let us know before we start and we'll adjust the time and quote accordingly." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/StandarRelated.jpg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Express Detail Fresno CA | Macho Araujo Detailing",
@@ -808,6 +808,10 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/interior-detail/Gallery/IMG_8921.JPG",
       "/images/services/interior-detail/Gallery/IMG_8927.JPG",
       "/images/services/interior-detail/Gallery/IMG_8929.JPG",
+      "/images/services/standard-full-detail/Gallery/03.jpg",
+      "/images/services/standard-full-detail/Gallery/04.jpg",
+      "/images/services/standard-full-detail/Gallery/05.jpg",
+      "/images/services/standard-full-detail/Gallery/06.jpg",
     ],
     faqs: [
       { question: "How long does the Standard Full Detail take?", answer: "Typically 2.5 to 3.5 hours depending on vehicle size and condition. We confirm the estimated time when you book." },
@@ -816,7 +820,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8855.JPG" },
     ],
     metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
@@ -872,8 +876,9 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/premium-deluxe/Gallery/02.JPEG",
       "/images/services/premium-deluxe/Gallery/03.JPEG",
       "/images/services/premium-deluxe/Gallery/04.JPEG",
-      "/images/services/premium-deluxe/Gallery/05.JPEG",
-      "/images/services/premium-deluxe/Gallery/06.JPEG",
+      "/images/services/premium-deluxe/Gallery/07.jpg",
+      "/images/services/premium-deluxe/Gallery/08.jpg",
+      "/images/services/premium-deluxe/Gallery/09.jpg",
     ],
     faqs: [
       { question: "How long does the Premium Deluxe take?", answer: "The Premium Deluxe takes 3.5 - 4.5 hours depending on vehicle size and condition. We recommend booking it on a day when you don't need the vehicle — we'll let you know when it's ready." },
@@ -881,7 +886,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is the ceramic window protection the same as ceramic coating?", answer: "No — the window ceramic protection included in Premium Deluxe is a maintenance-grade glass sealant that lasts approximately 1 month. Full ceramic coating is a separate service. The window protection improves water beading and reduces glare at no extra cost." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/StandarRelated.jpg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/CeramicCoatingPortada.jpg" },
     ],
@@ -981,7 +986,7 @@ export const SERVICES_DATA: ServiceData[] = [
             <span style={{ fontSize: "11px", fontWeight: 700, color: "#C9A84C", textTransform: "uppercase", letterSpacing: "0.1em" }}>Monthly</span>
           </div>
           <div style={{ padding: "14px 20px", textAlign: "center" }}>
-            <p style={{ margin: 0, fontSize: "28px", fontWeight: 900, color: "#C9A84C" }}>$100 – $120</p>
+            <p style={{ margin: 0, fontSize: "28px", fontWeight: 900, color: "#C9A84C" }}>Starting at $100</p>
             <p style={{ margin: "6px 0 0", fontSize: "12px", color: "#888888" }}>One Maintenance Detail per month</p>
           </div>
         </div>
@@ -999,7 +1004,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Wheel Cleaner",
       "Tire Waxing",
     ],
-    price: "$100 – $120 / month",
+    price: "Starting at $100",
     priceNote: "Price is based on size, condition and type of vehicle. One Maintenance Detail per month included.",
     benefits: [
       {
@@ -1032,8 +1037,8 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/01.JPEG" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/standard-full-detail/StandarRelated.jpg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
     ],
     metaTitle: "Monthly Subscription Plan Fresno CA | Macho Araujo Detailing",
     metaDescription: "Monthly car detailing subscription in Fresno, CA. One maintenance detail per month from $100–$120. Save up to 20% vs one-time bookings. Mobile — we come to you.",
@@ -1087,7 +1092,6 @@ export const SERVICES_DATA: ServiceData[] = [
     faqs: [
       { question: "What surfaces can you pressure wash?", answer: "We wash concrete, asphalt, brick, pavers, metal dock doors, compactor pads, dumpster areas, building exteriors and more. If you're unsure whether a surface is suitable, we'll assess it before we start." },
       { question: "Do you offer recurring service?", answer: "Yes — we offer weekly, bi-weekly and monthly maintenance programs for businesses that need consistent cleanliness standards, such as food distribution facilities, warehouses and commercial properties." },
-      { question: "Will the water runoff be managed properly?", answer: "Yes. We follow responsible water management practices. For facilities with environmental compliance requirements, we can discuss containment and capture options." },
     ],
     related: [
       { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
@@ -1147,7 +1151,6 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/ozone-treatment/Gallery/02.JPG",
       "/images/services/ozone-treatment/Gallery/03.JPG",
       "/images/services/ozone-treatment/Gallery/04.jpg",
-      "/images/services/ozone-treatment/Gallery/05.JPG",
       "/images/services/ozone-treatment/Gallery/06.PNG",
     ],
     faqs: [

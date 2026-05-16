@@ -736,8 +736,8 @@ export default function AboutPage() {
             {/* Right: image */}
             <div className="story-img-wrap">
               <Image
-                src="/images/portfolio/Screenshot_20260416_024847_Instagram.jpg"
-                alt="Mercedes S580 full detail by Macho Araujo"
+                src="/images/about/elias1.jpg"
+                alt="Elias Macho Araujo — Fresno Mobile Detailer"
                 fill
                 sizes="(max-width: 640px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}

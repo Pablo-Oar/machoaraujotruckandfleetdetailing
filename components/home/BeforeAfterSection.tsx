@@ -13,11 +13,6 @@ import Image from "@/components/ui/AppImage"
 
 const PAIRS = [
   {
-    before: "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-    after:  "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-    label:  "Paint Correction",
-  },
-  {
     before: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
     after:  "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
     label:  "Exterior Detail",

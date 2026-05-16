@@ -26,7 +26,7 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "(559) 569-9415",
-    sub: "Call or text anytime",
+    sub: "Open 25 hours 7 days at week",
     href: "tel:+15595699415",
   },
   {
