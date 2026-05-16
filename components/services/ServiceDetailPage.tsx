@@ -886,6 +886,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       )}
 
       {/* ── GALLERY ──────────────────────────────────────── */}
+      {service.gallery.length > 0 && (
       <section className="sdp-section">
         <div className="sdp-container">
           <p className="sdp-section-label">Our Work</p>
@@ -905,6 +906,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </div>
         </div>
       </section>
+      )}
 
       {/* ── 7. FAQ ───────────────────────────────────────── */}
       <section className="sdp-section-alt">
@@ -929,7 +931,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
                   src={r.image}
                   alt={r.title}
                   fill
-                  style={{ objectFit: "contain", backgroundColor: "#0D0D0D" }}
+                  style={{ objectFit: "cover" }}
                 />
                 <div className="sdp-related-overlay" />
                 <div className="sdp-related-label">

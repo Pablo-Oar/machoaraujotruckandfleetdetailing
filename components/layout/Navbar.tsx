@@ -32,6 +32,8 @@ const SERVICES_DROPDOWN: DropdownItem[] = [
   { label: "Engine Detailing",        href: "/services/engine-detailing"        },
   { label: "Boat Detailing",          href: "/services/boat-detailing"          },
   { label: "Ozone Treatment",         href: "/services/ozone-treatment"         },
+  { label: "Industrial Pressure Washing", href: "/services/industrial-pressure-washing" },
+  { label: "Subscription Plan",       href: "/services/subscription-plan"           },
   { label: "Detailing Packages",      href: "/services/detailing-packages", type: "submenu", items: PACKAGES_ITEMS },
 ]
 

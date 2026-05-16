@@ -6,9 +6,6 @@ const IMAGES = [
   "/images/services/premium-deluxe/Carousel/01.JPG",
   "/images/services/premium-deluxe/Carousel/02.JPG",
   "/images/services/premium-deluxe/Carousel/03.JPG",
-  "/images/services/premium-deluxe/Carousel/04.JPG",
-  "/images/services/premium-deluxe/Carousel/05.JPG",
-  "/images/services/premium-deluxe/Carousel/06.JPG",
   "/images/services/premium-deluxe/Carousel/07.jpg",
 ]
 

@@ -15,43 +15,36 @@ import AboutHeroCarousel from "@/components/about/AboutHeroCarousel"
 const TIMELINE = [
   {
     id: "t1",
-    year: "2018",
+    year: "2020",
     side: "left" as const,
     title: "Where It All Started",
     body: "Elias began detailing cars for friends and neighbors in Fresno, CA — learning every technique by hand, building a reputation for results that spoke for themselves.",
   },
   {
     id: "t2",
-    year: "2019",
+    year: "2022",
     side: "right" as const,
     title: "First Commercial Clients",
     body: "Word spread fast in the Central Valley. Local business owners and fleet operators started calling — and Macho Araujo Detailing took on its first professional contracts.",
   },
   {
     id: "t3",
-    year: "2020",
+    year: "2023",
     side: "left" as const,
     title: "Fleet & Heavy-Duty Expansion",
     body: "Expanded into semi-trucks, box vans, and commercial fleets. Developed specialized protocols for large-format vehicles that most detailers avoid.",
   },
   {
     id: "t4",
-    year: "2022",
+    year: "2024",
     side: "right" as const,
     title: "Going Fully Mobile",
     body: "Launched a 100% mobile service model — bringing professional-grade detailing directly to homes, offices, and job sites across Fresno and the Central Valley.",
   },
   {
     id: "t5",
-    year: "2023",
-    side: "left" as const,
-    title: "Premium Services: Ceramic & Correction",
-    body: "Added Ceramic Coating and multi-stage Paint Correction to the service menu, serving luxury vehicles, classic cars, aircraft, and boats.",
-  },
-  {
-    id: "t6",
     year: "Today",
-    side: "right" as const,
+    side: "left" as const,
     title: "Serving Fresno & Beyond",
     body: "Fully certified, fully mobile, and fully committed — Macho Araujo Truck & Fleet Detailing is Fresno's go-to shop for any vehicle, any size, any surface.",
   },
@@ -708,8 +701,7 @@ export default function AboutPage() {
           <span className="eyebrow">Our Story</span>
           <h1>About Macho Araujo</h1>
           <p className="about-hero-sub">
-            Fresno&apos;s mobile detailing specialist — built from the ground up,
-            one car at a time.
+            I&apos;m Elias &quot;El Macho Araujo&quot; a professional boxer - Latin American Champion (2016) &amp; Argentine Title (2018) and also the man behind Macho Araujo Truck, Fleet and Car Detail.
           </p>
         </div>
       </AboutHeroCarousel>
@@ -723,25 +715,17 @@ export default function AboutPage() {
             <div className="story-text">
               <span className="eyebrow">Who We Are</span>
               <h2>
-                Fresno&apos;s <span>Trusted</span><br />
-                Mobile Detailer
+                Fresno&apos;s <span>Mobile</span><br />
+                Detailer
               </h2>
               <p className="story-body">
-                Macho Araujo Truck &amp; Fleet Detailing started as a passion project —
-                Elias detailing cars for friends in Fresno, CA, with nothing but
-                dedication and the right tools. What began in a driveway grew into
-                one of the Central Valley&apos;s most trusted mobile detailing operations.
+                Macho Araujo Truck &amp; Fleet Detailing has been servicing Fresno and Central Valley since 2020 with more than 5 years of experience offering basic and full detailing service for vans, trucks and any commercial vehicle.
               </p>
               <p className="story-body">
-                Today we specialize in fleet programs, paint correction, ceramic
-                coating, and full-service detailing for cars, trucks, semi-trailers,
-                aircraft, and boats. Every job is done on-site — we come to you,
-                so your schedule never changes.
+                I&apos;ve fully integrated my discipline, passion and hard work from the ring to the detailing industry, because just like in boxing, here every detail matters.
               </p>
               <p className="story-body">
-                No detailing shop. No wait times. Just professional results delivered
-                to your driveway, parking lot, or job site — anywhere in Fresno
-                and the surrounding Central Valley.
+                We only use high quality products to ensure the highest level of protection for your vehicle while still offering a variety of affordable services, so if your number one priority is quality without having to worry about the price then you have found the right mobile detailing.
               </p>
               <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
                 <a href="/services" className="btn-gold">View Our Services</a>

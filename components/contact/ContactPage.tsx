@@ -105,22 +105,17 @@ const SOCIAL_LINKS = [
 
 const SERVICE_OPTIONS = [
   "Select a service...",
-  // Individual Services
+  "Fleet Detailing",
   "Paint Correction",
   "Ceramic Coating",
-  "Interior Express Detail",
-  "Interior Premium Detail",
-  "Exterior Express Detail",
-  "Exterior Premium Detail",
+  "Express Detail Package",
+  "Standard Detail Package",
+  "Premium Detail Package",
   "Headlights Restoration",
   "Engine Bay Detailing",
-  "Fleet Detailing",
   "Aircraft Detailing",
   "Boat Detailing",
-  // Packages
-  "Express Detail Package",
-  "Standard Full Detail Package",
-  "Premium Deluxe Package",
+  "Industrial Pressure Washing",
   "Other",
 ]
 
@@ -605,7 +600,7 @@ export default function ContactPage() {
       <section className="contact-hero">
         <div style={{ position: "absolute", inset: 0 }}>
           <Image
-            src="/images/blog/Screenshot_20260416_102346_Gallery.jpg"
+            src="/images/contact us/hero.png"
             alt="Contact Macho Araujo Detailing"
             fill
             sizes="100vw"

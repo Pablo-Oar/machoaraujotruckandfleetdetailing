@@ -24,6 +24,27 @@ type MediaItem = {
 const MEDIA: MediaItem[] = [
   /* ── Videos ──────────────────────────────────────────────── */
   {
+    id: "v8",
+    type: "video",
+    src: "/videos/Add01.mp4",
+    category: "Fleet Wash",
+    label: "Fleet Wash — Professional Service",
+  },
+  {
+    id: "v9",
+    type: "video",
+    src: "/videos/Add02.mp4",
+    category: "Headlights Restoration",
+    label: "Headlights Restoration — Before & After",
+  },
+  {
+    id: "v10",
+    type: "video",
+    src: "/videos/Add03.mp4",
+    category: "Headlights Restoration",
+    label: "Headlights — Crystal Clear Results",
+  },
+  {
     id: "v7",
     type: "video",
     src: "/videos/proceso_web.mp4",

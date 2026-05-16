@@ -123,7 +123,8 @@ export default function Hero() {
             maxWidth: "520px",
             margin: "0 auto 40px",
           }}>
-            Ceramic Coating, Paint Correction, Fleet Detailing, Detailing Packages, Aircraft Detailing &amp; Boat Detailing. Servicing the entire Central Valley.
+            We provide professional mobile car detailing for all your vehicle needs in Fresno and Central Valley.<br /><br />
+            At Macho Araujo Car Detailing we know your vehicles are the face of your business on the road so we specialize in deep cleaning and detailing to make your brand shine every mile. Ceramic Coating, Paint Correction, Fleet Detailing, Detailing Packages, Aircraft Detailing &amp; Boat Detailing.
           </p>
 
           {/* CTA Pair */}

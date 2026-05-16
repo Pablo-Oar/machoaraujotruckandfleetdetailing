@@ -177,8 +177,6 @@ const PRIMARY_SERVICES = [
 
       <p><strong>Trailer Washout:</strong> Our interior washout provides a comprehensive cleaning for the cargo area of your vehicles, including trailers, box trucks and cargo vans.</p>
 
-      <p><strong>Industrial Pressure Washing:</strong> Our industrial pressure washing service is highly effective for cleaning various surfaces, including sidewalks, parking areas, dock doors, compactor pads, and more. We utilize advanced techniques and equipment to ensure thorough cleaning and removal of tough stains, grime, and debris.</p>
-
       <div style={{
         margin: "16px 0",
         padding: "16px 20px",
@@ -312,31 +310,31 @@ const ADDITIONAL = [
     title:    "Interior Express & Premium",
     price:    "Starting at $70",
     image:    "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
-    href:     "/contact",
+    href:     "/services/interior-detail",
   },
   {
     title:    "Exterior Express & Premium",
     price:    "Starting at $50",
     image:    "/images/services/exterior-detail/ImgExteriorPremium.jpg",
-    href:     "/contact",
+    href:     "/services/exterior-detail",
   },
   {
     title:    "Headlights Restoration",
     price:    "$80",
     image:    "/images/services/headlights-restoration/ImgHeadLights.png",
-    href:     "/contact",
+    href:     "/services/headlights-restoration",
   },
   {
     title:    "Engine Detailing",
     price:    "$80",
     image:    "/images/services/engine-detailing/ImgEngineDetailing.jpg",
-    href:     "/contact",
+    href:     "/services/engine-detailing",
   },
   {
     title:    "Ozone Treatment",
     price:    "$70",
     image:    "/images/services/ozone-treatment/Gallery/04.jpg",
-    href:     "/contact",
+    href:     "/services/ozone-treatment",
   },
   {
     title:    "Mobile On-Site Service",

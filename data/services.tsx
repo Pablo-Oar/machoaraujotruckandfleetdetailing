@@ -248,10 +248,14 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Consistent Service", body: "Our team shows up on schedule, every time. You get the same quality on visit #1 as visit #50." },
     ],
     gallery: [
-      "/images/services/fleet-detailing/Carousel/01.jpg",
-      "/images/services/fleet-detailing/Carousel/02.jpg",
-      "/images/services/fleet-detailing/Carousel/03.jpg",
-      "/images/services/fleet-detailing/Carousel/04.jpg",
+      "/images/services/fleet-detailing/Gallery/01.jpg",
+      "/images/services/fleet-detailing/Gallery/02.jpg",
+      "/images/services/fleet-detailing/Gallery/03.jpg",
+      "/images/services/fleet-detailing/Gallery/04.jpg",
+      "/images/services/fleet-detailing/Gallery/05.jpg",
+      "/images/services/fleet-detailing/Gallery/06.jpg",
+      "/images/services/fleet-detailing/Gallery/07.jpg",
+      "/images/services/fleet-detailing/Gallery/08.jpg",
     ],
     faqs: [
       { question: "What's the minimum fleet size?", answer: "We work with fleets as small as 3 vehicles. For very large fleets (20+ units), we offer dedicated team scheduling and priority response times." },
@@ -354,7 +358,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "exterior-detail",
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
-    heroImage: "/images/services/exterior-detail/ImgExteriorPremium.jpg",
+    heroImage: "/images/services/exterior-detail/hero.JPG",
     overviewImage: "/images/services/exterior-detail/ExteriorPremium01.png",
     tagline: "Two tiers of exterior care — Express & Premium.",
     description: (
@@ -624,7 +628,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Visibility & Safety",
     title: "Headlights Restoration",
     heroImage: "/images/services/headlights-restoration/HeadLights.png",
-    overviewImage: "/images/services/headlights-restoration/HeadlightsRestoration1.png",
+    overviewImage: "/images/services/headlights-restoration/HeadlightsRestoration01.jpg",
     tagline: "Clear headlights. Better visibility. Safer nights.",
     description:
       "Professional headlight restoration removes UV oxidation and yellowing to restore clarity and improve night visibility. Results that last — backed by a UV-resistant protective coating.",
@@ -638,7 +642,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Both headlights included",
       "Before & after photos provided",
     ],
-    price: "Starting at $70",
+    price: "Starting at $80",
     priceNote: "Price is for both headlights. Severely damaged or cracked lenses may need replacement instead of restoration — we'll advise during inspection.",
     benefits: [
       {
@@ -679,7 +683,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is this safe for my paint?", answer: "Yes — we mask all surrounding paint before sanding. There is zero risk of damage to your vehicle's finish during the process." },
     ],
     related: [
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/AdditionalServices/ExteriorPremium.jpg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
@@ -732,9 +736,10 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Exterior Wash & Tires", body: "Exterior foam washing, tire cleaning and hand drying with plush microfiber — no swirl-inducing brushes or spin dryers." },
     ],
     gallery: [
-      "/images/services/detailing-packages/HeroPackages.png",
-      "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
+      "/images/services/express-detail/Gallery/01.JPEG",
+      "/images/services/express-detail/Gallery/02.JPEG",
+      "/images/services/express-detail/Gallery/03.JPEG",
+      "/images/services/express-detail/Gallery/04.JPEG",
     ],
     faqs: [
       { question: "How long does the Express Detail take?", answer: "Typically 60–90 minutes for a standard car. SUVs and trucks may take up to 2 hours. We confirm the estimated time when you book." },
@@ -814,9 +819,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is this package good for pre-sale prep?", answer: "Yes — the Standard Full Detail is one of the most popular options for pre-sale preparation. It makes the interior look and smell fresh and the exterior clean and presentable without the full Premium investment." },
     ],
     related: [
-      { title: "Express Detail", slug: "express-detail", image: "/images/services/detailing-packages/HeroPackages.png" },
-      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/exterior-detail/ImgExteriorPremium.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg" },
+      { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8855.JPG" },
     ],
     metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
     metaDescription: "Standard Full Detail in Fresno, CA. Carpet cleaning, leather conditioning, interior degreaser and tire waxing. Most popular package. Mobile — starting at $130.",
@@ -867,9 +872,12 @@ export const SERVICES_DATA: ServiceData[] = [
       { number: "03", title: "Ceramic & Ozone", body: "Interior UV wax applied, exterior ceramic protection applied, windows ceramic coated. Vehicle sealed and ozone treatment run to eliminate all odors." },
     ],
     gallery: [
-      "/images/services/exterior-detail/ExteriorPremium01.png",
-      "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
-      "/images/portfolio/Screenshot_20260416_024930_Instagram.jpg",
+      "/images/services/premium-deluxe/Gallery/01.JPEG",
+      "/images/services/premium-deluxe/Gallery/02.JPEG",
+      "/images/services/premium-deluxe/Gallery/03.JPEG",
+      "/images/services/premium-deluxe/Gallery/04.JPEG",
+      "/images/services/premium-deluxe/Gallery/05.JPEG",
+      "/images/services/premium-deluxe/Gallery/06.JPEG",
     ],
     faqs: [
       { question: "How long does the Premium Deluxe take?", answer: "The Premium Deluxe takes 3.5 - 4.5 hours depending on vehicle size and condition. We recommend booking it on a day when you don't need the vehicle — we'll let you know when it's ready." },
@@ -877,9 +885,9 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is the ceramic window protection the same as ceramic coating?", answer: "No — the window ceramic protection included in Premium Deluxe is a maintenance-grade glass sealant that lasts approximately 1 month. Full ceramic coating is a separate service. The window protection improves water beading and reduces glare at no extra cost." },
     ],
     related: [
-      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/detailing-packages/PackagesDetailing1.png" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
-      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/ImgCeramicCoating.jpg" },
+      { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/CeramicCoatingPortada.jpg" },
     ],
     metaTitle: "Premium Deluxe Detail Fresno CA | Macho Araujo Detailing",
     metaDescription: "Premium Deluxe car detail in Fresno, CA. Full steam clean, shampoo, ozone treatment, ceramic windows and liquid wax. Our best package. Mobile — contact us for pricing.",
@@ -891,7 +899,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Under the Hood",
     title: "Engine Bay Detailing",
     heroImage: "/images/services/engine-detailing/ImgEngineDetailing.jpg",
-    overviewImage: "/images/services/engine-detailing/EngineDetailing1.png",
+    overviewImage: "/images/services/engine-detailing/EngineDetailing01.png",
     tagline: "Safely degrease and detail your engine bay.",
     description:
       "Safe, thorough engine bay degreasing and detailing. We remove built-up grease, dust and road grime, then dress all plastics and hoses for a clean, protected engine bay.",
@@ -905,7 +913,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Microfiber dry & detailing",
       "Suitable for all engine types",
     ],
-    price: "Starting at $70",
+    price: "Starting at $80",
     priceNote: "Price may vary for heavily soiled or complex engine bays. Often included in our Premium Deluxe package.",
     benefits: [
       {
@@ -945,7 +953,7 @@ export const SERVICES_DATA: ServiceData[] = [
     faqs: [
       { question: "Will water damage my engine?", answer: "No — when done correctly. We cover all sensitive electrical components and use low pressure. Engines are designed to handle water from rain and steam — the key is avoiding direct high-pressure spray on electrical connections." },
       { question: "How often should I detail my engine bay?", answer: "Once or twice a year is sufficient for most vehicles. Trucks and off-road vehicles that accumulate more grime may benefit from more frequent cleaning." },
-      { question: "Is engine detailing included in your packages?", answer: "Yes — engine detailing is included in our Premium Deluxe package ($300). It can also be added as a standalone service or added on to any other package." },
+      { question: "Is engine detailing included in your packages?", answer: "No — engine detailing is not included in our Premium Deluxe package ($300). It can be added as a standalone service or to any other package." },
     ],
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
@@ -955,6 +963,144 @@ export const SERVICES_DATA: ServiceData[] = [
     metaTitle: "Engine Bay Detailing Fresno CA | Macho Araujo Detailing",
     metaDescription: "Safe engine bay detailing in Fresno, CA. Degrease, scrub and dress your engine bay. Mobile service. Included in Premium Deluxe or book as standalone.",
   },
+  /* ── 13. SUBSCRIPTION PLAN ─────────────────────────────── */
+  {
+    slug: "subscription-plan",
+    eyebrow: "Monthly Plan",
+    title: "Subscription Plan",
+    heroImage: "/images/services/subscription-plan/hero.jpg",
+    overviewImage: "/images/services/subscription-plan/overview.jpg",
+    tagline: "Clean, Protect and Maintain Your Vehicle All Year Long.",
+    description: (
+      <>
+        <p style={{ margin: 0, marginBottom: "12px" }}>Welcome to Our New Subscription Plan. We understand that your vehicle is not just transportation, but an extension of your style and personality.</p>
+        <p style={{ margin: 0, marginBottom: "8px", fontWeight: 700, color: "#FFFFFF", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.06em" }}>Why Subscribe</p>
+        <div style={{ margin: "0 0 12px", padding: "16px 20px", borderLeft: "3px solid #C9A84C", backgroundColor: "rgba(201,168,76,0.06)", borderRadius: "0 4px 4px 0" }}>
+          <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>Give your car the care it deserves. Book Our Subscription Plan and Save up to 20%.</p>
+        </div>
+        <p style={{ margin: 0, marginBottom: "20px" }}>Contact us today for a clean, fresh-smelling and restored car that enhances your driving experience and maintains your car&apos;s value.</p>
+        <div style={{ border: "1px solid rgba(201,168,76,0.3)", borderRadius: "8px", overflow: "hidden", marginBottom: "16px", maxWidth: "320px" }}>
+          <div style={{ background: "rgba(201,168,76,0.08)", padding: "10px 20px", textAlign: "center", borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
+            <span style={{ fontSize: "11px", fontWeight: 700, color: "#C9A84C", textTransform: "uppercase", letterSpacing: "0.1em" }}>Monthly</span>
+          </div>
+          <div style={{ padding: "14px 20px", textAlign: "center" }}>
+            <p style={{ margin: 0, fontSize: "28px", fontWeight: 900, color: "#C9A84C" }}>$100 – $120</p>
+            <p style={{ margin: "6px 0 0", fontSize: "12px", color: "#888888" }}>One Maintenance Detail per month</p>
+          </div>
+        </div>
+        <p style={{ margin: 0, fontSize: "12px", color: "#666666" }}>*Price is based on size, condition and type of vehicle</p>
+      </>
+    ),
+    longDescription: "",
+    features: [
+      "Vacuuming & Blow out",
+      "Interior Disinfect Wipe Down",
+      "Door Panels & Inside Windows",
+      "Wash Rubber Mats",
+      "Exterior Detail",
+      "Spray Wax Protection",
+      "Wheel Cleaner",
+      "Tire Waxing",
+    ],
+    price: "$100 – $120 / month",
+    priceNote: "Price is based on size, condition and type of vehicle. One Maintenance Detail per month included.",
+    benefits: [
+      {
+        icon: ICONS.clock,
+        title: "Save Time",
+        body: "Stop wasting weekends cleaning your car. We handle it on a set schedule — you just enjoy a clean vehicle.",
+      },
+      {
+        icon: ICONS.star,
+        title: "Save Money",
+        body: "Subscribers pay less than one-time clients. Lock in your rate and save up to 20% compared to individual bookings.",
+      },
+      {
+        icon: ICONS.shield,
+        title: "Always Clean",
+        body: "Your car always sparkling, rain or shine. Regular maintenance keeps paint protected and the interior fresh year-round.",
+      },
+    ],
+    steps: [
+      { number: "01", title: "Choose Your Plan", body: "Select the monthly subscription and we'll confirm pricing based on your vehicle size and condition." },
+      { number: "02", title: "Set Your Schedule", body: "We lock in a recurring date that works for you — same time every month, no need to rebook." },
+      { number: "03", title: "We Come to You", body: "Every month our team shows up at your location and delivers a full maintenance detail, consistently." },
+    ],
+    gallery: [],
+    faqs: [
+      { question: "Can I cancel my subscription?", answer: "Yes — you can cancel anytime with no penalty. We ask for at least 7 days notice before your next scheduled service." },
+      { question: "What's included every month?", answer: "Every monthly visit includes: vacuuming & blow out, interior disinfect wipe down, door panels & inside windows, wash rubber mats, exterior detail, spray wax protection, wheel cleaner and tire waxing." },
+      { question: "How much do I save compared to booking individually?", answer: "Subscribers save up to 20% compared to one-time bookings at regular pricing. The more months you stay subscribed, the more you save." },
+      { question: "Can I upgrade my subscription?", answer: "Yes — you can upgrade to a higher-tier maintenance detail at any time. Contact us and we'll adjust your plan and pricing accordingly." },
+    ],
+    related: [
+      { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
+      { title: "Standard Full Detail", slug: "standard-full-detail", image: "/images/services/Standard-full detail/01.jpeg" },
+      { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/Gallery/06.jpeg" },
+    ],
+    metaTitle: "Monthly Subscription Plan Fresno CA | Macho Araujo Detailing",
+    metaDescription: "Monthly car detailing subscription in Fresno, CA. One maintenance detail per month from $100–$120. Save up to 20% vs one-time bookings. Mobile — we come to you.",
+  },
+
+  /* ── 12. INDUSTRIAL PRESSURE WASHING ───────────────────── */
+  {
+    slug: "industrial-pressure-washing",
+    eyebrow: "Commercial Cleaning",
+    title: "Industrial Pressure Washing",
+    heroImage: "/images/services/industrial-pressure-washing/hero.png",
+    overviewImage: "/images/services/industrial-pressure-washing/imgDescription.png",
+    tagline: "Heavy-duty pressure washing for commercial surfaces.",
+    description:
+      "Our industrial pressure washing service is highly effective for cleaning various surfaces, including sidewalks, parking areas, dock doors, compactor pads, and more. We utilize advanced techniques and equipment to ensure thorough cleaning and removal of tough stains, grime, and debris.",
+    longDescription:
+      "Industrial surfaces accumulate grease, oil, dirt, algae, and chemical residue that standard cleaning methods can't touch. Our high-pressure washing equipment delivers the force needed to restore concrete, asphalt, metal docks, loading bays, and exterior walls to a clean, safe condition. Whether it's a one-time deep clean or a recurring maintenance program, we bring everything on-site — no disruption to your operation.",
+    features: [
+      "Sidewalks, walkways & parking areas",
+      "Dock doors & loading bays",
+      "Compactor pads & dumpster areas",
+      "Building exteriors & concrete walls",
+      "Grease, oil & chemical residue removal",
+      "Recurring maintenance programs available",
+    ],
+    price: "Custom Quote",
+    priceNote: "Pricing is based on surface area, type of soiling and frequency. Contact us for a site assessment and quote.",
+    benefits: [
+      {
+        icon: ICONS.zap,
+        title: "High-Pressure Power",
+        body: "Our commercial-grade equipment removes grease, oil stains, algae and embedded grime that regular washing can't touch.",
+      },
+      {
+        icon: ICONS.shield,
+        title: "Safe for All Surfaces",
+        body: "We adjust pressure and technique for each surface — concrete, asphalt, metal, brick — preventing damage while maximizing clean.",
+      },
+      {
+        icon: ICONS.truck,
+        title: "On-Site Service",
+        body: "We bring the equipment to your facility. Minimal downtime, maximum results — scheduled around your operation.",
+      },
+    ],
+    steps: [
+      { number: "01", title: "Site Assessment", body: "We inspect the area, identify surface types and soiling levels, and confirm the right pressure, temperature and detergent for each zone." },
+      { number: "02", title: "Pre-Treatment", body: "Degreaser or cleaning agents applied to stubborn stains, grease spots and high-traffic areas before pressure washing begins." },
+      { number: "03", title: "Pressure Wash & Rinse", body: "High-pressure wash applied systematically across all surfaces. Final rinse removes all loosened debris, leaving a clean, ready-to-use surface." },
+    ],
+    gallery: [],
+    faqs: [
+      { question: "What surfaces can you pressure wash?", answer: "We wash concrete, asphalt, brick, pavers, metal dock doors, compactor pads, dumpster areas, building exteriors and more. If you're unsure whether a surface is suitable, we'll assess it before we start." },
+      { question: "Do you offer recurring service?", answer: "Yes — we offer weekly, bi-weekly and monthly maintenance programs for businesses that need consistent cleanliness standards, such as food distribution facilities, warehouses and commercial properties." },
+      { question: "Will the water runoff be managed properly?", answer: "Yes. We follow responsible water management practices. For facilities with environmental compliance requirements, we can discuss containment and capture options." },
+    ],
+    related: [
+      { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
+      { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/AdditionalServices/ExteriorPremium.jpg" },
+    ],
+    metaTitle: "Industrial Pressure Washing Fresno CA | Macho Araujo Detailing",
+    metaDescription: "Commercial pressure washing in Fresno and Central Valley. Sidewalks, parking areas, dock doors, compactor pads and more. On-site service — contact us for a quote.",
+  },
+
   /* ── 11. OZONE TREATMENT ───────────────────────────────── */
   {
     slug: "ozone-treatment",
