@@ -284,7 +284,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <a href={PHONE_HREF} className="btn-gold hidden md:inline-flex"
+          <a href={PHONE_HREF} className="btn-gold nav-phone-btn hidden md:inline-flex"
             style={{ fontSize: "13px", padding: "10px 20px", gap: "7px" }}>
             <PhoneIcon size={14} /> {PHONE_DISPLAY}
           </a>

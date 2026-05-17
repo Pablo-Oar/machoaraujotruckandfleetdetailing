@@ -443,7 +443,7 @@ export default function ServicesPage() {
           align-items: center;
           margin-bottom: 80px;
           padding-bottom: 80px;
-          border-bottom: 1px solid #1A1A1A;
+          border-bottom: 2px solid rgba(201,168,76,0.40);
         }
 
         .srv-row:last-child {
@@ -558,8 +558,23 @@ export default function ServicesPage() {
         .pkg-section {
           background-color: #111111;
           padding: 96px 0;
-          border-top: 1px solid rgba(201,168,76,0.10);
-          border-bottom: 1px solid rgba(201,168,76,0.10);
+          border-top:    1px solid rgba(201,168,76,0.40);
+          border-bottom: 1px solid rgba(201,168,76,0.40);
+          box-shadow:
+            0 -3px 14px rgba(201,168,76,0.22),
+            0 -10px 36px rgba(201,168,76,0.08),
+            0  3px 14px rgba(201,168,76,0.22),
+            0  10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .pkg-section:hover {
+          border-top-color:    rgba(201,168,76,0.70);
+          border-bottom-color: rgba(201,168,76,0.70);
+          box-shadow:
+            0 -6px 24px rgba(201,168,76,0.42),
+            0 -18px 60px rgba(201,168,76,0.18),
+            0  6px 24px rgba(201,168,76,0.42),
+            0  18px 60px rgba(201,168,76,0.18);
         }
 
         .pkg-inner {
@@ -803,7 +818,13 @@ export default function ServicesPage() {
         .how-section {
           background-color: #000000;
           padding: 96px 0;
-          border-top: 1px solid rgba(201,168,76,0.10);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .how-section:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .how-inner {
@@ -888,7 +909,14 @@ export default function ServicesPage() {
           background-color: #000000;
           padding: 96px 0;
           text-align: center;
-          border-top: 1px solid rgba(201,168,76,0.10);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .srv-cta-section:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .srv-cta-inner {

@@ -323,17 +323,11 @@ export const SERVICES_DATA: ServiceData[] = [
     steps: [],
     gallery: [
       "/images/services/interior-detail/Gallery/IMG_8914.jpeg",
-      "/images/services/interior-detail/Gallery/IMG_8916.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8920.WEBP",
-      "/images/services/interior-detail/Gallery/IMG_8921.JPG",
       "/images/services/interior-detail/Gallery/IMG_8923.PNG",
-      "/images/services/interior-detail/Gallery/IMG_8924.PNG",
       "/images/services/interior-detail/Gallery/IMG_8925.WEBP",
       "/images/services/interior-detail/Gallery/IMG_8926.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8927.JPG",
       "/images/services/interior-detail/Gallery/IMG_8928.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8929.JPG",
-      "/images/services/interior-detail/Gallery/IMG_8930.JPG",
     ],
     beforeAfter: [
       "/images/services/interior-detail/After-Before/IMG_8823.JPG",

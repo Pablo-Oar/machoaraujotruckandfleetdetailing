@@ -25,8 +25,17 @@ export default function CTABanner({
           background-color: #000000;
           padding: 100px 24px;
           text-align: center;
-          border-top:    1px solid rgba(201,168,76,0.15);
-          border-bottom: 1px solid rgba(201,168,76,0.15);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow:
+            0 -3px 14px rgba(201,168,76,0.22),
+            0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .cta-banner:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow:
+            0 -6px 24px rgba(201,168,76,0.42),
+            0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .cta-banner-inner {

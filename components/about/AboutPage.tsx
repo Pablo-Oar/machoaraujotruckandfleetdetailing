@@ -257,8 +257,18 @@ export default function AboutPage() {
         .about-values {
           background-color: #111111;
           padding: 72px 0;
-          border-top: 1px solid rgba(201, 168, 76, 0.10);
-          border-bottom: 1px solid rgba(201, 168, 76, 0.10);
+          border-top: 1px solid rgba(201, 168, 76, 0.40);
+          border-bottom: 1px solid rgba(201, 168, 76, 0.40);
+          box-shadow: 0 -3px 14px rgba(201, 168, 76, 0.22), 0 -10px 36px rgba(201, 168, 76, 0.08),
+                      0  3px 14px rgba(201, 168, 76, 0.22), 0  10px 36px rgba(201, 168, 76, 0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .about-values:hover {
+          border-top-color: rgba(201, 168, 76, 0.70);
+          border-bottom-color: rgba(201, 168, 76, 0.70);
+          box-shadow: 0 -6px 24px rgba(201, 168, 76, 0.42), 0 -18px 60px rgba(201, 168, 76, 0.18),
+                      0  6px 24px rgba(201, 168, 76, 0.42), 0  18px 60px rgba(201, 168, 76, 0.18);
         }
 
         .values-grid {
@@ -306,6 +316,14 @@ export default function AboutPage() {
         .about-timeline {
           background-color: #111111;
           padding: 96px 0;
+          border-top: 1px solid rgba(201, 168, 76, 0.40);
+          box-shadow: 0 -3px 14px rgba(201, 168, 76, 0.22), 0 -10px 36px rgba(201, 168, 76, 0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .about-timeline:hover {
+          border-top-color: rgba(201, 168, 76, 0.70);
+          box-shadow: 0 -6px 24px rgba(201, 168, 76, 0.42), 0 -18px 60px rgba(201, 168, 76, 0.18);
         }
 
         .timeline-heading {
@@ -458,7 +476,14 @@ export default function AboutPage() {
         .about-gallery {
           background-color: #0D0D0D;
           padding: 96px 0;
-          border-top: 1px solid rgba(201, 168, 76, 0.10);
+          border-top: 1px solid rgba(201, 168, 76, 0.40);
+          box-shadow: 0 -3px 14px rgba(201, 168, 76, 0.22), 0 -10px 36px rgba(201, 168, 76, 0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .about-gallery:hover {
+          border-top-color: rgba(201, 168, 76, 0.70);
+          box-shadow: 0 -6px 24px rgba(201, 168, 76, 0.42), 0 -18px 60px rgba(201, 168, 76, 0.18);
         }
 
         .gallery-heading {
@@ -517,7 +542,14 @@ export default function AboutPage() {
           background-color: #000000;
           padding: 88px 0;
           text-align: center;
-          border-top: 1px solid rgba(201, 168, 76, 0.10);
+          border-top: 1px solid rgba(201, 168, 76, 0.40);
+          box-shadow: 0 -3px 14px rgba(201, 168, 76, 0.22), 0 -10px 36px rgba(201, 168, 76, 0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .about-cta:hover {
+          border-top-color: rgba(201, 168, 76, 0.70);
+          box-shadow: 0 -6px 24px rgba(201, 168, 76, 0.42), 0 -18px 60px rgba(201, 168, 76, 0.18);
         }
 
         .about-cta .eyebrow {

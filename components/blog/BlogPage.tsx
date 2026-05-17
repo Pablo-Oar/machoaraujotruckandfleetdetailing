@@ -189,13 +189,6 @@ const MEDIA: MediaItem[] = [
     category: "Paint Correction",
     label: "Luxury Vehicle Detail",
   },
-  {
-    id: "p14",
-    type: "photo",
-    src: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
-    category: "Full Detail",
-    label: "Premium Full Detail Package",
-  },
 ]
 
 const FILTERS = ["All", "Videos", "Photos", "Fleet", "Paint Correction", "Interior"]
@@ -596,11 +589,30 @@ export default function BlogPage() {
         /* ══════════════════════════════════════════════════════
            INSTAGRAM CTA
            ══════════════════════════════════════════════════════ */
+        .media-section-divider {
+          height: 1px;
+          background: linear-gradient(to right, transparent, #555555, transparent);
+          margin-bottom: 48px;
+          box-shadow: 0 0 8px rgba(80,80,80,0.40), 0 0 20px rgba(60,60,60,0.20);
+          transition: box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .media-section-divider:hover {
+          background: linear-gradient(to right, transparent, #CCCCCC, transparent);
+          box-shadow: 0 0 16px rgba(200,200,200,0.90), 0 0 40px rgba(180,180,180,0.60), 0 0 80px rgba(150,150,150,0.30);
+        }
+
         .blog-cta {
           background-color: #000000;
           padding: 80px 0;
           text-align: center;
-          border-top: 1px solid rgba(201,168,76,0.10);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .blog-cta:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .blog-cta .eyebrow { margin-bottom: 14px; }
@@ -736,11 +748,7 @@ export default function BlogPage() {
               </div>
 
               {/* ── Divider ─────────────────────────────────── */}
-              <div style={{
-                height: "1px",
-                background: "linear-gradient(to right, transparent, #2A2A2A, transparent)",
-                marginBottom: "48px",
-              }} />
+              <div className="media-section-divider" />
 
               {/* ── Photos ──────────────────────────────────── */}
               <p style={{

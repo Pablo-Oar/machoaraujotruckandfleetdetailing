@@ -16,7 +16,14 @@ export default function Footer() {
         .footer {
           background-color: #000000;
           padding: 72px 0 0;
-          border-top: 1px solid rgba(201,168,76,0.15);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+
+        .footer:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .footer-inner {
@@ -32,8 +39,8 @@ export default function Footer() {
         /* ── Col header ─────────────────────────────────────── */
         .footer-col-title {
           font-size: 10px;
-          font-weight: 500;
-          color: #666666;
+          font-weight: 700;
+          color: #B8BCC8;
           text-transform: uppercase;
           letter-spacing: 0.14em;
           margin-bottom: 20px;
@@ -56,12 +63,20 @@ export default function Footer() {
           text-transform: uppercase;
           letter-spacing: 0.07em;
           text-decoration: none;
-          transition: color 0.2s;
           line-height: 1;
+          padding: 5px 8px;
+          margin: -5px -8px;
+          border-radius: 3px;
+          background-image: linear-gradient(rgba(201,168,76,0.14), rgba(201,168,76,0.14));
+          background-size: 0% 100%;
+          background-repeat: no-repeat;
+          background-position: left center;
+          transition: background-size 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s ease;
         }
 
         .footer-link:hover {
-          color: #E8C96A;
+          background-size: 100% 100%;
+          color: #F0D47A;
         }
 
         .footer-link svg {
@@ -209,7 +224,7 @@ export default function Footer() {
                 </svg>
                 Instagram
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://www.facebook.com/share/18aMXA18tk/" target="_blank" rel="noopener noreferrer" className="footer-link">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
@@ -221,14 +236,6 @@ export default function Footer() {
                   <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/>
                 </svg>
                 TikTok
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="footer-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
-                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
-                </svg>
-                YouTube
               </a>
             </div>
           </div>

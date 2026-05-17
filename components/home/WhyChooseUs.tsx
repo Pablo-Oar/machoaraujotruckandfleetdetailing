@@ -62,7 +62,13 @@ export default function WhyChooseUs() {
         .why-section {
           background-color: #0D0D0D;
           padding: 96px 0;
-          border-top: 1px solid rgba(201,168,76,0.12);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .why-section:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .why-inner {

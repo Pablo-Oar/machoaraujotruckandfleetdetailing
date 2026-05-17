@@ -225,6 +225,22 @@ body {
     transform: scale(0.99);
   }
 
+  /* Navbar phone button — glow dorado permanente */
+  .nav-phone-btn {
+    box-shadow:
+      0 0 10px rgba(201,168,76,0.55),
+      0 0 24px rgba(201,168,76,0.30),
+      0 0 48px rgba(201,168,76,0.12);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  .nav-phone-btn:hover {
+    box-shadow:
+      0 0 14px rgba(201,168,76,0.80),
+      0 0 32px rgba(201,168,76,0.45),
+      0 0 64px rgba(201,168,76,0.20);
+  }
+
   /* Botón secundario — outline blanco */
   .btn-outline {
     display: inline-flex;

@@ -74,8 +74,23 @@ export default function StatsRow() {
       <style>{`
         .stats-row {
           background-color: #000000;
-          border-top:    1px solid rgba(201,168,76,0.2);
-          border-bottom: 1px solid rgba(201,168,76,0.2);
+          border-top:    1px solid rgba(201,168,76,0.40);
+          border-bottom: 1px solid rgba(201,168,76,0.40);
+          box-shadow:
+            0 -3px 14px rgba(201,168,76,0.22),
+            0 -10px 36px rgba(201,168,76,0.08),
+            0  3px 14px rgba(201,168,76,0.22),
+            0  10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .stats-row:hover {
+          border-top-color:    rgba(201,168,76,0.70);
+          border-bottom-color: rgba(201,168,76,0.70);
+          box-shadow:
+            0 -6px 24px rgba(201,168,76,0.42),
+            0 -18px 60px rgba(201,168,76,0.18),
+            0  6px 24px rgba(201,168,76,0.42),
+            0  18px 60px rgba(201,168,76,0.18);
         }
 
         .stats-grid {

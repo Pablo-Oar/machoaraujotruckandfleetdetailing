@@ -100,15 +100,43 @@ function Slider({ before, after }: { before: string; after: string }) {
 
 export default function BeforeAfterSection() {
   const [active, setActive] = useState(0)
+  const sectionRef = useRef<HTMLElement>(null)
+  const textRef  = useRef<HTMLDivElement>(null)
+  const sliderRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const section = sectionRef.current
+    if (!section) return
+
+    const onScroll = () => {
+      const rect = section.getBoundingClientRect()
+      const mid  = rect.top + rect.height / 2 - window.innerHeight / 2
+      // Texto sube más lento, slider baja más lento → sensación de profundidad
+      if (textRef.current)   textRef.current.style.transform  = `translateY(${mid * -0.12}px)`
+      if (sliderRef.current) sliderRef.current.style.transform = `translateY(${mid * 0.08}px)`
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true })
+    onScroll()
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
     <>
       <style>{`
         /* ── Sección ─────────────────────────────────────────── */
         .ba-section {
+          position: relative;
+          overflow: hidden;
           background-color: #0D0D0D;
           padding: 96px 0;
-          border-top: 1px solid rgba(201,168,76,0.12);
+          border-top: 1px solid rgba(201,168,76,0.40);
+          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .ba-section:hover {
+          border-top-color: rgba(201,168,76,0.70);
+          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .ba-inner {
@@ -322,11 +350,11 @@ export default function BeforeAfterSection() {
         }
       `}</style>
 
-      <section className="ba-section">
+      <section className="ba-section" ref={sectionRef}>
         <div className="ba-inner">
 
           {/* ── LEFT: texto + selector ──────────────────────── */}
-          <div className="ba-text">
+          <div className="ba-text" ref={textRef} style={{ willChange: "transform" }}>
             <span className="eyebrow">Our Results</span>
             <h2 className="section-h2">
               See The<br />Difference
@@ -352,7 +380,7 @@ export default function BeforeAfterSection() {
           </div>
 
           {/* ── RIGHT: slider ───────────────────────────────── */}
-          <div className="ba-slider-wrap">
+          <div className="ba-slider-wrap" ref={sliderRef} style={{ willChange: "transform" }}>
             <Slider key={active} before={PAIRS[active].before} after={PAIRS[active].after} />
           </div>
 

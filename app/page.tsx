@@ -9,10 +9,12 @@ import Testimonials from "@/components/home/Testimonials"
 import CTABanner from "@/components/home/CTABanner"
 import ComparisonTable from "@/components/home/ComparisonTable"
 import FAQAccordion from "@/components/home/FAQAccordion"
+import ScrollReveal from "@/components/ui/ScrollReveal"
 
 export default function HomePage() {
   return (
     <main className="flex-1">
+      <ScrollReveal />
       <Hero />
       <StatsRow />
       <ServiceCards />

@@ -506,9 +506,24 @@ export default function ContactPage() {
         .contact-areas {
           background-color: #111111;
           padding: 56px 0;
-          border-top: 1px solid rgba(201,168,76,0.10);
-          border-bottom: 1px solid rgba(201,168,76,0.10);
+          border-top:    1px solid rgba(201,168,76,0.40);
+          border-bottom: 1px solid rgba(201,168,76,0.40);
           text-align: center;
+          box-shadow:
+            0 -3px 14px rgba(201,168,76,0.22),
+            0 -10px 36px rgba(201,168,76,0.08),
+            0  3px 14px rgba(201,168,76,0.22),
+            0  10px 36px rgba(201,168,76,0.08);
+          transition: box-shadow 0.45s ease, border-color 0.45s ease;
+        }
+        .contact-areas:hover {
+          border-top-color:    rgba(201,168,76,0.70);
+          border-bottom-color: rgba(201,168,76,0.70);
+          box-shadow:
+            0 -6px 24px rgba(201,168,76,0.42),
+            0 -18px 60px rgba(201,168,76,0.18),
+            0  6px 24px rgba(201,168,76,0.42),
+            0  18px 60px rgba(201,168,76,0.18);
         }
 
         .areas-title {
