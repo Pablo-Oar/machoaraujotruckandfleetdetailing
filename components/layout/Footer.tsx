@@ -79,6 +79,18 @@ export default function Footer() {
           color: #F0D47A;
         }
 
+        .footer-link--instagram:hover {
+          color: #E1306C;
+        }
+
+        .footer-link--facebook:hover {
+          color: #1877F2;
+        }
+
+        .footer-link--tiktok:hover {
+          color: #69C9D0;
+        }
+
         .footer-link svg {
           flex-shrink: 0;
           opacity: 0.7;
@@ -100,6 +112,12 @@ export default function Footer() {
           color: rgba(255,255,255,0.3);
           line-height: 1.65;
           max-width: 220px;
+          transition: color 0.25s ease;
+          cursor: default;
+        }
+
+        .footer-tagline:hover {
+          color: rgba(210,210,215,0.85);
         }
 
         /* ── Copyright ──────────────────────────────────────── */
@@ -215,7 +233,7 @@ export default function Footer() {
           <div>
             <p className="footer-col-title">Get In Touch</p>
             <div className="footer-links">
-              <a href="https://www.instagram.com/machoaraujo_truck_fleet_detail" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://www.instagram.com/machoaraujo_truck_fleet_detail" target="_blank" rel="noopener noreferrer" className="footer-link footer-link--instagram">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -224,14 +242,14 @@ export default function Footer() {
                 </svg>
                 Instagram
               </a>
-              <a href="https://www.facebook.com/share/18aMXA18tk/" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://www.facebook.com/share/18aMXA18tk/" target="_blank" rel="noopener noreferrer" className="footer-link footer-link--facebook">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
                 </svg>
                 Facebook
               </a>
-              <a href="https://www.tiktok.com/@macho.araujo.detailing" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://www.tiktok.com/@macho.araujo.detailing" target="_blank" rel="noopener noreferrer" className="footer-link footer-link--tiktok">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/>
                 </svg>

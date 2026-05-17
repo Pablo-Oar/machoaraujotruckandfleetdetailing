@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 /* ─────────────────────────────────────────────────────────────
    WHY CHOOSE US — FEATURE CARDS
@@ -266,14 +267,14 @@ export default function WhyChooseUs() {
                 Macho Araujo Truck & Fleet Detailing brings certified expertise and premium products directly to your door.
                 We&apos;ve built our reputation one vehicle at a time since 2020.
               </p>
-              <a href="/about" className="why-cta-link">
+              <Link href="/about" className="why-cta-link">
                 Our Story
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* ── RIGHT: Feature cards ───────────────────────── */}

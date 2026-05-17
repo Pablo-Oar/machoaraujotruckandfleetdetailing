@@ -90,17 +90,6 @@ const SOCIAL_LINKS = [
       </svg>
     ),
   },
-  {
-    id: "youtube",
-    href: "#",
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
-      </svg>
-    ),
-  },
 ]
 
 const SERVICE_OPTIONS = [
@@ -339,6 +328,24 @@ export default function ContactPage() {
           border-color: #C9A84C;
           color: #C9A84C;
           background-color: rgba(201,168,76,0.06);
+        }
+
+        .contact-social-btn--instagram:hover {
+          border-color: #E1306C;
+          color: #E1306C;
+          background-color: rgba(225,48,108,0.08);
+        }
+
+        .contact-social-btn--facebook:hover {
+          border-color: #1877F2;
+          color: #1877F2;
+          background-color: rgba(24,119,242,0.08);
+        }
+
+        .contact-social-btn--tiktok:hover {
+          border-color: #69C9D0;
+          color: #69C9D0;
+          background-color: rgba(105,201,208,0.08);
         }
 
         /* ── Right column: Form ─────────────────────────────── */
@@ -673,7 +680,7 @@ export default function ContactPage() {
               <div className="contact-socials">
                 {SOCIAL_LINKS.map((s) => (
                   <a key={s.id} href={s.href} target="_blank"
-                    rel="noopener noreferrer" className="contact-social-btn"
+                    rel="noopener noreferrer" className={`contact-social-btn contact-social-btn--${s.id}`}
                     aria-label={s.id}>
                     {s.icon}
                   </a>

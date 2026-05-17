@@ -121,6 +121,15 @@ export default function Navbar() {
   )
   const currentService = allServiceItems.find((item) => item.href === normalizedPathname)
 
+  /* active page label for mobile header */
+  const activeMobileLabel = (() => {
+    if (pathname === "/") return "Home"
+    const match = NAV_LINKS.find((l) => l.href !== "/" && pathname.startsWith(l.href))
+    if (!match) return ""
+    if (match.href === "/services" && currentService) return currentService.label
+    return match.label
+  })()
+
   return (
     <>
       {/* ── HEADER ─────────────────────────────────────────── */}
@@ -132,6 +141,7 @@ export default function Navbar() {
         boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.5)" : "none",
       }}>
         <div className="site-container" style={{
+          position: "relative",
           display: "flex", alignItems: "center",
           justifyContent: "space-between", height: "70px",
         }}>
@@ -283,11 +293,22 @@ export default function Navbar() {
             )}
           </nav>
 
-          {/* Desktop CTA */}
-          <a href={PHONE_HREF} className="btn-gold nav-phone-btn hidden md:inline-flex"
-            style={{ fontSize: "13px", padding: "10px 20px", gap: "7px" }}>
-            <PhoneIcon size={14} /> {PHONE_DISPLAY}
-          </a>
+          {/* Phone CTA — desktop solo botón, mobile botón + página activa debajo */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "3px" }}>
+            <a href={PHONE_HREF} className="btn-gold nav-phone-btn"
+              style={{ fontSize: "13px", padding: "10px 20px", gap: "7px" }}>
+              <PhoneIcon size={14} /> {PHONE_DISPLAY}
+            </a>
+            {activeMobileLabel && (
+              <span className="flex md:hidden" style={{
+                fontSize: "9px", fontWeight: 700, color: "#C9A84C",
+                textTransform: "uppercase", letterSpacing: "0.12em",
+                whiteSpace: "nowrap",
+              }}>
+                {activeMobileLabel}
+              </span>
+            )}
+          </div>
 
           {/* Hamburger */}
           <button className="flex md:hidden" onClick={() => setMenuOpen(true)} aria-label="Open menu"

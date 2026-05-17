@@ -559,7 +559,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "detailing-packages",
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
-    heroImage: "/images/services/detailing-packages/HeroPackages.jpg",
+    heroImage: "/images/services/detailing-packages/DPHero.jpg",
     overviewImage: "/images/services/detailing-packages/DP.jpg",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
