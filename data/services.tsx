@@ -136,7 +136,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Carousel/03.JPG" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8852.JPG" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Paint Correction Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional paint correction in Fresno, CA. Eliminate swirl marks, scratches and oxidation with multi-stage machine polishing. Mobile service — we come to you.",
@@ -200,7 +200,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Ceramic Coating Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional ceramic coating in Fresno, CA. 3–5 year hydrophobic protection, UV shield and deep gloss. Mobile service — we come to your location.",
@@ -268,7 +268,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
       { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Fleet Detailing Fresno CA | Macho Araujo Truck & Fleet",
     metaDescription: "Commercial fleet detailing in Fresno and Central Valley. Weekly, bi-weekly and monthly contracts for businesses. Semi-trucks, vans and heavy vehicles. Get a quote.",
@@ -280,7 +280,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Interior Restoration",
     title: "Interior Detail",
     heroImage: "/images/services/interior-detail/ImgInteriorPremium.jpg",
-    overviewImage: "/images/services/interior-detail/InteriorPremium01.jpg",
+    overviewImage: "/images/services/interior-detail/IntPremium.jpg",
     tagline: "Your cabin, looking and smelling brand new.",
     description: (
       <>
@@ -343,7 +343,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
       { title: "Engine Detailing", slug: "engine-detailing", image: "/images/services/engine-detailing/ImgEngineDetailing.jpg" },
     ],
     metaTitle: "Interior Detail Fresno CA | Macho Araujo Detailing",
@@ -560,7 +560,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Full-Service Packages",
     title: "Detailing Packages",
     heroImage: "/images/services/detailing-packages/HeroPackages.jpg",
-    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.jpg",
+    overviewImage: "/images/services/detailing-packages/DP.jpg",
     tagline: "Express, Standard or Premium Deluxe — pick your level.",
     description:
       "Three comprehensive packages designed to fit any need and budget. From a quick refresh to a full restoration, every package is performed with the same premium-quality products and care.",
@@ -676,7 +676,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/AdditionalServices/ExteriorPremium.jpg" },
       { title: "Paint Correction", slug: "paint-correction", image: "/images/services/paint-correction/ImgPaintCorrection.jpg" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Headlight Restoration Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional headlight restoration in Fresno, CA. Remove yellowing and oxidation, restore clarity and improve night visibility. Mobile service — we come to you.",
@@ -687,7 +687,7 @@ export const SERVICES_DATA: ServiceData[] = [
     slug: "express-detail",
     eyebrow: "Quick Refresh",
     title: "Express Detail",
-    heroImage: "/images/services/detailing-packages/HeroPackages.jpg",
+    heroImage: "/images/services/detailing-packages/DPHero.jpg",
     overviewImage: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
     tagline: "Quick, thorough refresh — in and out in under 90 minutes.",
     description:
@@ -752,7 +752,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Most Popular",
     title: "Standard Full Detail",
     heroImage: "/images/services/standard-full-detail/hero.jpg",
-    overviewImage: "/images/services/detailing-packages/PackagesDetailing1.jpg",
+    overviewImage: "/images/services/detailing-packages/DP.jpg",
     tagline: "Complete inside and out — our most popular package.",
     description:
       "Everything in the Express Detail plus carpet cleaning, interior degreaser, dashboard shining, leather conditioning and tire waxing. The go-to choice for a thorough clean that covers all the bases.",
@@ -942,7 +942,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { question: "Is engine detailing included in your packages?", answer: "No — engine detailing is not included in our Premium Deluxe package ($300). It can be added as a standalone service or to any other package." },
     ],
     related: [
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
       { title: "Fleet Detailing", slug: "fleet-detailing", image: "/images/services/fleet-detailing/ImgFleetDetailing.jpg" },
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/hero.JPG" },
     ],
@@ -1148,7 +1148,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/hero/heroPremiumDeluxe.jpg" },
       { title: "Interior Detail", slug: "interior-detail", image: "/images/services/interior-detail/ImgInteriorPremium.jpg" },
-      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/HeroPackages.jpg" },
+      { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Ozone Treatment Fresno CA | Macho Araujo Detailing",
     metaDescription: "Professional ozone odor elimination in Fresno, CA. Remove smoke, pet, mold and mildew odors permanently. Mobile service — $70 or FREE with Premium Deluxe.",
