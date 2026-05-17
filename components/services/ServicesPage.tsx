@@ -559,23 +559,6 @@ export default function ServicesPage() {
         .pkg-section {
           background-color: #111111;
           padding: 96px 0;
-          border-top:    1px solid rgba(201,168,76,0.40);
-          border-bottom: 1px solid rgba(201,168,76,0.40);
-          box-shadow:
-            0 -3px 14px rgba(201,168,76,0.22),
-            0 -10px 36px rgba(201,168,76,0.08),
-            0  3px 14px rgba(201,168,76,0.22),
-            0  10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .pkg-section:hover {
-          border-top-color:    rgba(201,168,76,0.70);
-          border-bottom-color: rgba(201,168,76,0.70);
-          box-shadow:
-            0 -6px 24px rgba(201,168,76,0.42),
-            0 -18px 60px rgba(201,168,76,0.18),
-            0  6px 24px rgba(201,168,76,0.42),
-            0  18px 60px rgba(201,168,76,0.18);
         }
 
         .pkg-inner {
@@ -819,13 +802,6 @@ export default function ServicesPage() {
         .how-section {
           background-color: #000000;
           padding: 96px 0;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .how-section:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .how-inner {
@@ -910,14 +886,6 @@ export default function ServicesPage() {
           background-color: #000000;
           padding: 96px 0;
           text-align: center;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-
-        .srv-cta-section:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .srv-cta-inner {
@@ -1131,7 +1099,7 @@ export default function ServicesPage() {
       {/* ════════════════════════════════════════════════════
           PRICING PACKAGES
       ════════════════════════════════════════════════════ */}
-      <section className="pkg-section">
+      <section className="pkg-section gold-divider">
         <div className="pkg-inner">
 
           <div className="pkg-header">
@@ -1197,7 +1165,7 @@ export default function ServicesPage() {
       {/* ════════════════════════════════════════════════════
           ADDITIONAL SERVICES
       ════════════════════════════════════════════════════ */}
-      <section className="add-srv-section">
+      <section className="add-srv-section gold-divider">
         <div className="add-srv-inner">
 
           <div className="add-srv-header">
@@ -1230,7 +1198,7 @@ export default function ServicesPage() {
       {/* ════════════════════════════════════════════════════
           HOW WE WORK
       ════════════════════════════════════════════════════ */}
-      <section className="how-section">
+      <section className="how-section gold-divider">
         <div className="how-inner">
 
           <div className="how-header">
@@ -1254,7 +1222,7 @@ export default function ServicesPage() {
       {/* ════════════════════════════════════════════════════
           CTA FINAL
       ════════════════════════════════════════════════════ */}
-      <section className="srv-cta-section">
+      <section className="srv-cta-section gold-divider">
         <div className="srv-cta-inner">
           <span className="eyebrow">Get Started Today</span>
           <h2 className="srv-cta-h2">

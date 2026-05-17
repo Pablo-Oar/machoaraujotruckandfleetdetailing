@@ -607,13 +607,6 @@ export default function BlogPage() {
           background-color: #000000;
           padding: 80px 0;
           text-align: center;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .blog-cta:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .blog-cta .eyebrow { margin-bottom: 14px; }
@@ -778,7 +771,7 @@ export default function BlogPage() {
       </section>
 
       {/* ── INSTAGRAM CTA ───────────────────────────────────── */}
-      <section className="blog-cta">
+      <section className="blog-cta gold-divider">
         <div className="blog-inner">
           <span className="eyebrow">Follow Our Work</span>
           <h2>See More on Instagram</h2>

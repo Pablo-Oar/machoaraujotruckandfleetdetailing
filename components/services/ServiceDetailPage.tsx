@@ -274,24 +274,10 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
         .sdp-section {
           background: #0D0D0D;
           padding: 80px 0;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .sdp-section:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
         .sdp-section-alt {
           background: #111111;
           padding: 80px 0;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .sdp-section-alt:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
         .sdp-container {
           max-width: 1300px;
@@ -624,13 +610,6 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           background: #000000;
           padding: 80px 0;
           text-align: center;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-        .sdp-cta:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
         .sdp-cta-eyebrow {
           font-family: Montserrat, sans-serif;
@@ -805,7 +784,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       </section>
 
       {/* ── 2. OVERVIEW ──────────────────────────────────── */}
-      <section className="sdp-section">
+      <section className="sdp-section gold-divider">
         <div className="sdp-container">
           <div className="sdp-overview-grid" style={service.slug === "detailing-packages" ? { alignItems: "stretch" } : undefined}>
             {/* Image */}
@@ -852,7 +831,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
 
       {/* ── 3. BENEFITS ──────────────────────────────────── */}
       {service.benefits.length > 0 && (
-      <section className="sdp-section-alt">
+      <section className="sdp-section-alt gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>Why Choose Us</p>
           <h2 className="sdp-section-h2" style={{ textAlign: "center" }}>
@@ -875,7 +854,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
 
       {/* ── 4. PROCESS ───────────────────────────────────── */}
       {service.steps.length > 0 && (
-      <section className="sdp-section">
+      <section className="sdp-section gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>How It Works</p>
           <h2 className="sdp-section-h2" style={{ textAlign: "center" }}>
@@ -896,7 +875,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
 
       {/* ── 5. PRICING ───────────────────────────────────── */}
       {service.slug !== "detailing-packages" && service.slug !== "exterior-detail" && service.slug !== "interior-detail" && (
-      <section className="sdp-section-alt">
+      <section className="sdp-section-alt gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label" style={{ textAlign: "center" }}>Investment</p>
           <h2 className="sdp-section-h2" style={{ textAlign: "center" }}>Pricing</h2>
@@ -921,7 +900,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
 
       {/* ── 6. BEFORE & AFTER ────────────────────────────── */}
       {service.beforeAfter && service.beforeAfter.length > 0 && (
-      <section className="sdp-section-alt">
+      <section className="sdp-section-alt gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label">Transformations</p>
           <h2 className="sdp-section-h2">Before & After</h2>
@@ -944,7 +923,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
 
       {/* ── GALLERY ──────────────────────────────────────── */}
       {service.gallery.length > 0 && (
-      <section className="sdp-section">
+      <section className="sdp-section gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label">Our Work</p>
           <h2 className="sdp-section-h2">Gallery</h2>
@@ -966,7 +945,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       )}
 
       {/* ── 7. FAQ ───────────────────────────────────────── */}
-      <section className="sdp-section-alt">
+      <section className="sdp-section-alt gold-divider">
         <div className="sdp-container" style={{ maxWidth: "860px" }}>
           <p className="sdp-section-label" style={{ textAlign: "center" }}>FAQ</p>
           <h2 className="sdp-section-h2" style={{ textAlign: "center", marginBottom: "40px" }}>
@@ -977,7 +956,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       </section>
 
       {/* ── 8. RELATED SERVICES ──────────────────────────── */}
-      <section className="sdp-section">
+      <section className="sdp-section gold-divider">
         <div className="sdp-container">
           <p className="sdp-section-label">Explore More</p>
           <h2 className="sdp-section-h2">Related Services</h2>
@@ -1002,7 +981,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
       </section>
 
       {/* ── 9. CTA BANNER ────────────────────────────────── */}
-      <section className="sdp-cta">
+      <section className="sdp-cta gold-divider">
         <div className="sdp-container">
           <p className="sdp-cta-eyebrow">Ready to Book?</p>
           <h2 className="sdp-cta-h2">Let's Get Your Vehicle Looking Its Best</h2>

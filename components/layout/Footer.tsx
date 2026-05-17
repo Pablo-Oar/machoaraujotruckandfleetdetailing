@@ -17,14 +17,6 @@ export default function Footer() {
         .footer {
           background-color: #000000;
           padding: 72px 0 0;
-          border-top: 1px solid rgba(201,168,76,0.40);
-          box-shadow: 0 -3px 14px rgba(201,168,76,0.22), 0 -10px 36px rgba(201,168,76,0.08);
-          transition: box-shadow 0.45s ease, border-color 0.45s ease;
-        }
-
-        .footer:hover {
-          border-top-color: rgba(201,168,76,0.70);
-          box-shadow: 0 -6px 24px rgba(201,168,76,0.42), 0 -18px 60px rgba(201,168,76,0.18);
         }
 
         .footer-inner {
@@ -165,7 +157,7 @@ export default function Footer() {
         }
       `}</style>
 
-      <footer className="footer">
+      <footer className="footer gold-divider">
         <div className="footer-inner">
 
           {/* ── Col 1: Logo + tagline ───────────────────────── */}

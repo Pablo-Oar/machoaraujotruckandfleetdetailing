@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[1768,["/machoaraujotruckandfleetdetailing/_next/static/chunks/0rp2cz_7wuufi.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0l3.0tz-x8oie.js"],"default"]
+2:I[1768,["/machoaraujotruckandfleetdetailing/_next/static/chunks/0rp2cz_7wuufi.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/18cdos.8yjkx4.js"],"default"]
 3:I[97367,["/machoaraujotruckandfleetdetailing/_next/static/chunks/0rp2cz_7wuufi.js","/machoaraujotruckandfleetdetailing/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/machoaraujotruckandfleetdetailing/_next/static/chunks/0l3.0tz-x8oie.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BWlAbrc-ik7cT3kAREa-8"}
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/machoaraujotruckandfleetdetailing/_next/static/chunks/18cdos.8yjkx4.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"vv7b-Fob_LLXW4W3cD74R"}
 5:null
