@@ -1,4 +1,5 @@
 import Image from "@/components/ui/AppImage"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    BLOG GRID / WORK GALLERY
@@ -300,7 +301,7 @@ export default function BlogGrid() {
           {/* CTA */}
           <div className="blog-cta">
             <a
-              href="https://www.instagram.com/machoaraujo_truck_fleet_detail"
+              href={CONTACT.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold"
@@ -313,7 +314,7 @@ export default function BlogGrid() {
               </svg>
               View More On Instagram
             </a>
-            <a href="tel:+15595699415" className="btn-outline">
+            <a href={CONTACT.phoneHref} className="btn-outline">
               Book Your Detail
             </a>
           </div>

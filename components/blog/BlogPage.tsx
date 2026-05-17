@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback } from "react"
 import Image from "@/components/ui/AppImage"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    BLOG / MEDIA PAGE
@@ -787,7 +788,7 @@ export default function BlogPage() {
           </p>
           <div className="blog-cta-btns">
             <a
-              href="https://www.instagram.com/machoaraujo_truck_fleet_detail"
+              href={CONTACT.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold">

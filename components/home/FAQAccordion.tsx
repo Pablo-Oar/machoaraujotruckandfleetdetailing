@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    FAQ ACCORDION
@@ -261,7 +262,7 @@ export default function FAQAccordion() {
             <Link href="/contact" className="btn-gold">
               Get A Quote
             </Link>
-            <a href="tel:+15595699415" className="btn-outline">
+            <a href={CONTACT.phoneHref} className="btn-outline">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07
@@ -271,7 +272,7 @@ export default function FAQAccordion() {
                          a16 16 0 006.29 6.29l1.42-1.42a2 2 0 012.11-.45
                          c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
               </svg>
-              (559) 569-9415
+              {CONTACT.phoneDisplay}
             </a>
           </div>
 

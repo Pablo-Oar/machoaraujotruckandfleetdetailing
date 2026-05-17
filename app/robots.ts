@@ -1,0 +1,20 @@
+import type { MetadataRoute } from "next"
+
+/* ─────────────────────────────────────────────────────────────
+   ROBOTS — generado en build (static export → /robots.txt)
+   Base URL: cambiar SOLO esta constante cuando el cliente tenga
+   dominio propio (debe coincidir con sitemap.ts y metadataBase)
+   ───────────────────────────────────────────────────────────── */
+export const dynamic = "force-static"
+
+const BASE = "https://pablo-oar.github.io/machoaraujotruckandfleetdetailing"
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: `${BASE}/sitemap.xml`,
+  }
+}

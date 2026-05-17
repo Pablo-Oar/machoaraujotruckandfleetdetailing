@@ -1,3 +1,5 @@
+import { CONTACT } from "@/data/contact"
+
 /* Botón flotante de WhatsApp — fijo en la esquina inferior derecha */
 export default function WhatsAppButton() {
   return (
@@ -40,7 +42,7 @@ export default function WhatsAppButton() {
       `}</style>
 
       <a
-        href="https://wa.me/15595699415"
+        href={CONTACT.whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-fab"

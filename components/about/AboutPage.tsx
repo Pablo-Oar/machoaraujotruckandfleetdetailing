@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import AboutHeroCarousel from "@/components/about/AboutHeroCarousel"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    ABOUT US PAGE
@@ -890,13 +891,13 @@ export default function AboutPage() {
           </p>
           <div className="about-cta-btns">
             <a href="/contact" className="btn-gold">Request a Free Quote</a>
-            <a href="tel:+15595699415" className="btn-outline">
+            <a href={CONTACT.phoneHref} className="btn-outline">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                 style={{ marginRight: "6px" }}>
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.13 6.13l.95-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z" />
               </svg>
-              (559) 569-9415
+              {CONTACT.phoneDisplay}
             </a>
           </div>
         </div>

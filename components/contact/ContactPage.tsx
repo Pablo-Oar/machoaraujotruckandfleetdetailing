@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react"
 import Image from "@/components/ui/AppImage"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    CONTACT PAGE
@@ -25,9 +26,9 @@ const CONTACT_INFO = [
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.13 6.13l.95-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z" />
       </svg>
     ),
-    label: "(559) 569-9415",
+    label: CONTACT.phoneDisplay,
     sub: "Open 24 hours 7 days at week",
-    href: "tel:+15595699415",
+    href: CONTACT.phoneHref,
   },
   {
     id: "email",
@@ -38,9 +39,9 @@ const CONTACT_INFO = [
         <polyline points="22,6 12,13 2,6"/>
       </svg>
     ),
-    label: "ELIASDAM87@GMAIL.COM",
+    label: CONTACT.email.toUpperCase(),
     sub: "Email Address",
-    href: "https://mail.google.com/mail/?view=cm&to=eliasdam87@gmail.com",
+    href: CONTACT.emailHref,
   },
   {
     id: "location",
@@ -51,16 +52,16 @@ const CONTACT_INFO = [
         <circle cx="12" cy="10" r="3"/>
       </svg>
     ),
-    label: "FRESNO, CA",
-    sub: "Serving the Central Valley",
-    href: "https://www.google.com/maps/search/Fresno,+CA",
+    label: CONTACT.locationLabel.toUpperCase(),
+    sub: CONTACT.locationSub,
+    href: CONTACT.locationHref,
   },
 ]
 
 const SOCIAL_LINKS = [
   {
     id: "instagram",
-    href: "https://www.instagram.com/machoaraujo_truck_fleet_detail",
+    href: CONTACT.social.instagram,
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -82,7 +83,7 @@ const SOCIAL_LINKS = [
   },
   {
     id: "tiktok",
-    href: "https://www.tiktok.com/@macho.araujo.detailing",
+    href: CONTACT.social.tiktok,
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -777,7 +778,7 @@ export default function ContactPage() {
 
                   {status === "error" && (
                     <div className="form-feedback error">
-                      Something went wrong. Please try again or call us at (559) 569-9415.
+                      Something went wrong. Please try again or call us at {CONTACT.phoneDisplay}.
                     </div>
                   )}
 

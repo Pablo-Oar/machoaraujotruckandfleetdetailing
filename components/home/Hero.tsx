@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useEffect, useRef } from "react"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    HERO SECTION
@@ -46,6 +47,8 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="none"
+        poster={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/hero-poster.jpg`}
         style={{
           backgroundColor: "#0D0D0D",
           position: "absolute",
@@ -137,12 +140,12 @@ export default function Hero() {
               Get A Free Quote
             </Link>
             <a
-              href="tel:+15595699415"
+              href={CONTACT.phoneHref}
               className="btn-outline"
               style={{ fontSize: "14px", padding: "13px 32px", letterSpacing: "0.07em" }}
             >
               <PhoneIcon />
-              (559) 569-9415
+              {CONTACT.phoneDisplay}
             </a>
           </div>
 

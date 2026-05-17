@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import { usePathname } from "next/navigation"
+import { CONTACT } from "@/data/contact"
 
 /* ─────────────────────────────────────────────────────────────
    TYPES
@@ -42,8 +43,8 @@ const NAV_LINKS = [
   { label: "Contact",  href: "/contact", dropdown: null },
 ]
 
-const PHONE_DISPLAY = "(559) 569-9415"
-const PHONE_HREF    = "tel:+15595699415"
+const PHONE_DISPLAY = CONTACT.phoneDisplay
+const PHONE_HREF    = CONTACT.phoneHref
 
 /* ─────────────────────────────────────────────────────────────
    ICONS

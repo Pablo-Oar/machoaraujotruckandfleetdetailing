@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import type { ServiceData } from "@/data/services"
+import { CONTACT } from "@/data/contact"
 import PremiumDeluxeCarousel from "@/components/services/PremiumDeluxeCarousel"
 import ExpressDetailCarousel from "@/components/services/ExpressDetailCarousel"
 
@@ -1010,7 +1011,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
           </p>
           <div className="sdp-cta-pair">
             <Link href="/contact" className="btn-gold">Book Now</Link>
-            <a href="tel:+15595699415" className="btn-outline">(559) 569-9415</a>
+            <a href={CONTACT.phoneHref} className="btn-outline">{CONTACT.phoneDisplay}</a>
           </div>
         </div>
       </section>
