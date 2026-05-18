@@ -300,7 +300,7 @@ const PACKAGES = [
       "All inside waxing & UV protection",
       "Fabric, seat & floor shampoo / steam clean",
       "Windows ceramic protection (+1 month)",
-      "Liquid wax protection",
+      "Hydro-speed ceramic protection",
       "FREE ozone treatment",
     ],
     highlight: false,

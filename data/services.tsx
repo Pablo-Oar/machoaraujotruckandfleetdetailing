@@ -148,7 +148,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Long-Term Protection",
     title: "Ceramic Coating",
     heroImage: "/images/services/ceramic-coating/HeroCeramicCoating.JPG",
-    overviewImage: "/images/services/ceramic-coating/CeramicCoating01.jpg",
+    overviewImage: "/images/services/ceramic-coating/CeramicCoating1.jpg",
     tagline: "3+ years of hydrophobic, UV-resistant paint protection.",
     description:
       "Professional-grade nano-ceramic formula that bonds permanently to your paint, delivering 3–5 years of hydrophobic, UV-resistant, self-cleaning protection. The best investment for any vehicle.",
@@ -378,7 +378,7 @@ export const SERVICES_DATA: ServiceData[] = [
             <div className="sdp-tier-name">Premium</div>
             <div className="sdp-tier-price">Starting at $120</div>
             <ul className="sdp-tier-list">
-              {["Foam bath", "Complete wash of vehicle including door jams, gas cap and bugs remove", "Clean wheels, tires and fenders with a variety of brushes to reach ALL AREAS", "Soft microfiber hand drying", "Spray wax for extra shine & protection", "Clean exterior glass and windows", "Tires waxing"].map(item => (
+              {["Foam bath", "Complete wash of vehicle including door jams, gas cap and bugs remove", "Clean wheels, tires and fenders with a variety of brushes to reach ALL AREAS", "Soft microfiber hand drying", "Hydro-speed ceramic protection", "Clean exterior glass and windows", "Tires waxing"].map(item => (
                 <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
               ))}
             </ul>
@@ -427,7 +427,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Specialty Vehicles",
     title: "Aircraft Detailing",
     heroImage: "/images/services/aircraft-detailing/HeroAircraft.jpg",
-    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing1.jpg",
+    overviewImage: "/images/services/aircraft-detailing/AircraftDetailing.jpg",
     tagline: "Aviation-safe products. Meticulous results.",
     description:
       "Meticulous interior and exterior detailing for private and charter aircraft. We use aviation-safe products and techniques to protect your investment and satisfy regulatory standards.",

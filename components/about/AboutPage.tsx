@@ -854,7 +854,7 @@ export default function AboutPage() {
             quote — we&apos;ll come to you anywhere in Fresno and the Central Valley.
           </p>
           <div className="about-cta-btns">
-            <a href="/contact" className="btn-gold">Request a Free Quote</a>
+            <Link href="/contact" className="btn-gold">Request a Free Quote</Link>
             <a href={CONTACT.phoneHref} className="btn-outline">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
