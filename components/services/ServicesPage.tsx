@@ -149,30 +149,34 @@ const PRIMARY_SERVICES = [
         </div>
       </div>
 
-      <div style={{ overflowX: "auto", margin: "8px 0 16px", maxWidth: "100%" }}><table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px" }}>
-        <thead>
-          <tr style={{ borderBottom: "1px solid rgba(201,168,76,0.4)" }}>
-            <th style={{ textAlign: "left", padding: "6px 8px", color: "#C9A84C" }}>Vehicle Class</th>
-            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Weekly/Unit</th>
-            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Biweekly/Unit</th>
-            <th style={{ textAlign: "center", padding: "6px 8px", color: "#C9A84C" }}>Monthly/Unit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style={{ padding: "6px 8px" }}>Small/Medium/Large (Sedan/SUV/Van-Pickup)</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$30</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$35</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$40</td>
-          </tr>
-          <tr>
-            <td style={{ padding: "6px 8px" }}>Trucks</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$80</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$90</td>
-            <td style={{ textAlign: "center", padding: "6px 8px" }}>$100</td>
-          </tr>
-        </tbody>
-      </table></div>
+      <div style={{ margin: "8px 0 16px", maxWidth: "100%", display: "flex", flexDirection: "column", gap: "10px" }}>
+        {[
+          { label: "Small/Medium/Large (Sedan/SUV/Van-Pickup)", weekly: "$30", biweekly: "$35", monthly: "$40" },
+          { label: "Trucks", weekly: "$80", biweekly: "$90", monthly: "$100" },
+        ].map((row) => (
+          <div key={row.label} style={{
+            border: "1px solid rgba(201,168,76,0.25)",
+            borderRadius: "6px",
+            padding: "14px 16px",
+            backgroundColor: "rgba(201,168,76,0.04)",
+          }}>
+            <p style={{ margin: "0 0 12px", fontWeight: 700, fontSize: "13px", color: "#FFFFFF" }}>{row.label}</p>
+            <div style={{ display: "flex", gap: "8px" }}>
+              {[
+                { k: "Weekly", v: row.weekly },
+                { k: "Biweekly", v: row.biweekly },
+                { k: "Monthly", v: row.monthly },
+              ].map((c) => (
+                <div key={c.k} style={{ flex: 1, textAlign: "center" }}>
+                  <span style={{ display: "block", fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.06em", color: "#C9A84C", marginBottom: "4px" }}>{c.k}</span>
+                  <span style={{ display: "block", fontSize: "15px", fontWeight: 700, color: "#FFFFFF" }}>{c.v}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+        <p style={{ fontSize: "11px", color: "#888888", margin: "2px 0 0" }}>Price per unit.</p>
+      </div>
 
       <p><strong>Tractor &amp; Truck Cabin — Interior Cleaning:</strong> We offer a complete interior cleaning including trash removal, vacuum and surface wipe-down. We focus on high visibility areas and driver touch points. This service is strictly customized to meet your needs.</p>
 

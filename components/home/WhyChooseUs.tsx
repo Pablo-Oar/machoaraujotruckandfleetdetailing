@@ -196,8 +196,8 @@ export default function WhyChooseUs() {
           }
 
           .why-cta-link {
-            display: block;
-            text-align: center;
+            display: flex;
+            justify-content: center;
           }
         }
 
@@ -231,8 +231,8 @@ export default function WhyChooseUs() {
           }
 
           .why-cta-link {
-            display: block;
-            text-align: center;
+            display: flex;
+            justify-content: center;
           }
 
           .why-grid {
