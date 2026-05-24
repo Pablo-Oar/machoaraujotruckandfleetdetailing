@@ -5,64 +5,70 @@ import { CONTACT } from "@/data/contact"
 /* ─────────────────────────────────────────────────────────────
    BLOG GRID / WORK GALLERY
    - Fondo: #1A1A1A
-   - Grid 3 columnas (9 items — 3 filas)
+   - Grid 3 columnas (10 items)
    - Fotos en grayscale por defecto, hover → color completo
    - Overlay con etiqueta de categoría en hover
    ───────────────────────────────────────────────────────────── */
 
 const ITEMS = [
   {
-    src: "/images/portfolio/Screenshot_20260416_024847_Instagram.jpg",
-    category: "Paint Correction",
-    label: "Mercedes S580 — Full Detail",
+    src: "/images/home/our-work/01.jpg",
+    category: "Exterior Premium Detail",
+    label: "Ford Raptor",
     span: false,
   },
   {
-    src: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg",
-    category: "Interior Detail",
-    label: "Mercedes S580 — Interior",
-    span: false,
-  },
-  {
-    src: "/images/blog/Screenshot_20260416_102653_Instagram.jpg",
-    category: "Exterior Detail",
-    label: "RAM 1500 Rebel",
-    span: false,
-  },
-  {
-    src: "/images/blog/Screenshot_20260416_102531_Instagram.jpg",
+    src: "/images/home/our-work/02.jpg",
     category: "Fleet Detailing",
-    label: "Semi-Trailer — Wheel Detail",
+    label: "Promo",
     span: false,
   },
   {
-    src: "/images/blog/Screenshot_20260416_102234_Gallery.jpg",
-    category: "Mobile Detailing",
-    label: "On-Site Exterior Treatment",
+    src: "/images/home/our-work/03.jpg",
+    category: "Exterior Premium Detail",
+    label: "Freightliner Trailer",
     span: false,
   },
   {
-    src: "/images/blog/Screenshot_20260416_102442_Gallery.jpg",
-    category: "Fleet Wash",
-    label: "HVL Commercial Van",
+    src: "/images/home/our-work/04.jpg",
+    category: "Fleet Detailing",
+    label: "Plan",
     span: false,
   },
   {
-    src: "/images/portfolio/Screenshot_20260416_024830_Instagram.jpg",
-    category: "Foam Pre-Wash",
-    label: "Mercedes S580 — Pre-Treatment",
-    span: false,
-  },
-  {
-    src: "/images/portfolio/Screenshot_20260416_024916_Instagram.jpg",
+    src: "/images/home/our-work/05.jpg",
     category: "Full Detail",
     label: "Jeep Wrangler Unlimited",
     span: false,
   },
   {
-    src: "/images/blog/Screenshot_20260416_102346_Gallery.jpg",
+    src: "/images/home/our-work/06.jpg",
+    category: "Exterior Premium Detail",
+    label: "RAM 1500 Rebel",
+    span: false,
+  },
+  {
+    src: "/images/home/our-work/07.jpg",
+    category: "Fleet Detailing",
+    label: "Semi Trailer — Wheel Detail",
+    span: false,
+  },
+  {
+    src: "/images/home/our-work/08.jpg",
+    category: "Interior Premium Detail",
+    label: "RAM 1500 Rebel",
+    span: false,
+  },
+  {
+    src: "/images/home/our-work/09.jpg",
     category: "Fleet Wash",
-    label: "Ford Transit — Foam Cannon",
+    label: "HVL Commercial Van",
+    span: false,
+  },
+  {
+    src: "/images/home/our-work/10.jpg",
+    category: "Exterior Detail",
+    label: "Subaru Outback",
     span: false,
   },
 ]
