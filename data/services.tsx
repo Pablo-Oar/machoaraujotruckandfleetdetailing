@@ -135,7 +135,7 @@ export const SERVICES_DATA: ServiceData[] = [
     ],
     related: [
       { title: "Ceramic Coating", slug: "ceramic-coating", image: "/images/services/ceramic-coating/Carousel/03.JPG" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8852.JPG" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/1.jpg" },
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },
     ],
     metaTitle: "Paint Correction Fresno CA | Macho Araujo Detailing",
@@ -816,7 +816,7 @@ export const SERVICES_DATA: ServiceData[] = [
     related: [
       { title: "Express Detail", slug: "express-detail", image: "/images/services/express-detail/Gallery/02.JPEG" },
       { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
-      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/IMG_8855.JPG" },
+      { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/1.jpg" },
     ],
     metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
     metaDescription: "Standard Full Detail in Fresno, CA. Carpet cleaning, leather conditioning, interior degreaser and tire waxing. Most popular package. Mobile — starting at $130.",
