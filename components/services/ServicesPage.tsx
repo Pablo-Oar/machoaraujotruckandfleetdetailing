@@ -108,9 +108,9 @@ const PRIMARY_SERVICES = [
         <div style={{
           margin: "0 0 16px",
           padding: "16px 20px",
-          borderLeft: "3px solid #C9A84C",
+          borderRight: "3px solid #C9A84C",
           backgroundColor: "rgba(201,168,76,0.06)",
-          borderRadius: "0 4px 4px 0",
+          borderRadius: "4px 0 0 4px",
         }}>
           <p style={{ margin: 0, fontWeight: 600, color: "#FFFFFF", fontSize: "14px" }}>
             At Macho Araujo Truck &amp; Fleet Detailing, we specialized in fleet cleaning making your brand shine every mile.

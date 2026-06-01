@@ -740,7 +740,7 @@ export default function AboutPage() {
               <p className="story-body">
                 Macho Araujo Truck &amp; Fleet Detailing has been servicing Fresno and Central Valley since 2020 with more than 5 years of experience offering basic and full detailing service for vans, trucks and any commercial vehicle.
               </p>
-              <p className="story-body">
+              <p className="story-body" style={{ fontWeight: 700 }}>
                 I&apos;ve fully integrated my discipline, passion and hard work from the ring to the detailing industry, because just like in boxing, here every detail matters.
               </p>
               <p className="story-body">

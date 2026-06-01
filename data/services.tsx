@@ -354,7 +354,7 @@ export const SERVICES_DATA: ServiceData[] = [
     eyebrow: "Exterior Restoration",
     title: "Exterior Detail",
     heroImage: "/images/services/exterior-detail/hero.JPG",
-    overviewImage: "/images/services/exterior-detail/ExteriorPremium01.jpg",
+    overviewImage: "/images/services/exterior-detail/ExteriorPremiunDescripcion.jpg",
     tagline: "Two tiers of exterior care — Express & Premium.",
     description: (
       <>
@@ -374,7 +374,7 @@ export const SERVICES_DATA: ServiceData[] = [
           </div>
           <div className="sdp-tier-card sdp-tier-card--premium">
             <div className="sdp-tier-name">Premium</div>
-            <div className="sdp-tier-price">Starting at $120</div>
+            <div className="sdp-tier-price">Starting at $90</div>
             <ul className="sdp-tier-list">
               {["Foam bath", "Complete wash of vehicle including door jams, gas cap and bugs remove", "Clean wheels, tires and fenders with a variety of brushes to reach ALL AREAS", "Soft microfiber hand drying", "Hydro-speed ceramic protection", "Clean exterior glass and windows", "Tires waxing"].map(item => (
                 <li key={item}><span className="sdp-tier-check">✓</span>{item}</li>
@@ -912,7 +912,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Suitable for all engine types",
     ],
     price: "$80",
-    priceNote: "Price may vary for heavily soiled or complex engine bays. Often included in our Premium Deluxe package.",
+    priceNote: "",
     benefits: [
       {
         icon: ICONS.engine,
@@ -951,7 +951,6 @@ export const SERVICES_DATA: ServiceData[] = [
     faqs: [
       { question: "Will water damage my engine?", answer: "No — when done correctly. We cover all sensitive electrical components and use low pressure. Engines are designed to handle water from rain and steam — the key is avoiding direct high-pressure spray on electrical connections." },
       { question: "How often should I detail my engine bay?", answer: "Once or twice a year is sufficient for most vehicles. Trucks and off-road vehicles that accumulate more grime may benefit from more frequent cleaning." },
-      { question: "Is engine detailing included in your packages?", answer: "No — engine detailing is not included in our Premium Deluxe package ($300). It can be added as a standalone service or to any other package." },
     ],
     related: [
       { title: "Detailing Packages", slug: "detailing-packages", image: "/images/services/detailing-packages/DPHero.jpg" },

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useRef, useCallback } from "react"
+import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 import { CONTACT } from "@/data/contact"
 
@@ -793,7 +794,7 @@ export default function BlogPage() {
               </svg>
               Follow On Instagram
             </a>
-            <a href="/contact" className="btn-outline">Book Your Detail</a>
+            <Link href="/contact" className="btn-outline">Book Your Detail</Link>
           </div>
         </div>
       </section>
