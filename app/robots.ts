@@ -2,12 +2,12 @@ import type { MetadataRoute } from "next"
 
 /* ─────────────────────────────────────────────────────────────
    ROBOTS — generado en build (static export → /robots.txt)
-   Base URL: cambiar SOLO esta constante cuando el cliente tenga
-   dominio propio (debe coincidir con sitemap.ts y metadataBase)
+   Base URL: cambiar SOLO esta constante (debe coincidir con
+   sitemap.ts y metadataBase). Dominio propio en Cloudflare Pages.
    ───────────────────────────────────────────────────────────── */
 export const dynamic = "force-static"
 
-const BASE = "https://pablo-oar.github.io/machoaraujotruckandfleetdetailing"
+const BASE = "https://machoaraujodetailing.com"
 
 export default function robots(): MetadataRoute.Robots {
   return {

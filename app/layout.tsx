@@ -23,7 +23,7 @@ const montserrat = Montserrat({
    Cada página puede sobrescribir estos valores con generateMetadata
    ───────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pablo-oar.github.io/machoaraujotruckandfleetdetailing"),
+  metadataBase: new URL("https://machoaraujodetailing.com"),
   title: {
     default: "Elias Car Detailing | Fresno, California",
     template: "%s | Elias Car Detailing Fresno CA",

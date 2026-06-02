@@ -3,12 +3,12 @@ import { SERVICES_DATA } from "@/data/services"
 
 /* ─────────────────────────────────────────────────────────────
    SITEMAP — generado en build (static export → /sitemap.xml)
-   Base URL: cambiar SOLO esta constante cuando el cliente tenga
-   dominio propio (debe coincidir con metadataBase de layout.tsx)
+   Base URL: cambiar SOLO esta constante (debe coincidir con
+   metadataBase de layout.tsx). Dominio propio en Cloudflare Pages.
    ───────────────────────────────────────────────────────────── */
 export const dynamic = "force-static"
 
-const BASE = "https://pablo-oar.github.io/machoaraujotruckandfleetdetailing"
+const BASE = "https://machoaraujodetailing.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
