@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 /* ─────────────────────────────────────────────────────────────
    Tipografía — Montserrat
@@ -72,6 +73,7 @@ export default function RootLayout({
       style={{ backgroundColor: "#0D0D0D" }}
     >
       <body className="min-h-full flex flex-col antialiased">
+        <LocalBusinessSchema />
         <ScrollToTop />
         <Navbar />
         <div style={{ paddingTop: "70px" }}>
