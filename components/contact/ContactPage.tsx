@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react"
 import Image from "@/components/ui/AppImage"
 import { CONTACT } from "@/data/contact"
+import { trackEvent } from "@/lib/analytics"
 
 /* ─────────────────────────────────────────────────────────────
    CONTACT PAGE
@@ -159,6 +160,7 @@ export default function ContactPage() {
       })
       if (res.ok) {
         setStatus("success")
+        trackEvent("generate_lead", { method: "contact_form", service: form.service })
         setForm({ name: "", email: "", phone: "", vehicle: "", service: "", message: "" })
       } else {
         setStatus("error")
