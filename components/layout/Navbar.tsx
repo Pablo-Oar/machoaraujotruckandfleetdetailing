@@ -150,7 +150,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ display: "flex", alignItems: "center", flexShrink: 0 }}
             onClick={() => { if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
-            <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing — Fresno, CA"
+            <Image src="/images/logo/LogotipoWeb.png" alt="Macho Araujo Truck & Fleet Detailing — Fresno, CA"
               width={160} height={48}
               style={{ objectFit: "contain", height: "52px", width: "auto" }} priority />
           </Link>
@@ -341,7 +341,7 @@ export default function Navbar() {
         {/* Top row */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "44px" }}>
           <Link href="/" onClick={() => { setMenuOpen(false); if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" }) }}>
-            <Image src="/images/logo/Logotipo.png" alt="Elias Car Detailing"
+            <Image src="/images/logo/LogotipoWeb.png" alt="Macho Araujo Truck & Fleet Detailing"
               width={140} height={42} style={{ objectFit: "contain", height: "44px", width: "auto" }} priority />
           </Link>
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu"

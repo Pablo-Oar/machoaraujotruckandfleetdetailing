@@ -164,7 +164,7 @@ export default function Footer() {
           <div className="footer-logo">
             <Link href="/" className="footer-logo-img">
               <Image
-                src="/images/logo/Logotipo.png"
+                src="/images/logo/LogotipoWeb.png"
                 alt="Macho Araujo Truck & Fleet Detailing"
                 width={160}
                 height={48}

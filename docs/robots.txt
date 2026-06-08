@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://pablo-oar.github.io/machoaraujotruckandfleetdetailing/sitemap.xml
+Sitemap: https://machoaraujodetailing.com/sitemap.xml

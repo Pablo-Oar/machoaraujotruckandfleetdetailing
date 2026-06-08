@@ -26,8 +26,8 @@ const schema = {
   url: SITE_URL,
   telephone: `+${CONTACT.phoneRaw}`,
   email: CONTACT.email,
-  image: `${SITE_URL}/images/logo/Logotipo.png`,
-  logo: `${SITE_URL}/images/logo/Logotipo.png`,
+  image: `${SITE_URL}/images/logo/LogotipoWeb.png`,
+  logo: `${SITE_URL}/images/logo/LogotipoWeb.png`,
   priceRange: "$$",
   // Ciudad base (sin dirección de calle por ser servicio a domicilio)
   address: {

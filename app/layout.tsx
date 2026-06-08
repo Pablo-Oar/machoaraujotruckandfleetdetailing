@@ -27,8 +27,8 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://machoaraujodetailing.com"),
   title: {
-    default: "Elias Car Detailing | Fresno, California",
-    template: "%s | Elias Car Detailing Fresno CA",
+    default: "Macho Araujo Truck & Fleet Detailing | Fresno, California",
+    template: "%s | Macho Araujo Detailing Fresno CA",
   },
   description:
     "Professional car detailing in Fresno, California. Ceramic coating, paint correction, PPF and premium interior detailing. Mobile service available.",
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     "PPF Fresno",
     "auto detailing Fresno",
   ],
-  authors: [{ name: "Elias Car Detailing" }],
-  creator: "Elias Car Detailing",
+  authors: [{ name: "Macho Araujo Truck & Fleet Detailing" }],
+  creator: "Macho Araujo Truck & Fleet Detailing",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Elias Car Detailing",
-    title: "Elias Car Detailing | Fresno, California",
+    siteName: "Macho Araujo Truck & Fleet Detailing",
+    title: "Macho Araujo Truck & Fleet Detailing | Fresno, California",
     description:
       "Professional car detailing in Fresno, CA. Ceramic coating, paint correction, PPF and premium interior detailing.",
   },
