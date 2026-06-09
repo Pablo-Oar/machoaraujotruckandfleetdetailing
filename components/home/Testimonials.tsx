@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState, useEffect, useCallback } from "react"
+import { trackEvent } from "@/lib/analytics"
 
 /* ─────────────────────────────────────────────────────────────
    TESTIMONIALS CAROUSEL
@@ -344,10 +345,11 @@ export default function Testimonials() {
 
           <div className="tc-cta">
             <a
-              href="https://g.page/r/machoaraujodetailing/review"
+              href="https://share.google/SY3vyv3uf4JnjfNkw"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
+              onClick={() => trackEvent("review_click", { method: "google_reviews" })}
             >
               Leave Us Your Review
             </a>
