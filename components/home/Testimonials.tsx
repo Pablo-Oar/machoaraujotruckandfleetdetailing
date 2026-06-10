@@ -345,7 +345,7 @@ export default function Testimonials() {
 
           <div className="tc-cta">
             <a
-              href="https://share.google/SY3vyv3uf4JnjfNkw"
+              href="https://g.page/r/CXyY6RH5cC-OEAl/review"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
