@@ -93,7 +93,7 @@ export default function Hero() {
             letterSpacing: "0.15em",
             marginBottom: "20px",
           }}>
-            Macho Araujo Truck, Fleet &amp; Car Detailing
+            Macho Araujo Detailing
           </span>
 
           {/* H1 */}

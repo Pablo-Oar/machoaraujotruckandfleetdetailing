@@ -41,6 +41,21 @@ const schema = {
     latitude: 36.7378,
     longitude: -119.7871,
   },
+  // Horario: abierto las 24 horas, todos los días (coincide con la ficha de Google)
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "00:00",
+    closes: "23:59",
+  },
   // Zonas que cubre el servicio móvil (Central Valley)
   areaServed: [
     { "@type": "City", name: "Fresno" },

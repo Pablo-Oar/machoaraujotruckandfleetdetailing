@@ -27,7 +27,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://machoaraujodetailing.com"),
   title: {
-    default: "Macho Araujo Truck & Fleet Detailing | Fresno, California",
+    default: "Macho Araujo Detailing",
     template: "%s | Macho Araujo Detailing Fresno CA",
   },
   description:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Macho Araujo Truck & Fleet Detailing",
-    title: "Macho Araujo Truck & Fleet Detailing | Fresno, California",
+    title: "Macho Araujo Detailing | Fresno, California",
     description:
       "Professional car detailing in Fresno, CA. Ceramic coating, paint correction, PPF and premium interior detailing.",
   },
