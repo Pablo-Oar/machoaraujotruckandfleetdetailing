@@ -276,5 +276,5 @@ Los videos `_web.mp4` son versiones comprimidas generadas con `ffmpeg-static` pa
 | **Teléfono** | (559) 569-9415 |
 | **Email** | eliasdam87@gmail.com |
 | **Zona de servicio** | Fresno, CA y Central Valley |
-| **Instagram** | @machoaraujo_truck_fleet_detail |
+| **Instagram** | @machoaraujodetailing |
 | **TikTok** | @macho.araujo.detailing |

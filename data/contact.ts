@@ -25,7 +25,7 @@ export const CONTACT = {
 
   /* ── Redes sociales ───────────────────────────────────────── */
   social: {
-    instagram: "https://www.instagram.com/machoaraujo_truck_fleet_detail",
+    instagram: "https://www.instagram.com/machoaraujodetailing",
     facebook: "https://www.facebook.com/share/18aMXA18tk/",
     tiktok: "https://www.tiktok.com/@macho.araujo.detailing",
   },
