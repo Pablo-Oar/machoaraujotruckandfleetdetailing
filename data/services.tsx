@@ -98,7 +98,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Decontamination wash + clay bar prep",
       "Final LSP (Last Step Product) protection",
     ],
-    price: "Starting at $300",
+    price: "Starting at $350",
     priceNote: "Final price depends on vehicle size, paint condition and stages required. Free inspection included.",
     benefits: [
       {
@@ -162,7 +162,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Bird dropping & acid rain resistance",
       "Paint correction prep included",
     ],
-    price: "Starting at $400",
+    price: "Starting at $499",
     priceNote: "Price varies by vehicle size and coating package (1, 2 or 3-year tier). Paint correction before coating is quoted separately.",
     benefits: [
       {
@@ -567,14 +567,14 @@ export const SERVICES_DATA: ServiceData[] = [
     longDescription:
       "Our detailing packages make it simple to choose the right level of service. Whether you need a quick maintenance clean before a meeting or a full interior and exterior restoration for a car sale or gift, we have a package for it. All three packages are performed mobile — we come to your home, office or wherever the car is parked.",
     features: [
-      "Express (Starting at $80): Basic vacuum & blow out, wipe-down, glass, tire cleaning, exterior wash & hand dry",
-      "Standard (Starting at $130): All Express + carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing",
-      "Premium Deluxe: All Standard + inside waxing & UV protection, fabric/seat/floor shampoo & steam, windows ceramic protection (+1 month), liquid wax, FREE ozone treatment",
+      "Express (Starting at $99): Basic vacuum & blow out, wipe-down, glass, tire cleaning, exterior wash & hand dry",
+      "Standard (Starting at $149): All Express + carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing",
+      "Premium Deluxe (Starting at $199): All Standard + inside waxing & UV protection, fabric/seat/floor shampoo & steam, windows ceramic protection (+1 month), liquid wax, FREE ozone treatment",
       "All packages performed at your location",
       "Gift certificates available",
     ],
-    price: "Starting at $80",
-    priceNote: "Express $80–$120 · Standard Full $130–$160 · Premium Deluxe: contact for pricing. Price varies by vehicle size.",
+    price: "Starting at $99",
+    priceNote: "Express $99–$120 · Standard Full $149–$160 · Premium Deluxe: Starting at $199. Price varies by vehicle size.",
     benefits: [
       {
         icon: ICONS.car,
@@ -608,7 +608,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "/images/services/detailing-packages/Gallery/8.jpg",
     ],
     faqs: [
-      { question: "What's included in each package?", answer: "Express ($80–$120): basic vacuum & blow out, interior wipe-down, glass cleaning, tire cleaning, exterior wash & hand dry. Standard Full ($130–$160): all Express plus carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing. Premium Deluxe: all Standard plus inside waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection (+1 month), liquid wax protection and FREE ozone treatment." },
+      { question: "What's included in each package?", answer: "Express ($99–$120): basic vacuum & blow out, interior wipe-down, glass cleaning, tire cleaning, exterior wash & hand dry. Standard Full ($149–$160): all Express plus carpet cleaning, interior degreaser & dashboard shining, leather conditioning, tire waxing. Premium Deluxe (starting at $199): all Standard plus inside waxing & UV protection, fabric/seat/floor shampoo & steam clean, windows ceramic protection (+1 month), liquid wax protection and FREE ozone treatment." },
       { question: "How long does each package take?", answer: "Express: 1.5–2 hours. Standard: 2.5–3 hours. Premium Deluxe: 3.5–4.5 hours. Times may vary by vehicle size and condition." },
       { question: "Can I customize a package?", answer: "Yes — we can add or remove specific services to build a custom package. Just let us know what you need and we'll quote accordingly." },
     ],
@@ -618,7 +618,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { title: "Premium Deluxe", slug: "premium-deluxe", image: "/images/services/premium-deluxe/RelatedServicePremiumDeluxe.jpg" },
     ],
     metaTitle: "Detailing Packages Fresno CA | Macho Araujo Detailing",
-    metaDescription: "Car detailing packages in Fresno, CA. Express from $80, Standard Full from $130, Premium Deluxe with ozone treatment. Full mobile service — we come to you.",
+    metaDescription: "Car detailing packages in Fresno, CA. Express from $99, Standard Full from $149, Premium Deluxe from $199 with ozone treatment. Full mobile service — we come to you.",
   },
 
   /* ── 9. HEADLIGHTS RESTORATION ─────────────────────────── */
@@ -707,7 +707,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Exterior washing & hand drying",
       "Complete in 1.5 - 2 hours",
     ],
-    price: "Starting at $80",
+    price: "Starting at $99",
     priceNote: "Price depending on vehicle size and condition. SUVs and trucks at the higher end.",
     benefits: [
       {
@@ -751,7 +751,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { title: "Interior Detail", slug: "interior-detail", image: "/images/portfolio/Screenshot_20260416_024903_Instagram.jpg" },
     ],
     metaTitle: "Express Detail Fresno CA | Macho Araujo Detailing",
-    metaDescription: "Express car detail in Fresno, CA. Quick hand wash, vacuum, wipe-down and glass cleaning. Done in 90 minutes. Mobile — we come to you. Starting at $80.",
+    metaDescription: "Express car detail in Fresno, CA. Quick hand wash, vacuum, wipe-down and glass cleaning. Done in 90 minutes. Mobile — we come to you. Starting at $99.",
   },
 
   /* ── 12. STANDARD FULL DETAIL ───────────────────────────── */
@@ -774,7 +774,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Tire waxing",
       "Completed in 2.5–3.5 hours",
     ],
-    price: "Starting at $130",
+    price: "Starting at $149",
     priceNote: "Price depending on vehicle size and condition. Ideal for sedans, SUVs and light trucks.",
     benefits: [
       {
@@ -819,7 +819,7 @@ export const SERVICES_DATA: ServiceData[] = [
       { title: "Exterior Detail", slug: "exterior-detail", image: "/images/services/exterior-detail/Gallery/1.jpg" },
     ],
     metaTitle: "Standard Full Detail Fresno CA | Macho Araujo Detailing",
-    metaDescription: "Standard Full Detail in Fresno, CA. Carpet cleaning, leather conditioning, interior degreaser and tire waxing. Most popular package. Mobile — starting at $130.",
+    metaDescription: "Standard Full Detail in Fresno, CA. Carpet cleaning, leather conditioning, interior degreaser and tire waxing. Most popular package. Mobile — starting at $149.",
   },
 
   /* ── 13. PREMIUM DELUXE ─────────────────────────────────── */
@@ -842,7 +842,7 @@ export const SERVICES_DATA: ServiceData[] = [
       "Hydro-speed ceramic protection",
       "FREE ozone treatment (odor elimination)",
     ],
-    price: "Starting at $200",
+    price: "Starting at $199",
     priceNote: "Premium Deluxe pricing varies by vehicle size, condition and time required (3.5 - 4.5 hours). Contact us for an accurate quote.",
     benefits: [
       {

@@ -50,7 +50,7 @@ const PRIMARY_SERVICES = [
       "Oxidation & water spot elimination",
       "Paint thickness measurement",
     ],
-    price:  "Starting at $300",
+    price:  "Starting at $350",
     image:  "/images/services/paint-correction/ImgPaintCorrection.jpg",
     href:   "/contact",
     flip:   false,
@@ -70,7 +70,7 @@ const PRIMARY_SERVICES = [
       "UV & oxidation protection",
       "Deep gloss amplification",
     ],
-    price:  "Starting at $400",
+    price:  "Starting at $499",
     image:  "/images/services/ceramic-coating/ImgCeramicCoating.jpg",
     href:   "/contact",
     flip:   true,
@@ -263,7 +263,7 @@ const PRIMARY_SERVICES = [
 const PACKAGES = [
   {
     name:      "Express Detail",
-    price:     "Starting at $80",
+    price:     "Starting at $99",
     subtitle:  "Quick refresh for day-to-day maintenance",
     features: [
       "Basic vacuum & blow out",
@@ -278,7 +278,7 @@ const PACKAGES = [
   },
   {
     name:      "Standard Full Detail",
-    price:     "Starting at $130",
+    price:     "Starting at $149",
     subtitle:  "Most popular — thorough inside & out",
     features: [
       "Everything in Express Detail",
@@ -293,7 +293,7 @@ const PACKAGES = [
   },
   {
     name:      "Premium Deluxe",
-    price:     "Starting at $200",
+    price:     "Starting at $199",
     subtitle:  "Full restoration — our best package",
     features: [
       "Everything in Standard Full",
