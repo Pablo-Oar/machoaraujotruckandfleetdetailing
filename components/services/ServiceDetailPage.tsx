@@ -885,9 +885,16 @@ export default function ServiceDetailPage({ service }: { service: ServiceData })
               Mobile service — we come to your location anywhere in Fresno and the Central Valley.
             </p>
             <p className="sdp-price-note">{service.priceNote}</p>
-            <Link href="/contact" className="btn-gold">
+            <a
+              href={CONTACT.whatsappHrefWithText(
+                `Hi! I'm interested in getting a quote for ${service.title} (${service.price || "custom quote"}). Can you help me?`
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold"
+            >
               Get a Free Quote
-            </Link>
+            </a>
           </div>
         </div>
       </section>

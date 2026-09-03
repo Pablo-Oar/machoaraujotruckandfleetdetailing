@@ -17,6 +17,10 @@ export const CONTACT = {
 
   /* ── WhatsApp ─────────────────────────────────────────────── */
   whatsappHref: `https://wa.me/${PHONE_RAW}`,
+  /** WhatsApp con mensaje precargado (ej. por servicio). Usar desde
+   *  páginas que conocen el contexto — no desde el botón flotante global. */
+  whatsappHrefWithText: (text: string) =>
+    `https://wa.me/${PHONE_RAW}?text=${encodeURIComponent(text)}`,
 
   /* ── Ubicación ────────────────────────────────────────────── */
   locationLabel: "Fresno, CA",

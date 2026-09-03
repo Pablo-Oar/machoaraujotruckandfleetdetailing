@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "@/components/ui/AppImage"
 
@@ -49,6 +52,27 @@ const SERVICES = [
 ]
 
 export default function ServiceCards() {
+  const gridRef = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const el = gridRef.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <>
       <style>{`
@@ -82,6 +106,27 @@ export default function ServiceCards() {
           overflow: visible;
           z-index: 2;
         }
+
+        /* ── Entrada al hacer scroll (stagger por card) ──── */
+        .service-card {
+          opacity: 0;
+          transform: translateY(70px) scale(0.94);
+          transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                      transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+          will-change: opacity, transform;
+        }
+
+        .services-grid.is-visible .service-card {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+
+        .services-grid.is-visible .service-card:nth-child(1) { transition-delay: 0s; }
+        .services-grid.is-visible .service-card:nth-child(2) { transition-delay: 0.12s; }
+        .services-grid.is-visible .service-card:nth-child(3) { transition-delay: 0.24s; }
+        .services-grid.is-visible .service-card:nth-child(4) { transition-delay: 0.36s; }
+        .services-grid.is-visible .service-card:nth-child(5) { transition-delay: 0.48s; }
+        .services-grid.is-visible .service-card:nth-child(6) { transition-delay: 0.60s; }
 
         /* Wrapper imagen + overlay que se expande hacia los lados */
         .service-card-media {
@@ -245,7 +290,11 @@ export default function ServiceCards() {
       </section>
 
       {/* ── GRID ─────────────────────────────────────────── */}
-      <div className="services-grid">
+      <div
+        ref={gridRef}
+        className={`services-grid${visible ? " is-visible" : ""}`}
+        data-scroll-reveal-skip
+      >
         {SERVICES.map((service) => (
           <Link
             key={service.title}

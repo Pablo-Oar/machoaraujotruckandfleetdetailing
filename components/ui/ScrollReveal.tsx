@@ -22,7 +22,9 @@ export default function ScrollReveal() {
     if (!mainEl) return
 
     const sections = Array.from(mainEl.children).filter(
-      (el) => el.tagName === "SECTION" || el.tagName === "DIV"
+      (el) =>
+        (el.tagName === "SECTION" || el.tagName === "DIV") &&
+        !el.hasAttribute("data-scroll-reveal-skip")
     ) as HTMLElement[]
 
     // Aplica sr-hidden a todas las secciones excepto Hero, sin transición aún
